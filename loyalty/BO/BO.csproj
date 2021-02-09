@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3F9E349-9819-439C-872A-8EF1BF466437}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Palmary.Loyalty.BO</RootNamespace>
+    <AssemblyName>Palmary.Loyalty.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper">
+      <HintPath>..\packages\CsvHelper.2.5.0\lib\net40-client\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\LoyaltyDB.cs">
+      <DependentUpon>LoyaltyDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LoyaltyDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoyaltyDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataTransferObjects\CombineRedemption\CombineRedemptionObject.cs" />
+    <Compile Include="DataTransferObjects\Cronjob\CronjobObject.cs" />
+    <Compile Include="DataTransferObjects\CSVExport\MemberLevelChangeExportObject.cs" />
+    <Compile Include="DataTransferObjects\CSVExport\GiftRedemptionHistoryExportObject.cs" />
+    <Compile Include="DataTransferObjects\CSVExport\MemberExportObject.cs" />
+    <Compile Include="DataTransferObjects\CSVExport\TransactionExportObject.cs" />
+    <Compile Include="DataTransferObjects\CSV\MemberImportCSVReportObject.cs" />
+    <Compile Include="DataTransferObjects\CSV\PointAdjustmentImportCSVReportObject.cs" />
+    <Compile Include="DataTransferObjects\CSV\ProductPurchaseImportCSVReportObject.cs" />
+    <Compile Include="DataTransferObjects\CSV\ServicePaymentImportCSVReportObject.cs" />
+    <Compile Include="DataTransferObjects\DB\SearchParmObject.cs" />
+    <Compile Include="DataTransferObjects\Form\ChangedField.cs" />
+    <Compile Include="DataTransferObjects\Form\PhotoField.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftCategoryLinkObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftCategoryObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftInventoryObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftMemberPrivilegeObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftLangObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftLocationObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftObject.cs" />
+    <Compile Include="DataTransferObjects\Gift\GiftRedemptionObject.cs" />
+    <Compile Include="DataTransferObjects\Language\LanguageObject.cs" />
+    <Compile Include="DataTransferObjects\Media\PhotoObject.cs" />
+    <Compile Include="DataTransferObjects\MemberAdvanceSearch\MemberAdvanceSearchRuleObject.cs" />
+    <Compile Include="DataTransferObjects\MemberAdvanceSearch\MemberAdvanceSearchObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberCardObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberCategoryLangObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberCategoryObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberColumnObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberImportObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberLevelChangeObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberLevelObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberObject.cs" />
+    <Compile Include="DataTransferObjects\Member\MemberServiceObject.cs" />
+    <Compile Include="DataTransferObjects\Passcode\PasscodeObject.cs" />
+    <Compile Include="DataTransferObjects\Passcode\PasscodePrefixObject.cs" />
+    <Compile Include="DataTransferObjects\Passcode\PasscodeRegistryObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductCategoryLinkObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductCategoryObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductLangObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductPhotoObject.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductPurchaseObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRuleEarnObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRuleMemberCategoryObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRuleMemberLevelObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRuleObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRulePurchaseCriteriaObject.cs" />
+    <Compile Include="DataTransferObjects\PromotionRule\PromotionRuleServiceCriteriaObject.cs" />
+    <Compile Include="DataTransferObjects\Reminder\ReminderEngineObject.cs" />
+    <Compile Include="DataTransferObjects\Reminder\ReminderScheduleObject.cs" />
+    <Compile Include="DataTransferObjects\Reminder\ReminerTemplateObject.cs" />
+    <Compile Include="DataTransferObjects\Role\RoleObject.cs" />
+    <Compile Include="DataTransferObjects\Role\RolePrivilegeObject.cs" />
+    <Compile Include="DataTransferObjects\Rule\BasicRuleObject.cs" />
+    <Compile Include="DataTransferObjects\Security\AccessObject.cs" />
+    <Compile Include="DataTransferObjects\Security\AccessTokenObject.cs" />
+    <Compile Include="DataTransferObjects\Security\LogDetailObject.cs" />
+    <Compile Include="DataTransferObjects\Security\LogObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServiceCategoryObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServiceContractObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServicePaymentDetailExtraObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServicePaymentDetailObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServicePlanObject.cs" />
+    <Compile Include="DataTransferObjects\Service\ServicePaymentObject.cs" />
+    <Compile Include="DataTransferObjects\SystemConfig\SystemConfigObject.cs" />
+    <Compile Include="DataTransferObjects\Transaction\TransactionEarnObject.cs" />
+    <Compile Include="DataTransferObjects\Transaction\TransactionImportObject.cs" />
+    <Compile Include="DataTransferObjects\Transaction\TransactionObject.cs" />
+    <Compile Include="DataTransferObjects\Transaction\TransactionUseObject.cs" />
+    <Compile Include="DataTransferObjects\Tree\CategoryNode.cs" />
+    <Compile Include="DataTransferObjects\User\UserObject.cs" />
+    <Compile Include="DataTransferObjects\Utility\OrderObject.cs" />
+    <Compile Include="DataTransferObjects\Wifi\WifiAccessHistoryObject.cs" />
+    <Compile Include="DataTransferObjects\Wifi\WifiAccessReportObject.cs" />
+    <Compile Include="DataTransferObjects\Wifi\WifiLocationObject.cs" />
+    <Compile Include="DataTransferObjects\Wifi\WifiLocationPrivilegeObject.cs" />
+    <Compile Include="Modules\Administration\Section\LanguageManager.cs" />
+    <Compile Include="Modules\Administration\Security\AccessManager.cs" />
+    <Compile Include="Modules\Administration\Security\DebugManager.cs" />
+    <Compile Include="Modules\Administration\Security\LogDetailManager.cs" />
+    <Compile Include="Modules\Administration\Security\SessionManager.cs" />
+    <Compile Include="Modules\Administration\SystemControl\SystemConfigManager.cs" />
+    <Compile Include="Modules\Administration\Table\TableManager.cs" />
+    <Compile Include="Modules\Administration\Role\RoleAccessManager.cs" />
+    <Compile Include="Modules\Administration\Role\RoleManager.cs" />
+    <Compile Include="Modules\Administration\Role\RolePrivilegeManager.cs" />
+    <Compile Include="Modules\Administration\User\UserRoleLinkManager.cs" />
+    <Compile Include="Modules\CombineRedemption\CombineRedemptionManager.cs" />
+    <Compile Include="Modules\Export\ExportManager.cs" />
+    <Compile Include="Modules\Gift\GiftCategoryLangManager.cs" />
+    <Compile Include="Modules\Gift\GiftCategoryLinkManager.cs" />
+    <Compile Include="Modules\Gift\GiftCategoryManager.cs" />
+    <Compile Include="Modules\Gift\GiftInventoryManager.cs" />
+    <Compile Include="Modules\Gift\GiftLangManager.cs" />
+    <Compile Include="Modules\Gift\GiftLocationManager.cs" />
+    <Compile Include="Modules\Gift\GiftManager.cs" />
+    <Compile Include="Modules\Gift\GiftMemberPrivilegeManager.cs" />
+    <Compile Include="Modules\Gift\GiftPhotoManager.cs" />
+    <Compile Include="Modules\Gift\GiftRedemptionManager.cs" />
+    <Compile Include="Modules\Location\LocationLangManager.cs" />
+    <Compile Include="Modules\Location\LocationManager.cs" />
+    <Compile Include="Modules\MemberAdvanceSearch\MemberAdvanceSearchRuleManager.cs" />
+    <Compile Include="Modules\MemberAdvanceSearch\MemberAdvanceSearchListMemberManager.cs" />
+    <Compile Include="Modules\MemberAdvanceSearch\MemberAdvanceSearchManager.cs" />
+    <Compile Include="Modules\Member\MemberCardManager.cs" />
+    <Compile Include="Modules\Member\MemberCategoryLangManager.cs" />
+    <Compile Include="Modules\Member\MemberCategoryManager.cs" />
+    <Compile Include="Modules\Member\MemberColumnManager.cs" />
+    <Compile Include="Modules\Member\MemberImportManager.cs" />
+    <Compile Include="Modules\Member\MemberLevelChangeManager.cs" />
+    <Compile Include="Modules\Member\MemberLevelManager.cs" />
+    <Compile Include="Modules\Member\MemberManager.cs" />
+    <Compile Include="Modules\Member\MemberServiceManager.cs" />
+    <Compile Include="Modules\Member\TestManager.cs" />
+    <Compile Include="Modules\ModuleManager.cs" />
+    <Compile Include="Modules\Administration\Table\MenuManager.cs" />
+    <Compile Include="Modules\Administration\Security\LogManager.cs" />
+    <Compile Include="Modules\Administration\User\UserManager.cs" />
+    <Compile Include="Modules\Notification\EmailManager.cs" />
+    <Compile Include="Modules\Passcode\PasscodeManager.cs" />
+    <Compile Include="Modules\PointEngine\PointEngineManager.cs" />
+    <Compile Include="Modules\Product\ProductCategoryLangManager.cs" />
+    <Compile Include="Modules\Product\ProductCategoryLinkManager.cs" />
+    <Compile Include="Modules\Product\ProductCategoryManager.cs" />
+    <Compile Include="Modules\Product\ProductLangManager.cs" />
+    <Compile Include="Modules\Product\ProductManager.cs" />
+    <Compile Include="Modules\Passcode\PasscodeImportManager.cs" />
+    <Compile Include="Modules\Passcode\PasscodeFormatManager.cs" />
+    <Compile Include="Modules\Passcode\PasscodeGenerateManager.cs" />
+    <Compile Include="Modules\Passcode\PasscodePrefixManager.cs" />
+    <Compile Include="Modules\Administration\Section\SectionManager.cs" />
+    <Compile Include="Modules\Administration\SystemControl\SystemObjectManager.cs" />
+    <Compile Include="Modules\Product\ProductPhotoManager.cs" />
+    <Compile Include="Modules\Product\ProductPurchaseManager.cs" />
+    <Compile Include="Modules\Product\PromotionRulePurchaseCriteriaManager.cs" />
+    <Compile Include="Modules\PromotionRule\PromotionRuleManager.cs" />
+    <Compile Include="Modules\PromotionRule\PromotionRuleMemberCategoryManager.cs" />
+    <Compile Include="Modules\PromotionRule\PromotionRuleMemberLevelManager.cs" />
+    <Compile Include="Modules\PromotionRule\PromotionRulePurchaseProductCriteriaManager.cs" />
+    <Compile Include="Modules\PromotionRule\PromotionRuleServiceCriteriaManager.cs" />
+    <Compile Include="Modules\Reminder\ReminderEngineManager.cs" />
+    <Compile Include="Modules\Reminder\ReminderScheduleManager.cs" />
+    <Compile Include="Modules\Reminder\ReminderTemplateManager.cs" />
+    <Compile Include="Modules\Rule\BasicRuleManager.cs" />
+    <Compile Include="Modules\ScheduleJob\CronJob\CronJobManager.cs" />
+    <Compile Include="Modules\Service\ServiceCategoryManager.cs" />
+    <Compile Include="Modules\Service\ServiceContractManager.cs" />
+    <Compile Include="Modules\Service\ServicePlanManager.cs" />
+    <Compile Include="Modules\Service\ServicePaymentManager.cs" />
+    <Compile Include="Modules\Transaction\PointAdjustManager.cs" />
+    <Compile Include="Modules\Transaction\PointDeductActor.cs" />
+    <Compile Include="Modules\Transaction\PointTransferManager.cs" />
+    <Compile Include="Modules\Transaction\TransactionEarnManager.cs" />
+    <Compile Include="Modules\Transaction\TransactionImportManager.cs" />
+    <Compile Include="Modules\Transaction\TransactionManager.cs" />
+    <Compile Include="Modules\Transaction\TransactionUseManager.cs" />
+    <Compile Include="Modules\Utility\CheckDigitManager.cs" />
+    <Compile Include="Modules\Utility\ExcelManager.cs" />
+    <Compile Include="Modules\Utility\Extend.cs" />
+    <Compile Include="Modules\Utility\NetworkManager.cs" />
+    <Compile Include="Modules\Utility\OrderManager.cs" />
+    <Compile Include="Modules\Utility\RandomManager.cs" />
+    <Compile Include="Modules\Utility\TreeManager.cs" />
+    <Compile Include="Modules\Utility\CryptographyManager.cs" />
+    <Compile Include="Modules\Utility\UtilityManager.cs" />
+    <Compile Include="Modules\Wifi\WifiAccessHistoryManager.cs" />
+    <Compile Include="Modules\Wifi\WifiLocationManager.cs" />
+    <Compile Include="Modules\Wifi\WifiLocationPrivilegeManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\LoyaltyDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LoyaltyDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HashLib\HashLib.csproj">
+      <Project>{31880FB6-5B86-42B8-AB92-864045B5D7A2}</Project>
+      <Name>HashLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoyaltyCommon\LoyaltyCommon.csproj">
+      <Project>{16a6f022-92e5-4eed-985d-93817eb2aacd}</Project>
+      <Name>LoyaltyCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database\LoyaltyDB.dbml.layout">
+      <DependentUpon>LoyaltyDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

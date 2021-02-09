@@ -1,0 +1,13 @@
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.dll.config
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.dll
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.pdb
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\bin\Newtonsoft.Json.dll
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\obj\Debug\Palmary.Loyalty.Common.dll
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\obj\Debug\Palmary.Loyalty.Common.pdb
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\LoyaltyCommon\obj\Debug\LoyaltyCommon.csprojResolveAssemblyReference.cache
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.dll.config
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.dll
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\bin\Palmary.Loyalty.Common.pdb
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\bin\Newtonsoft.Json.dll
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\obj\Debug\Palmary.Loyalty.Common.dll
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\LoyaltyCommon\obj\Debug\Palmary.Loyalty.Common.pdb

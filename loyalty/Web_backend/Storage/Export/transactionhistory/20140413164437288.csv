@@ -1,0 +1,7 @@
+﻿transaction_id,type,source_id,location_id,member_id,point_change,point_status,point_expiry_date,display,void_date,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,type_name,member_name,member_no,point_status_name,status_name,crt_by_name
+6,5,0,0,179,23,1,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Chan Tai Man Test, Nick",MC0001,,,
+5,5,0,0,183,21,2,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Wong Tui Hing Test, Nick",MC0005,,,
+4,5,0,0,182,16,1,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"So Sze Kit Test, Joseph",MC0004,,,
+3,5,0,0,181,16,1,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Lai Ming Test, Lai",MC0003,,,
+2,5,0,0,180,16,2,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Fung Chi Chung Test, Paul",MC0002,,,
+1,5,0,0,179,26,1,,True,,,1,2014/4/12 下午 11:19:52,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Chan Tai Man Test, Nick",MC0001,,,

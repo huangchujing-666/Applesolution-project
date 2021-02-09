@@ -1,0 +1,1 @@
+{success: true, fields: ['data1', 'name'], url:'../UIContent/modules/portal/portlet/list_columnPortlet_data.js', xField:['name'], yField:['data1'], title1:'Number of Hits', title2:'Month of the Year', isColumnChart:true, legendTitle:['Jan','Feb','Mar','Apr','May'] }

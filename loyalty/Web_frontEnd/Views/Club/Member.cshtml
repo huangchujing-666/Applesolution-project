@@ -1,0 +1,111 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "TrueLoyalty® Club :: 會員專頁";
+}
+   @* <div class="address">
+        <a href="@Url.Content("~/Club/Member")" title="首頁">首頁</a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")" width="10" height="8" alt=">" /> <a href="@Url.Content("~/Club/Member")" title="LOYALTY® Club"><span>LOYALTY<sup>®</sup> Club</span></a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")"  width="10" height="8" alt=">" /> 會員專頁 </div>
+  </div>*@
+@*  <div class="club_banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>*@
+@*<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>*@
+
+<script type="text/javascript" src="@Url.Content("~/Content/js/member.js")"></script>
+<link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" />
+
+<section id="member">
+<div class="container">
+    <div class="row col-md-12" style="outline:1px solid #dddddd; min-height:60px">
+        
+            <div class="col-md-4 col-xs-12">
+               <h3>用户: @Model.MemberName</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+               <h3>會員等級: @Model.MemberInfo.memberlevel</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+               <h3>總積分: @Model.MemberAvailablePoint</h3><span>*12月31日或之前</span>
+            </div>
+            
+    </div>
+    <div class="row col-md-12" style="min-height:60px;"><h3><b>登記產品號碼</b></h3></div>
+    <div class="row col-md-12" style="outline:3px solid #dddddd; min-height:60px">
+            <form id="beautycodeform" name="beautycodeform" onsubmit="return beautyCodeCheck();">
+            <div class="col-md-6 col-xs-12" style="min-height:40px; line-height:40px; vertical-align: middle;">
+               請輸入產品內的「產品密碼」
+            </div>
+            <div class="col-md-6 col-xs-12" style="min-height:40px; line-height:40px; vertical-align: middle">
+               <input type="text" name="code1" id="code1" class="input3 uppercase" maxlength="3" /><img src="@Url.Content("~/Content/images/heng_line.jpg")" alt="-" /><input type="text" name="code2" id="code2" class="input4 uppercase" maxlength="4" /><img src="@Url.Content("~/Content/images/heng_line.jpg")" width="16" alt="-" /><input type="text" name="code3" id="code3" class="input4 uppercase" maxlength="3" />
+            </div>
+            <div class="col-md-6 col-xs-12" style="min-height:40px">
+                請輸入產品數目(測試用)
+            </div>
+            <div class="col-md-6 col-xs-12" style="min-height:40px">
+               <input type="text" name="quantity" id="quantity" class="input3 uppercase" maxlength="2" />
+            </div>
+            <div class="col-md-12 col-xs-12" style="min-height:60px">
+               <input type="image" id="btn_submit" name="btn_submit" src="@Url.Content("~/Content/images/jifen_btn.jpg")" alt="加入積分" title="加入積分" /><span class="loading"><img src="@Url.Content("~/Content/images/loading.gif")" alt="" /></span>
+            </div>
+              
+            </form>
+    </div>
+</div>
+</section>
+
+<section id="jetso">
+            <div class="container">
+                
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>會員有何優惠</h1>
+                    <div class="divider"></div>
+                    <p>累積分數，即可換取禮品</p>
+                </div>
+
+                <div class="row">
+                   <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa fa-download fa-2x"></i>
+                            <h3>換取禮品</h3>
+                            <p>所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-mobile fa-2x"></i>
+                            <h3>產品密碼</h3>
+                            <p>所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-users fa-2x"></i>
+                            <h3>賺取積分</h3>
+                            <p>所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-sliders fa-2x"></i>
+                            <h3>獎賞之門</h3>
+                            <p>所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

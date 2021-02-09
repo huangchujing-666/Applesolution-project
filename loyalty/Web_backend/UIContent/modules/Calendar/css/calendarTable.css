@@ -1,0 +1,176 @@
+﻿
+/*表头固定div*/
+.fixTableDiv{
+	width: 100px;
+	height: 70px;
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	z-index: 20;
+	top:0px;
+	left:0px;
+}
+/*表格标题div*/
+.HeaderTableDiv{
+	margin-left: 5px;
+	height:70px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 15;
+	left:96px;
+	top:0px;
+}
+.up{
+	height: 70px;
+	z-index: 0;
+}
+
+
+/*左部时间表div*/
+.colTableDiv{
+	width: 100px;
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+	left:0px;
+	top:70px;
+}
+/*数据表div*/
+.dataTableDiv{
+	height:570px;
+	overflow: scroll;
+	margin-left:101px;
+	/*left:101px;
+	top:70px;*/
+	z-index: 5;
+}
+
+
+/*四个table的样式*/
+/*fixTable:头部固定表 ,HeaderTable:标题表 ,TimeTable:时刻表 ,calendarTable:日历表*/
+.fixTable,.HeaderTable,.TimeTable{
+   /* margin-left: auto;
+    margin-right: auto;*/
+    table-layout: fixed;
+    border-collapse:separate;
+    text-align:center;
+}
+.calendarTable{
+	table-layout: fixed;
+    border-collapse:separate;
+}
+
+.fixTable th , .HeaderTable th {	
+	  color: #04408C;
+      font-family: tahoma,arial,verdana,sans-serif;
+      font-size: 11px;    
+      font-weight: bold;	
+	  PADDING-RIGHT: 3px;
+	  PADDING-LEFT: 5px;
+	  PADDING-BOTTOM: 5px;
+	  PADDING-TOP: 7px;
+	  height:40px;
+	  /*BACKGROUND: #dfe8f6 url(../images/tab-strip-bg.gif) repeat-x scroll center bottom;*/
+	  background-color: #CAE1FF;
+}
+.HeaderTable th{
+	 border-left: 1px solid #FFFFFF;
+	  border-right: 1px solid #FFFFFF;
+}
+.fixTable td,.TimeTable td{
+	font-size: 12px;
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 5px;
+    PADDING-TOP: 3px; 
+    width:100px;
+    border: 1px solid #E1E1E1;
+}
+.fixTable td{
+	height: 30px;
+}
+.TimeTable td{
+	height: 25px;
+}
+.HeaderTable td{
+	height:30px;
+	width:110px;
+	font-size: 12px;
+	background-color:white;
+    border: 1px solid #E1E1E1;
+    /*超出内容设为隐藏，并且用省略号代替*/
+    word-wrap:break-word;
+}
+.calendarTable td{
+	font-size: 12px;
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 5px;
+    width:120px;
+	vertical-align:top;
+	height: 1400px;
+    border: 1px solid #E1E1E1;
+}
+
+.tableSpace{
+	width: 15px;
+	height: 70px;
+}
+
+
+
+.calendarTable th a{
+	font-weight: bold;
+}
+.calendarTable a{
+	color:#15428b;
+	/*text-decoration: none;*/
+}
+.calendarTable a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*训练师(instructor)一行的div样式*/
+.calendar_instrutor_td_div{
+	height: 20px;
+}
+/*时间表td的div样式*/
+.calendar_time_div{
+	height: 15px;
+	padding: 3px 4px 0 0;
+	position: relative;
+    margin-left: 1px;    
+}
+
+/*日历表td的样式*/
+.calendar_td{
+	width: 110px;
+}
+/*日历表td的div样式*/
+.calendar_td_div{
+	background-color:red;
+	position: relative;
+    cursor: default;
+}
+/*日历表之间的间隔th/td的样式*/
+.calendar_interval{
+	height:30px;
+	width:15px;
+    border: 1px solid #E1E1E1;
+	background: white;
+}
+
+/*日历表内容的div样式*/
+.calendar_class_div{
+	text-align:center;
+	position:absolute;    
+    width:100px;  
+    background: #A4D3EE;
+    color: blue;
+    padding:8px;
+}
+
+

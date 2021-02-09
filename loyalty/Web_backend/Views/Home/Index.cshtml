@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Palmary Loyalty 2.0";
+    Layout = "~/Views/Shared/MainLayout.cshtml";   
+}
+@model Palmary.Loyalty.Web_backend.ObjectModels.Infrastructure.HomeObject 
+<div>
+    <form id="history-form" class="x-hide-display">
+        <input type="hidden" id="x-history-field" />
+        <iframe id="x-history-frame"></iframe>
+    </form>
+</div>
+    
+<div id="main_top_menu">
+    <div id="main_top_space">
+	<div id="main_top_logo">
+        <a href="../Home/Index"><img src="@Url.Content("~/UIContent/images/Template/TrueLoyalty/main/logo_white.png")" border="0"/></a>
+        <a href="../Home/Index">
+        <img src="@Url.Content("~/UIContent/images/Template/TrueLoyalty/main/logo_applesolution.png")" border="0" width="80" height="40" style="margin-left:20px;" />
+        </a>
+	</div>
+  
+	<div id="main_top_button">		
+        <span>Welcome ! @Html.Encode(User.Identity.Name) (@ViewBag.UserLoginTime)</span> @*<a href="/Language/Change/@ViewBag.LanguageChangeID">@ViewBag.LanguageChangeName</a>*@ | <a id="change_pwd">Change Password</a> | <a id="close_all_tab_link" >Close Other Tab</a> | @Html.ActionLink("Logout", "Logout", "Login")
+	</div>
+@*	<div class="searchBox">
+		<input id="generalSearch" name="generalSearch" type="text" value="Search..." onKeyDown="return SubmitKeyClick(this,event)" onClick="this.value=''"/>
+	</div>	
+	<div id="HistoryBar"><div class="history">History:</div><div id="top_toolbar_box" ></div></div>*@
+
+    
+	</div>
+</div>  	 
+  
+<div id="main_bottom" style="padding:0px 5px 0px 0px; text-align: right; font-size: 10px;">
+Version @Model.siteVersion Copyright &#169; Palmary Solutions Company Limited
+</div>

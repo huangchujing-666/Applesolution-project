@@ -1,0 +1,4 @@
+﻿Excel Row No,Fail Reason,Invoice No,Member Code,Member Service No,Service Plan No
+3,Invalid Member No,14040245633,PL011,65320123,MB3G1300
+4,Paid Amount: 指定的轉換無效。,14049991234,PL011TTT01,21316132,MB3G1300
+8,Invalid Service Plan No,14040221604,MC0006,64320265,MBXXXXX

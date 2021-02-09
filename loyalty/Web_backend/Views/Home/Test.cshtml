@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+    ViewBag.UserName = Session["UserName"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+   
+</head>
+<body>
+    <div id="loginpanel">
+     <strong>Session: @ViewBag.UserName</strong>
+     @if (Request.IsAuthenticated) {
+            <strong>@Html.Encode(User.Identity.Name)</strong>
+            @Html.ActionLink("Sign Out", "Logout", "User")
+        }
+        else {
+            @Html.ActionLink("Register", "Register", "User")
+            <span> | </span>
+            @Html.ActionLink("Sign In", "Login", "User")
+        }
+    </div>
+</body>
+</html>

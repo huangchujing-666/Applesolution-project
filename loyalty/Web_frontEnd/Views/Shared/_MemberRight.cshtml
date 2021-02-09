@@ -1,0 +1,41 @@
+﻿    <div class="right">
+      <div class="block1">
+        <ul>
+          <li><img src="@Url.Content("~/Content/images/list_icon1.png")" width="18" height="18" alt="" /> <a href="@Url.Content("~/Club/Member")" class="sp" title="會員專頁"><span>會員專頁</span></a>
+            <ul class="nei_list">
+              <li class="leftmain_item_sub"><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp2">@if (@ViewContext.RouteData.Values["action"].Equals("Member")) { <text>登記產品密碼</text> } else { <a href="@Url.Content("~/Club/Member")" title="登記產品密碼">登記產品密碼</a> }</span></li>
+              <li class="leftmain_item_sub"><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp2">@if (@ViewContext.RouteData.Values["action"].Equals("Product")) { <text>產品積分表</text> } else { <a href="@Url.Content("~/Club/Product")" title="產品積分表">產品積分表</a> }</span></li>
+              <li class="leftmain_item_sub"><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp2">@if (@ViewContext.RouteData.Values["action"].Equals("Profile")) { <text>更改個人資料</text> } else { <a href="@Url.Content("~/Club/Profile")" title="更改個人資料">更改個人資料</a> }</span></li>
+              <li class="leftmain_item_sub"><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp2">@if (@ViewContext.RouteData.Values["action"].Equals("Transaction")) { <text>積分記錄</text> } else { <a href="@Url.Content("~/Club/Transaction")" title="積分記錄">積分記錄</a> }</span></li>
+            </ul>
+          </li>
+          <li><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp">@if (@ViewContext.RouteData.Values["action"].Equals("Gift")) { <text>禮品專區</text> } else { <a href="@Url.Content("~/Club/Gift")" title="禮品專區">禮品專區</a> }</span></li>
+          @*<li><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp">@if (@ViewContext.RouteData.Values["action"].Equals("Referral")) { <text>推薦會員</text> } else { <a href="@Url.Content("~/Club/Referral")" title="推薦會員">推薦會員</a> }</span></li>*@
+          <li><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp">@if (@ViewContext.RouteData.Values["action"].Equals("Promotion")) { <text>今期優惠</text> } else { <a href="@Url.Content("~/Club/Promotion")" title="今期優惠">今期優惠</a> }</span></li>
+          <li><img src="@Url.Content("~/Content/images/list_icon2.png")" width="18" height="18" /> <span class="sp"><a href="@Url.Content("../Club/Contact_Us")" title="聯絡我們">聯絡我們</a></span></li>
+        </ul>
+      </div>
+      <div class="block2">
+        <h3 class="headine2">會員有何優惠</h3>
+        所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」。 </div>
+  <div class="block3" id="rollbanner">
+    @foreach (var item in Model.RollingBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="234" height="96" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="234" height="96" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>
+<script type="text/javascript">
+    $(function () {
+        $('#rollbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>
+    </div>

@@ -1,0 +1,125 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<!--Login Page Layout-->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" type="image/x-icon"/>
+    <link href = "@Url.Content("~/UIContent/js_lib/resources/css/ext-all-gray.css")" rel="stylesheet" type="text/css" />
+    
+    <script src = "@Url.Content("~/UIContent/js_lib/ext-all-debug.js")" type="text/javascript"></script>
+    <script src = "@Url.Content("~/UIContent/js_lib/extensible-all-debug.js")" type="text/javascript"></script>
+
+    <script type = "text/javascript">
+        Ext.require(['*']);
+        var login = function () {
+           
+            Ext.QuickTips.init();
+
+            function submitOnEnter(field, event) {
+	            if (event.getKey() == event.ENTER) {
+                var submitBtn = Ext.getCmp('LoginSubmitButton');
+                    submitBtn.btnEl.dom.click();
+	            }
+            };
+
+            var form = Ext.widget({
+                renderTo: 'loginpanel',
+                xtype: 'form',
+                layout: 'form',
+                id: 'simpleForm',
+                collapsible: false,
+                frame: true,
+                title: 'Login - Palmary Loyalty 2.0',
+                bodyPadding: '5 5 0',
+                width: 350,
+                fieldDefaults: {
+                    msgTarget: 'side',
+                    labelWidth: 75,
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                },
+                defaultType: 'textfield',
+                items: [{
+                    fieldLabel: 'Name',
+                    name: 'login_id',
+                    allowBlank: false,
+                    blankText: 'Name should not be empty!',
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                }, {
+                    fieldLabel: 'Password',
+                    name: 'login_password',
+                    allowBlank: false,
+                    inputType: 'password',
+                    blankText: 'Password should not be empty!',
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                }],
+                buttons: [{
+                    id: 'LoginSubmitButton',
+                    text: 'Submit',
+                    handler: function () {
+                        var form = this.up('form').getForm();
+                        var win = this.up('window');
+                        if (form.isValid()) {
+                            form.submit({
+                                clientValidation: true,
+                                waitMsg: 'Wait',
+                                waitTitle: 'verifying login……',
+                                url: '@Url.Action("Perform")',
+                                success: function (form1, action) {
+                                    if (action.success) {
+                                        window.location.href = "@Url.Action("Index","Home")";
+                                    }
+                                    else {
+                                        Ext.MessageBox.show({
+                                            width: 150,
+                                            title: "login failed",
+                                            buttons: Ext.MessageBox.OK,
+                                            msg: action.result.msg
+                                        }); 
+                                    }
+                                },
+                                failure: function (form1, action) {
+                                    Ext.MessageBox.show({
+                                        width: 150,
+                                        title: "login failed",
+                                        buttons: Ext.MessageBox.OK,
+                                        msg: 'login failed'//action.result.msg
+                                    });
+                                }
+                            });
+                        }
+                    }
+                }]
+             
+            });
+
+
+          
+
+
+            Ext.get('loginpanel').setStyle('position', 'absolute').center(Ext.getBody());
+           
+            //Ext.MessageBox.confirm('Confirm', 'Are you sure you want to do that?');
+        };
+
+        Ext.onReady(login);
+        
+    </script>
+</head>
+<body>
+    <div id="loginpanel">
+    </div>
+
+    <div style="height:104px; background-image: url(@Url.Content("~/UIContent/images/login-header.png"));"></div>
+</body>
+
+</html>

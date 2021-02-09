@@ -1,0 +1,1 @@
+{success: true, fields: ['data1', 'name'], url:'../UIContent/modules/portal/portlet/list_piePortlet_data.js', field:['data1'], field2:['name'], isPieChart:true, legendTitle:['Jan','Feb','Mar','Apr','May'] }

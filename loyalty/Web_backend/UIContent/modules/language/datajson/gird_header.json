@@ -1,0 +1,17 @@
+   {success: true,
+    columns: [    
+    {header: 'Login Name', dataIndex: 'login',width:214,type:'title',sortable:true},
+    {header: 'First Name', dataIndex: 'firstname',width:220},
+    {header: 'Last Name', dataIndex: 'lastname',width:220},
+    {header: 'Mobile', dataIndex: 'mobile',width:200},
+    {header: 'Sex',dataIndex:'sex',width:200,renderer:function(val){if(val=='1'){return 'Male';}else {return 'Female';}}}
+    ],
+     fields: ['id','login','firstname','lastname','mobile','sex','href','target'],
+    title: 'User',
+     pageSize:20,
+    delete_url: 'delete_data.jsp',
+     add_url:new com.embraiz.user.js.index().addTag,
+     add_hidden:false,
+     search_text_hidden:true,
+     checkbox_hidden:true
+    }

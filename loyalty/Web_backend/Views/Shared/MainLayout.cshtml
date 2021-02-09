@@ -1,0 +1,409 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" /> <!-- type="image/x-icon"/>-->
+
+<!--	
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/js_lib/resources/css/ext-all-green.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/js_lib/resources/css/extensible-all.css")" />-->
+<!--	<link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/extjs_4_2/resources/css/ext-all-neptune.css")" />-->
+	<!--<link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/extjs_4_2/resources/css/ext-all-darkblue.css")" />-->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/extjs_4_2/resources/css/ext-all-green.css")" />
+    
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/index.css")" />   
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/module.css")" />  
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/gird.css")" />  
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/embraiz.css")" /> 
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/gridpanel.css")" /> 
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/BoxSelect.css")" />    
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/ClearButton.css")" /> 
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/htmlEditorImage.css")" /> 
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/ComboFieldBox.css")" /> 
+    <!-- other CSS-->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/modules/Calendar/css/calendarTable.css")" /> 
+
+@*    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/tutorTable.css")" />*@
+    <!--Portal -->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/portal.css")"/>
+<!--
+     <link rel="stylesheet" type="text/css" href="@Url.Content("~/UIContent/css/dashboard.css")" /> 
+-->
+    <div id="loading-mask" style=""></div>
+    <div id="loading">
+        <div class="loading-indicator">
+            <img src="@Url.Content("~/UIContent/images/Template/TrueLoyalty/login/loading.gif")" width="170" height="82" style="margin-right:8px;float:left;vertical-align:top;"/>@* <br /><span id="loading-msg">Loading ...</span>*@
+        </div>
+    </div>
+  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/jquery-1.11.0.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/AccessControl/session_check.js")"></script>
+	
+    <script type="text/javascript" src="@Url.Content("~/UIContent/extjs_4_2/ext-all.js")"></script> 
+    @*<script type="text/javascript" src="@Url.Content("~/UIContent/extjs_4_2/bootstrap.js")"></script> *@
+<!--<script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/bootstrap.js")"></script>-->  
+<!--<script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/Extensible-config.js")"></script> -->
+<!--<script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/ext-all.js")"></script>-->
+   <!-- <script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/extensible-all-debug.js")"></script> -->
+  
+
+  <!-- Highcharts Library -->
+	  <!--<script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/Serie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/AreaRangeSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/AreaSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/AreaSplineRangeSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/AreaSplineSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/BarSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/BoxPlotSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/BubbleSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/ColumnRangeSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/ColumnSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/ErrorBarSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/FunnelSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/GaugeSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/LineSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/PieSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/RangeSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/ScatterSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/SplineSerie.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/Highcharts/WaterfallSerie.js")"></script>  -->
+    
+    <!-- latest version of highcharts -->
+	<script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/highcharts/highcharts.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/highcharts/highcharts-more.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/highcharts/modules/funnel.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js_lib/highcharts/modules/exporting.js")"></script> 
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js/keyboard.js")"></script>    
+   @* <script type="text/javascript" src="@Url.Content("~/UIContent/js/history.js")"></script>*@
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js/tag-multiple.js")"></script>   
+     
+    <script type="text/javascript" src="@Url.Content("~/UIContent/js/map.js")"></script>  
+    <!-- Image multi-upload dialog-->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/multiupload/swfobject.js")"></script>
+   
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/form_tool.js")"></script>       
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/button.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/combobox.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/store.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/gird.js")"></script>  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/form.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/BaseForm.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/form_layout.js")"></script>  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/GridTable.js")"></script>       
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/grid_search.js")"></script>  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/BoxSelect.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/GridTableSearch.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/gridkeyboard.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/form_keyboard.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/ClearButton.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/cellEdit_grid_search.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/Editing.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/CellEditing.js")"></script>  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/extPaging.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/cell-editing.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/row_editing.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/HtmlEditorImage.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_index.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_insert.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_edit.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_edit_grid.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_insert_Other.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/common_edit_Other.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/custom_fields.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/report.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/extra.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/embraiz/component/category.js")"></script> 
+   
+    <!-- multi-select -->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/ux/ComboFieldBox.js")"></script>
+
+    <!--Portal-->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/portal.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalColumn.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalPanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalDropZone.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/Portlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalGridPanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalTextPanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalChartPanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/js/PortalHighChartPanel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/myApproval.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/quickLink.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/textPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/linePortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/columnPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/piePortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/history.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/lead.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/company.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/payment.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/contract.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/auditTrail.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/topRedeemPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberDistributionPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberDistributionReportPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/salesPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/giftAlert.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/todayRedemption.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberUpgradePortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberAverageLifetimePortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/pointPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/redemptionPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberGainLostPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/topRedeemReportPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/salesReportPortlet.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/portal/portlet/js/memberProfileDistributionPortlet.js")"></script>
+
+    <!-- core -->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/core/imageUploadForm.js")"></script>
+
+    <!-- modules (Core) -->
+<!--
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/index.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/pieChart.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/barChart.js")"></script> 
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/barChart2.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/barChart3.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Dashboard/js/splineChartJoin.js")"></script> 
+-->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/user/js/index.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/user/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/user/js/edit_data.js")"></script>  
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/role/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/role/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/role/js/edit_data.js")"></script> 
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/listConfig/js/index.js")"></script> 
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/RoleAccess/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/setting/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/setting/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/setting/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/language/js/index.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/UIContent/modules/language/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/language/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/module/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/module/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/module/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/log/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/LogDetail/js/index.js")"></script>
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/SystemConfig/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/SystemConfig/js/edit_data.js")"></script>
+
+    <!-- modules -->
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/BasicRule/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PromotionRule/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PromotionRule/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PromotionRule/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServicePlan/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServicePlan/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServicePlan/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServiceCategory/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServiceContract/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServicePayment/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ServicePaymentDetail/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/product/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/product/js/edit_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/product/js/insert_data.js")"></script>
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductOrder/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductOrder/js/edit.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPurchase/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPurchase/js/insert_popupform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPurchaseDetail/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/passcode/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/passcode/js/edit_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/passcode/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/passcode/js/list.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodePrefix/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodePrefix/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodePrefix/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodeGenerate/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodeGenerate/js/form.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/passcodeexcel/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberProfile/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberProfile/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberProfile/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberSearch/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberSearch/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberSearch/js/list_member.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberSearch/js/view_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCard/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCard/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCard/js/edit_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCard/js/form.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCard/js/issueform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCardHistory/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PointAdjustment/js/form.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PointAdjustment/js/viewform.js")"></script>
+    <a href="~/Views/Shared/MainLayout.cshtml">~/Views/Shared/MainLayout.cshtml</a>
+
+	<script type="text/javascript" src="@Url.Content("~/UIContent/modules/PointTransfer/js/form.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PointTransfer/js/viewform.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionHistory/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionImport/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionImport/js/insert_popupform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/gift/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/gift/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/gift/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftCategory/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftCategory/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftCategory/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftOrder/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftOrder/js/edit.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftLocation/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftLocation/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftLocation/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftInventory/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftInventory/js/insert_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPrivilege/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPrivilege/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPrivilege/js/edit_data.js")"></script>
+
+@*    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Mproduct/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Mproduct/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Mproduct/js/edit_data.js")"></script>*@
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/location/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/location/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/location/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberlevel/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberlevel/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/memberlevel/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberCategory/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberImport/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberImport/js/insert_popupform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/productCategory/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/productCategory/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/productCategory/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPhoto/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPhoto/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/giftPhoto/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPrefix/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPrefix/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ProductPrefix/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/function/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodeRegistry/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodeRegistry/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/PasscodeRegistry/js/insert_popupform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemption/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemption/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemption/js/collect_form.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemption/js/cancel_form.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemption/js/detail_form.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/GiftRedemptionHistory/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionDetailRedemption/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiLocation/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiLocation/js/edit_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiLocation/js/insert_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiLocation/js/promote_form.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiAccessHistory/js/index.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiAccessReport/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/WifiAccessReport/js/chart.js")"></script>
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberField/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberField/js/addform.js")"></script>
+	  
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberGroup/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberGroup/js/insert_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionField/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionField/js/addform.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionGroup/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/TransactionGroup/js/insert_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/FileImportJob/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/FileImportJob/js/insert_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Demo1/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Demo1/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Demo1/js/edit_data.js")"></script>
+    
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderEngine/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderEngine/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderEngine/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderTemplate/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderTemplate/js/insert_data.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/ReminderTemplate/js/edit_data.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/memberlevel.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/memberUpgrade.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/memberAverageLifetime.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/point.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/redemption.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/memberGainLost.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/topRedeemReport.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/salesReport.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/Report/js/memberProfileDistribution.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/UIContent/modules/MemberLevelChange/js/index.js")"></script>
+
+    <!-- demo -->
+	<script type="text/javascript" src="@Url.Content("~/UIContent/modules/Calendar/js/index.js")"></script>
+
+    <!--ScheduleJob-->
+    <script  type="text/javascript" src="@Url.Content("~/UIContent/modules/Cronjob/js/index.js")" ></script>
+
+    <!-- put at the back, stable for slow network, download all js before run Ext.onReady -->
+    <!--左邊菜單欄-->
+	<script type="text/javascript" src="@Url.Content("~/UIContent/js/general-layout.js")"></script>
+    
+    </head>
+
+    <body>
+        @RenderBody()
+    </body>
+</html>

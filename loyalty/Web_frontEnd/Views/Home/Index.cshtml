@@ -1,0 +1,94 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "LOYALTY® PALMARY :: LOYALTY® Club";
+}
+    <div class="banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="866" height="292" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="866" height="292" alt="@item.title" border="0" /></div>
+        }
+    }
+    </div>
+<script type="text/javascript" src="@Url.Content("~/Content/js/jquery.jcarousel.min.js")"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+        $('#categorybtnmenu').jcarousel();
+    });
+</script>
+
+    <div class="scroll">
+        <ul id="categorybtnmenu" class="jcarousel-skin">
+   @foreach (var item in Model.CategoryBtns)
+    {       
+          <li><a href="@Url.Action(item.page, "Product")" title="@item.chiname - @item.introduction"><img src="@Url.Content("~/materials/category")/@item.image" width="236" height="110" border="0" alt="@item.chiname" /></a></li>
+    }
+        </ul>
+    </div>
+    <div style="clear:both"></div>
+    <div class="home_banner">
+  <div class="left_banner" id="leftbanner">
+    @foreach (var item in Model.LeftBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="362" height="71" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="362" height="71" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>
+<script type="text/javascript">
+    $(function () {
+        $('#leftbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>
+
+  <div class="right_banner" id="rightbanner">
+    @foreach (var item in Model.RightBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="362" height="71" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="362" height="71" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>
+<script type="text/javascript">
+    $(function () {
+        $('#rightbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>
+
+    </div>
+<div style="clear:both"></div>
+    <div class="home_news">
+      <div class="news_icon"><img src="@Url.Content("~/Content/images/new_icon.jpg")" width="65" height="37" alt="最新消息"/></div>
+      <div class="news">
+        <div>
+          <ul>
+        @foreach (var item in Model.NewsRecords)
+        {
+            <li><span>@item.postdate.ToString("yyyy-MM-dd")</span><span class="link"><a href="@Url.Action("Details", "News", new { id = item.id })" title="@item.title">@item.title</a></span></li>
+        }
+          </ul>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,4 @@
+﻿redemption_id,transaction_id,redemption_code,redemption_channel,member_id,gift_id,quantity,point_used,redemption_status,collect_date,collect_location_id,void_date,void_user_id,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,gift_no,gift_name,location_name,redemption_status_name,member_no,member_name,crt_by_name
+3,2,14040000037,3,213,243,3,3,2,2014/4/16 下午 04:54:07,3,,,,1,2014/4/16 下午 04:53:46,2,1,2014/4/16 下午 04:54:07,2,1,0,LA01,"Table lamp, nickel-plated, birch white",IKEA Sha Tin store,Collected,MC0001,"Tai Man Chan, Nick",,
+2,2,14040000029,3,213,242,2,2,-1,,2,2014/4/16 下午 04:54:20,,waive,1,2014/4/16 下午 04:53:46,2,1,2014/4/16 下午 04:54:20,2,1,0,CH01,"Dark chocolate 70%, Utz certified",IKEA Kowloon Bay store,Voided,MC0001,"Tai Man Chan, Nick",,
+1,2,14040000011,3,213,197,1,1,1,,2,,,,1,2014/4/16 下午 04:53:46,2,1,2014/4/16 下午 04:53:46,2,1,0,BW01,"Bowl, pink, green",IKEA Kowloon Bay store,Waiting Collect,MC0001,"Tai Man Chan, Nick",,

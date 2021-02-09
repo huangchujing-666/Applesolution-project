@@ -1,0 +1,125 @@
+.tutorTable {
+	border-top: 1px solid #8DB2E3;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+    border-collapse:separate;
+}
+.tutorTable td {
+    font-size: 12px;
+	PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 5px;
+    PADDING-TOP: 5px; 
+	border-bottom: 1px solid #E1E1E1;   
+}
+
+.tutorTable .outerBottomBorder{
+	BORDER-BOTTOM: #8db2e3 1px solid; 
+}
+.tutorTable th {	
+	  color: #04408C;
+      font-family: tahoma,arial,verdana,sans-serif;
+      font-size: 11px;    
+      font-weight: bold;	
+	  PADDING-RIGHT: 3px;
+	  PADDING-LEFT: 5px;
+	  PADDING-BOTTOM: 5px;
+	  PADDING-TOP: 7px;
+	  BACKGROUND: #dfe8f6 url(../images/tab-strip-bg.gif) repeat-x scroll center bottom;
+	  border-bottom: 1px solid #A9BFD3;
+	  border-right: 1px solid #E1E1E1;
+}
+.tutorTable th a{
+	font-weight: bold;
+}
+.tutorTable a{
+	color:#15428b;
+	text-decoration: none;
+}
+.tutorTable a:hover{
+	text-decoration: underline;
+}
+TABLE TR.alt {
+	BACKGROUND: #f1f1f1
+}
+
+.tutor-cal-day-time-inner {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    padding: 3px 4px 0 0;
+}
+ .tutor-cal-bg-rows {
+    position: relative;
+    margin-left: 1px;    
+    
+}
+.tutor-cal-day-col-inner {
+    position: relative;
+    cursor: default;
+}
+.tutor-cal-day-col-gutter {
+    position: relative;
+    margin-right: 3px;
+    height: 520px;
+}
+.tutor-cal-day-col {
+    border-left: 1px solid #ddd;
+    vertical-align: top
+}
+.tutor-cal-evt-block-div{
+    position:absolute;    
+    width:100%;   
+    BACKGROUND:#FF557F;
+}
+.tutor-cal-evt-pocket-div{
+    position:absolute;    
+    width:100%;    
+    BACKGROUND:#FFF4BF;
+    margin:3px;
+}
+.tutor-cal-evt-pocket-div-adjust{
+    position:absolute;    
+    width:100%;    
+    BACKGROUND:#FBE4C6;
+    margin:3px;
+}
+.tutor-pocket-table{
+	position:absolute;
+    width:100%;   
+}
+.tutor-pocket-table tr{
+  height:19px;
+}
+.tutor-pocket-table td{
+   font-size: 11px;
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px; 
+	border: 1px solid #FFFFFF; 	
+	height:19px;
+}
+.tutor-pocket-td-blank{  
+	background:#C3F0FE;
+}
+.tutor-pocket-td-res-seat{  
+	background:#ADD5A2;	
+}
+.tutor-pocket-td-out{  
+	background:#7FAAFF;	
+}
+.tutor-pocket-td-res-Occupying{
+	background:#5988AB;	
+}
+.tutor-pocket-td-res-Occupying-adjust{
+	background:#F6ADB4;	
+}
+.tutor-pocket-td-sign-in{ 
+	background:red;	
+}
+.tutor-pocket-td-res-suspension-back{
+	background:#D400FF;	
+}

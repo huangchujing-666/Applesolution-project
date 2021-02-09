@@ -1,0 +1,149 @@
+#menu { position: relative; }
+#menu ul{ list-style: none; margin:0; padding:0; }
+
+
+
+/* 
+	LEVEL ONE
+*/
+ul.dropdown{
+	width: 100%;
+	position: relative;
+}
+ul.dropdown li{
+	font-weight: bold;
+	float: left;
+	position: relative;
+}
+ul.dropdown li a{
+	display: block;
+	position: relative;
+}
+
+ul.dropdown li a.levelone{
+	display:block;
+	text-align:center;
+	overflow:hidden;
+	color:#FFF;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	z-index: 1;
+}
+ul.dropdown li a.levelone:hover{
+	color:#17883c;
+	background-color: #FFF;
+}
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul.sub_menu {
+	position: absolute;
+	width: 160px;
+	height: 140px;
+	overflow:hidden;
+	z-index: 10000;
+	display: none;
+	left: 60px;
+	background-image: url(../images/menu_bodybg.png);
+	background-repeat: no-repeat;
+	background-position: left 60px;
+	top: -15px;
+	margin: 0px;
+	padding-top: 100px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+ul.dropdown ul.sub_menu li{
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 30px;
+	margin: 0px;
+	text-align: left;
+	width: 100px;
+}
+ul.dropdown ul.sub_menu li a{
+	font-size:12px;
+	text-decoration:none;
+	font-weight: normal;
+} 
+ul.dropdown ul.sub_menu li a:hover{
+
+}
+
+ul.dropdown ul.sub_menu1 
+{
+	background-image: url(../images/menu_bodybg3.png);
+    *z-index: 10000;
+}
+
+ul.dropdown ul.sub_menu2 
+{
+	background-image: url(../images/menu_bodybg3.png);
+    *z-index: 10000;
+}
+
+ul.dropdown ul.sub_menu3 
+{
+	background-image: url(../images/menu_bodybg3.png);
+    *z-index: 10000;
+}
+
+ul.dropdown ul.sub_menu4 
+{
+	background-image: url(../images/menu_bodybg4.png);
+    *z-index: 10000;
+}
+
+ul.dropdown ul.sub_menu5 
+{
+	background-image: url(../images/menu_bodybg5.png);
+    *z-index: 10000;
+}
+ 
+.snb_font1 {
+	color: #44beba;
+	padding-top: 6px;
+}
+.snb_font3 {
+	color: #61ad76;
+	padding-top: 6px;
+}
+.snb_font2 {
+	color: #83488a;
+	padding-top: 6px;
+}
+.snb_font4 {
+	color: #F4C750;
+	padding-top: 6px;
+}
+.snb_font5 {
+	color: #FF0000;
+	padding-top: 6px;
+}
+
+#nav5 {
+	z-index: 10000;
+	*z-index:10000;
+}
+
+
+
+#menu li.sp_top{
+	padding:0;
+	margin: 0px;
+	background-image: url(../images/menu_topbg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 9px;
+	width: 136px;
+}
+#menu li.sp_bottom{
+	height:9px;
+	padding:0;
+	background-image: url(../images/menu_bottombg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 136px;
+}

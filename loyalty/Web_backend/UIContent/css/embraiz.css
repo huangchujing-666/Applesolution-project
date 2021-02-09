@@ -1,0 +1,708 @@
+.iconRole16{
+	background-image:url(../images/edit.gif) !important;
+}
+.iconUser16{
+	background-image:url(../icons/obj/objUser/16.gif) !important;
+}
+.iconExplorer16{
+	background-image:url(../icons/explorer.gif) !important;
+}
+.iconClient16{
+	background-image:url(../icons/building.png) !important
+}
+.iconContact16{
+	background-image:url(../icons/group.png) !important
+}
+.iconDistributor{
+	background-image:url(../icons/user_gray.png) !important
+}
+.iconDashboard{
+	background-image:url(../icons/dashboard.png) !important
+}
+.iconView{
+	background-image:url(../images/preview.png) !important
+}
+.iconSave{
+   background-image:url(../images/table_save.png) !important
+}
+.iconCompany{
+	background-image:url(../images/16.gif) !important
+}
+.iconEntry{
+	background-image:url(../images/project16.gif) !important
+}
+.iconUser_green{
+	background-image:url(../icons/user_green.png) !important
+}
+.iconEmployer{
+	background-image:url(../icons/user_gray.png) !important
+}
+.iconInsurance{
+	background-image:url(../icons/cog.png) !important
+}
+.iconPolicy{
+	background-image:url(../icons/database_table.png) !important
+}
+.iconFullView{
+	background-image:url(../icons/brick_edit.png) !important
+}
+.iconSummaryview{
+	background-image:url(../icons/brick.png) !important
+}
+.iconOptions{
+	background-image:url(../icons/anchor.png) !important
+}
+.iconTask{
+	background-image:url(../images/task.gif) !important
+}
+.iconRcAction{
+	background-image:url(../icons/drive_disk.png) !important
+}
+.iconEmployerComment{
+	background-image:url(../icons/folder_user.png) !important
+}
+.iconCmAction{
+	background-image:url(../icons/hourglass.png) !important
+}
+.iconMedia{
+	background-image:url(../icons/medal_bronze_1.png) !important
+}
+.iconPanelDoctor{
+	background-image:url(../icons/status_away.png) !important
+}
+.iconLeave{
+	background-image:url(../icons/note_edit.png) !important
+}
+.iconReport{
+	background-image:url(../icons/report.png) !important
+}
+.iconInvoice{
+	background-image:url(../icons/page_white_gear.png) !important
+}
+.iconAccount{
+	background-image:url(../icons/group_gear.png) !important
+}
+.iconPayment{
+	background-image:url(../icons/coins.png) !important
+}
+.iconJob{
+	background-image:url(../icons/wrench.png) !important
+}
+.iconKey{
+	background-image:url(../icons/key.png) !important
+}
+.iconEmployerInfo{
+	background-image:url(../icons/user.png) !important
+}
+.iconDate{
+	background-image:url(../icons/date.png) !important
+}
+.iconSum{
+	background-image:url(../icons/sum.png) !important
+}
+.iconMenu{
+	background-image:url(../icons/chart_organisation.png) !important
+}
+.iconStaffComment{
+	background-image:url(../icons/user_orange.png) !important
+}
+.iconEdit{
+	background-image:url(../icons/edit16.gif) !important
+}
+.iconReload{
+	background-image:url(../icons/reload.gif) !important
+}
+.iconContact{
+	background-image:url(../icons/user_orange.png) !important
+}
+
+.iconShape_align_bottom{
+	background-image:url(../icons/shape_align_bottom.png) !important
+}
+.iconEmail{
+	background-image:url(../icons/email.png) !important
+}
+.iconEmailTemplate{
+	background-image:url(../icons/email_edit.png) !important
+}
+.iconHistoryL{
+	background-image:url(../icons/application_tile_horizontal.png) !important
+}
+.iconBroker{
+	background-image:url(../icons/folder_user.png) !important
+}
+.iconQuotationItem{
+	background-image:url(../icons/list.gif) !important
+}
+.iconContract{
+	background-image:url(../icons/package_link.png) !important
+}
+.iconOpportunity{
+	background-image:url(../icons/cart_go.png) !important
+}
+.iconEform{
+	background-image:url(../icons/application_home.png) !important
+}
+.iconWatchList{
+	background-image:url(../icons/list.gif) !important
+}
+.iconSearchCondition{
+	background-image:url(../icons/magnifier.png) !important
+}
+.iconSubmit{
+	background-image:url(../icons/application_get.png) !important
+}
+.iconApprove{
+	background-image:url(../icons/accept.png) !important
+}.iconUpload{
+	background-image:url(../icons/down16.gif) !important
+}
+.iconCalendarDayView{
+	background-image:url(../icons/calendar_view_day.png) !important
+}
+.iconCalendarMonthView{
+	background-image:url(../icons/calendar_view_month.png) !important
+}
+.iconCalendarWeekView{
+	background-image:url(../icons/calendar_view_week.png) !important
+}
+.iconEvent{
+	background-image:url(../icons/clock.png) !important
+}
+.x-toolbar {
+  
+}
+.inside-tab-panel .x-panel-body-default{
+	border-top-width: 0px;
+}
+.component_toolbar{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+}
+.x-tab-default-top button, .x-tab-default-top .x-tab-inner {
+	height:15px;
+}
+#tableElement{
+	padding:20px;	
+}
+#tableElement th, #tableElement td{
+	padding: 5px;
+	border:1px solid #C7E8FA;
+}
+#tableElement th{
+	background-color: #f1faff;
+	border:1px solid #C7E8FA;
+	height: 35px;
+}
+.gridCell{
+	background-color: #f1faff;
+}
+.iconAdd{
+	background-image:url(../icons/add.png) !important;
+}
+.iconDelete{
+	background-image:url(../icons/delete.png) !important;
+}
+.iconSearch{
+	background-image:url(../icons/magnifier.png) !important;
+}
+.iconGrid{
+	background-image:url(../icons/application_view_columns.png) !important;
+}
+.iconForm{
+	background-image:url(../icons/application_form.png) !important;
+}
+.iconGridEdit{
+	background-image:url(../icons/application_form_edit.png) !important;
+}
+.iconVcard{
+    background-image:url(../icons/vcard.png) !important;
+}
+.changeText
+{
+	background-color:#FFFF00;
+
+}
+#top_toolbar_box {
+    height: 30px;
+    left: 58px;
+    position: absolute;
+    top: 1px;
+    width:92.8%;
+}
+#HistoryBar {
+	height:30px;
+	left:210px;
+	position:absolute;
+	top:35px;
+	width:79%;
+}
+.history{
+	margin-top:2px;
+}
+.firstStyle{
+	background-image:url(image/page-first.gif) !important;
+	width:16px;
+	height:16px;
+}
+
+.preStyle{
+	background-image:url(image/page-prev.gif) !important;
+	width:16px;
+	height:16px;
+}
+
+.nextStyle{
+	background-image:url(image/page-next.gif) !important;
+	width:16px;
+	height:16px;
+}
+
+.lastStyle{
+	background-image:url(image/page-last.gif) !important;
+	width:16px;
+	height:16px;
+}
+.gridTable {
+	border: 1px solid #8DB2E3;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+    border-collapse:separate;
+}
+.gridWrapper{
+	display: inline-block;
+}
+.gridTableDiv{
+ margin:5px;
+ border:#8db2e3 1px solid;
+}
+.gridTable td {
+    font-size: 12px;
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px; 
+	border-bottom: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+}
+
+.gridTable .outerBottomBorder{
+	BORDER-BOTTOM: #8db2e3 1px solid; 
+}
+.gridTable th {	
+	  color: #04408C;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 11px;    
+    font-weight: bold;	
+	  PADDING-RIGHT: 3px;
+	  PADDING-LEFT: 5px;
+	  PADDING-BOTTOM: 5px;
+	  PADDING-TOP: 7px;
+	  BACKGROUND: #dfe8f6 url(../images/tab-strip-bg.gif) repeat-x scroll center bottom;
+	  border-bottom: 1px solid #A9BFD3;
+}
+.gridTable th a{
+	font-weight: bold;
+}
+.gridTable a{
+	color:#15428b;
+	text-decoration: none;
+}
+.gridTable a:hover{
+	text-decoration: underline;
+}
+TABLE TR.alt {
+	BACKGROUND: #f1f1f1
+}
+
+.page-num {
+	 display:inline;	
+}
+.footerDiv{
+	 PADDING-RIGHT: 3px; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.footerDiv .page-num{
+	margin-top:0px;
+	vertical-align: top;
+}
+.titleDiv {
+	  BACKGROUND: #F1F1F1;
+	  font: bold 11px tahoma,arial,helvetica;
+	  color: #15428B;
+	  padding: 4px 4px 3px 2px;
+	  height: 26px;
+	  position: relative;
+	  border-color: #A9BFD3;
+      border-style: solid;
+      border-width: 1px 1px 0;
+}
+.titleDiv img{
+	margin:2px;
+	margin-right:4px;
+}
+.x-grid3-desc-icon {
+	background-image:url(../images/sort_desc.gif)!important;
+	display:inline;
+	background-repeat:no-repeat;
+	height:4px;
+	margin-left:3px;
+	vertical-align:middle;
+	width:13px;
+}
+.x-grid3-asc-icon {
+	background-image:url(../images/sort_asc.gif)!important;
+	display:inline;
+	background-repeat:no-repeat;
+	height:4px;
+	margin-left:3px;
+	vertical-align:middle;
+	width:13px;
+}
+a{
+	Cursor:pointer;
+}
+.imgRefresh{
+    Cursor:pointer;
+    height:16px;
+	margin-left:10px;
+	width:16px;
+}
+.iconSave{
+   background-image:url(../icons/table_save.png) !important
+}
+.formbuttoncls{
+	float:right;
+	margin-left: 5px;
+}
+.iconExcel{
+	background-image:url(../icons/page_excel.png) !important
+}
+.iconGridEdit{
+	background-image:url(../icons/application_form_edit.png) !important;
+}
+.iconReset{
+	background-image:url(../icons/arrow_rotate_anticlockwise.png) !important;
+}
+.iconConfig{
+	background-image:url(../icons/page_edit.png) !important;
+}
+.gird_link{
+	Cursor:pointer;
+	display:block;
+	text-decoration: underline;
+	margin-left:5px;
+	line-height: 13px;
+	height:20px;	
+}
+.gird_bk_red .x-grid-cell{
+	background-color:#F99;
+}
+.gird_bk_blue .x-grid-cell{
+	background-color:#6CF;
+}
+.iconCopyUser{
+	background-image:url(../icons/door_in.png) !important;
+}
+.iconPatient{
+	background-image:url(../icons/user_suit.png) !important
+}
+.iconBatchEntry{
+	background-image:url(../icons/group_link.png) !important
+}
+.iconPromote{
+	background-image:url(../icons/application_side_expand.png) !important
+}
+.iconRemove{
+   background-image:url(../icons/delete.png) !important
+}
+.iconReport_edit{
+	background-image:url(../icons/report_edit.png) !important
+}
+.gridTable th {	
+	  color: #000000;
+	  font-size: 10px;
+	  font-weight: normal;
+	  BACKGROUND: #efeded url(../images/trm_table_back.jpg) repeat-x scroll center bottom;
+	  border-bottom: 1px solid #A9BFD3;
+}
+
+.gridTable th a {
+	color: #000000;
+	font-weight: normal;	
+}
+.history{
+	color: #ffffff;	
+}
+/*.x-table-layout-cell table, .x-table-layout-cell tr, .x-table-layout-cell td, .x-table-layout-cell tbody{
+	height: 100%;
+}*/
+.x-table-layout-cell .x-table-form-item{
+	margin-bottom: 0px;
+}
+.x-table-form-item td.x-trigger-cell, .x-table-form-item td.x-form-trigger-input-cell{
+	padding: 0px;
+}
+.x-table-form-item td { /*field and label of view and edit form */
+    padding: 4px;
+}
+.x-table-layout-cell{
+	border: 1px solid #A9BFD3;
+} 
+.x-table-layout{
+	margin:5px;
+}
+.x-field-label-cell{
+	border-right: 1px solid #A9BFD3;
+	/*removed width*/
+}
+
+.x-table-form-item{
+	width:100%;
+}
+.x-table-layout-cell { 
+    width: 1%; 
+} 
+.dateRange_cls .x-field-label-cell{
+	width:100px;
+	border-right-style:none;
+}
+.tolabelCss .x-field-label-cell{
+	width:30px;
+	border-right-style:none;
+}
+.field_no_padding .x-form-checkboxgroup-body, .field_no_padding .x-form-check-group{
+	padding: 0px;
+}
+.iconloginLog{
+	background-image:url(../icons/drive_user.png) !important
+}
+.x-form-item-hidden td{
+	padding:0px;
+}
+.x-trigger-cell{
+	vertical-align: middle;
+}
+.trm_ref_field_cs .x-field-label-cell{
+	width:50px;
+}
+.upload-image-table .x-table-layout{
+	margin:0px;
+}
+.upload-image-tr .x-table-form-item td{
+	padding: 0px;
+}
+/*.upload-image-table .x-table-layout-cell table, .x-table-layout-cell tr, .x-table-layout-cell td, .x-table-layout-cell tbody{
+	height: auto;
+}*/
+
+<!-- form layout fix -->
+.x-form-checkboxgroup-body{
+	width:150px;
+}
+table.field_no_padding, table.display_Cls, .htmlEditor, .custom_field, .readonlyField{
+	table-layout:fixed !important;
+	height:30px;
+}
+table.x-form-trigger-wrap{
+	width:100% !important;
+}
+.display_Cls .x-form-item-body{
+	width:150px;
+}
+.custom_field td{
+	padding-top:2px;
+	padding-bottom:0px;
+}
+.custom_field td.x-field-label-cell{
+	padding-top:4px;
+}
+.htmlEditor td{
+	padding:4px;
+	border:none;
+}
+.htmlEditor iframe{
+	border-right: 1px solid #B5B8C8;
+	border-left: 1px solid #B5B8C8;
+	border-bottom: 1px solid #B5B8C8;
+}
+.htmlEditor .x-html-editor-tb{
+	border-right: 1px solid #B5B8C8;
+	border-left: 1px solid #B5B8C8;
+	border-top: 1px solid #B5B8C8;
+}
+.x-form-item-body{
+	width:auto !important;
+}
+.column_checkbox{
+	margin:0px !important;
+}
+.column_checkbox .x-form-item-body{
+	vertical-align:middle;
+}
+.htmlEditor {
+	width:100%;
+}
+.x-form-item-body{
+	vertical-align:top;
+}
+.x-form-trigger-input-cell{
+	vertical-align:top;
+}
+.x-trigger-cell{
+	vertical-align:top;
+}
+.x-table-layout-cell .x-panel-body-default{
+	border:none;
+}
+.custom_field .x-form-item-body{
+	padding-left:2px;
+}
+.x-form-item-label{
+	font-weight:bold;
+}
+
+ /* treePanel green style (for parlty use, need to set cls attribute as template-green in the component)*/
+.template-green .x-panel-header-default{ 
+     
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, #98C465),
+	    color-stop(0.5, #98C465),
+	    color-stop(0.5, #74BD3F),
+	    color-stop(0.54, #74BD3F),
+	    color-stop(0.54, #74BD3F),
+	    color-stop(0.8, #86C953),
+	    color-stop(1, #A6D980)
+    );
+    background-image: -o-linear-gradient(bottom, #98C465 0%, #98C465 50%, #74BD3F 50%, #74BD3F 54%, #74BD3F 54%, #86C953 80%, #A6D980 100%);
+    background-image: -moz-linear-gradient(bottom, #98C465 0%, #98C465 50%, #74BD3F 50%, #74BD3F 54%, #74BD3F 54%, #86C953 80%, #A6D980 100%);
+    background-image: -webkit-linear-gradient(bottom, #98C465 0%, #98C465 50%, #74BD3F 50%, #74BD3F 54%, #74BD3F 54%, #86C953 80%, #A6D980 100%);
+    background-image: -ms-linear-gradient(bottom, #98C465 0%, #98C465 50%, #74BD3F 50%, #74BD3F 54%, #74BD3F 54%, #86C953 80%, #A6D980 100%);
+    background-image: linear-gradient(to bottom, #98C465 0%, #98C465 50%, #74BD3F 50%, #74BD3F 54%, #74BD3F 54%, #86C953 80%, #A6D980 100%);
+
+    border-color: #779E59 #779E59;
+}
+
+.template-green .x-panel-header-text-default{
+    color: white !important;
+}
+
+.template-green .x-panel-body {
+    border-color: #779E59 #779E59;
+}
+
+.template-green .x-toolbar-default {
+    border-color: #779E59 #779E59;
+}
+
+.template-green .x-tab-bar {
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(1, #B3B3B3),
+	    color-stop(1, #B3B3B3)
+    );
+    background-image: -o-linear-gradient(bottom, #B3B3B3 100%, #B3B3B3 100%);
+    background-image: -moz-linear-gradient(bottom, #B3B3B3 100%, #B3B3B3 100%);
+    background-image: -webkit-linear-gradient(bottom, #B3B3B3 100%, #B3B3B3 100%);
+    background-image: -ms-linear-gradient(bottom, #B3B3B3 100%, #B3B3B3 100%);
+    background-image: linear-gradient(to bottom, #B3B3B3 100%, #B3B3B3 100%);
+}
+
+.template-green .x-tab-bar-body {
+     border-color: #B3B3B3;
+}
+
+.template-green .x-tab-default { /* tab button*/
+                              
+  background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, #96AF75),
+	    color-stop(1, #96AF75)
+    );
+    background-image: -o-linear-gradient(bottom, #96AF75 0%, #96AF75 100%);
+    background-image: -moz-linear-gradient(bottom, #96AF75 0%, #96AF75 100%);
+    background-image: -webkit-linear-gradient(bottom, #96AF75 0%, #96AF75 100%);
+    background-image: -ms-linear-gradient(bottom, #96AF75 0%, #96AF75 100%);
+    background-image: linear-gradient(to bottom, #96AF75 0%, #96AF75 100%);
+
+    border-color: #779E59 #779E59;
+}
+
+.template-green .x-tab-bar-strip {
+     border-color: #779E59;
+}
+
+.template-green .x-tab-bar-strip-default-docked-top {
+    background-color: #8BC63E;
+}
+
+
+.template-green .x-tab-default-top { /*normal tab*/
+    border-bottom: 1px solid #779E59!important;
+}
+
+.template-green .x-tab-default-top-active { /*active tab*/
+    border-bottom-color: #8BC63E!important;
+
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, #8BC63E),
+	    color-stop(1, #8BC63E)
+    );
+    background-image: -o-linear-gradient(bottom, #8BC63E 0%, #8BC63E 100%);
+    background-image: -moz-linear-gradient(bottom, #8BC63E 0%, #8BC63E 100%);
+    background-image: -webkit-linear-gradient(bottom, #8BC63E 0%, #8BC63E 100%);
+    background-image: -ms-linear-gradient(bottom, #8BC63E 0%, #8BC63E 100%);
+    background-image: linear-gradient(to bottom, #8BC63E 0%, #8BC63E 100%);
+}
+
+.template-green .x-tab button {
+    color: white;
+}
+
+
+.template-green .x-toolbar-default-docked-top {
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, #CEDBB7),
+	    color-stop(1, #CEDBB7)
+    );
+    background-image: -o-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -moz-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -webkit-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -ms-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: linear-gradient(to bottom, #CEDBB7 0%, #CEDBB7 100%);
+}
+
+.template-green .x-toolbar-default-docked-bottom {
+    background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, #CEDBB7),
+	    color-stop(1, #CEDBB7)
+    );
+    background-image: -o-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -moz-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -webkit-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: -ms-linear-gradient(bottom, #CEDBB7 0%, #CEDBB7 100%);
+    background-image: linear-gradient(to bottom, #CEDBB7 0%, #CEDBB7 100%);
+}
+
+ /* [END] treePanel green style */
+ 
+

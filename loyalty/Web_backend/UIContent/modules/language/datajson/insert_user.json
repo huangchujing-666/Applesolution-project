@@ -1,0 +1,19 @@
+{row: [
+{fieldLabel: 'Head Office',type: 'select',name: 'headOfficeId',datasource:'modules/headOffice/listHO.jsp',allowBlank:false,tabIndex:1},
+{fieldLabel: 'Login Name',type: 'input',name: 'loginName',allowBlank:false,tabIndex:2},
+{fieldLabel: 'Nick Name',type: 'input',name: 'nickName',tabIndex:3},
+{fieldLabel: 'Email',type: 'input',name:'email',allowBlank:false,tabIndex:4},
+{fieldLabel: 'Status',type: 'select',name:'status',datasource:'modules/user/datajson/status.json',tabIndex:5},
+{fieldLabel: 'Role',type:'multselect',name:'role',datasource:'modules/user/list_role.json',allowBlank:false,value:'',display_value:'',tabIndex:6}
+],
+"rowhidden":[{type:'hidden',name:'uid'}],
+column:2,
+post_url:'modules/user/list_data.jsp',
+post_header:'modules/user/grid_header.jsp',
+title:'User Detail',
+icon:'iconUser16',
+post_params:'modules/user/insert_data.jsp',
+button_text:'Save',
+button_icon:'iconSave',
+value_changes:true
+}

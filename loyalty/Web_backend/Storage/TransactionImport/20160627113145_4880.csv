@@ -1,0 +1,4 @@
+﻿Excel Row No,Fail Reason,Purchase Date,Member Code,Product Code,Total Amount
+2,Member not exist,2016/6/1 下午 12:50:59,MC0001,1,500
+3,Member not exist,2016/6/2 上午 12:00:00,MC0001,2,1000
+4,Member not exist,2016/6/3 下午 12:50:59,MC0001,,5000

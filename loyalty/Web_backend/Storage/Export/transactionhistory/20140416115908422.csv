@@ -1,0 +1,4 @@
+﻿transaction_id,type,source_id,location_id,member_id,point_change,point_status,point_expiry_date,display,void_date,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,type_name,member_name,member_no,point_status_name,status_name,crt_by_name
+34,50,0,0,181,-2,1,,True,,,1,2014/4/15 下午 07:32:51,2,1,2014/4/15 下午 07:32:51,2,1,0,Redemption,"Lai Ming Test, Lai",MC0003,,,
+33,3,1,0,181,100,1,,True,,,1,2014/4/15 下午 07:31:30,2,1,2014/4/15 下午 07:31:30,2,1,0,Point Adjustment,"Lai Ming Test, Lai",MC0003,,,
+3,5,0,0,181,16,1,,True,,,1,2014/4/12 下午 11:19:53,2,1,2014/4/12 下午 11:19:53,2,1,0,Post Paid Service,"Lai Ming Test, Lai",MC0003,,,

@@ -1,0 +1,897 @@
+-------------------------------------------------- SQL Batch ver1.0 Installation Start -------------------------------------------------- 
+Execute "01Table" 
+"_Create_access_token.sql" 
+"_Create_basic_rule.sql" 
+"_Create_combine_redemption.sql" 
+"_Create_custom_field.sql" 
+"_Create_gift.sql" 
+"_Create_gift_category.sql" 
+"_Create_gift_category_lang.sql" 
+"_Create_gift_category_link.sql" 
+"_Create_gift_inventory.sql" 
+"_Create_gift_lang.sql" 
+"_Create_gift_location.sql" 
+"_Create_gift_member_privilege.sql" 
+"_Create_gift_photo.sql" 
+"_Create_gift_redemption.sql" 
+"_Create_language.sql" 
+"_Create_listing.sql" 
+"_Create_listing_item.sql" 
+"_Create_location.sql" 
+"_Create_location_lang.sql" 
+"_Create_log.sql" 
+"_Create_log_detail.sql" 
+"_Create_log_role.sql" 
+"_Create_member_advance_search.sql" 
+"_Create_member_advance_search_rule.sql" 
+"_Create_member_card.sql" 
+"_Create_member_category.sql" 
+"_Create_member_category_lang.sql" 
+"_Create_member_column.sql" 
+"_Create_member_import.sql" 
+"_Create_member_level.sql" 
+"_Create_member_level_change.sql" 
+"_Create_member_level_lang.sql" 
+"_Create_member_profile.sql" 
+"_Create_member_service.sql" 
+"_Create_member_udd.sql" 
+"_Create_passcode.sql" 
+"_Create_passcode_failImport.sql" 
+HResult 0x274C，级别 16，状态 1
+TCP 提供程序: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+"_Create_passcode_format.sql" 
+"_Create_passcode_generate.sql" 
+"_Create_passcode_prefix.sql" 
+"_Create_passcode_registry.sql" 
+"_Create_privilege.sql" 
+"_Create_product.sql" 
+"_Create_product_category.sql" 
+"_Create_product_category_lang.sql" 
+"_Create_product_category_link.sql" 
+"_Create_product_custom_info.sql" 
+"_Create_product_lang.sql" 
+"_Create_product_photo.sql" 
+"_Create_product_purchase.sql" 
+"_Create_product_purchase_order.sql" 
+"_Create_promotion_rule.sql" 
+"_Create_promotion_rule_member_category.sql" 
+"_Create_promotion_rule_member_level.sql" 
+"_Create_promotion_rule_purchase_criteria.sql" 
+"_Create_promotion_rule_service_criteria.sql" 
+"_Create_reminder_engine.sql" 
+"_Create_reminder_schedule.sql" 
+"_Create_reminder_template.sql" 
+HResult 0x274C，级别 16，状态 1
+TCP 提供程序: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+"_Create_role.sql" 
+"_Create_section.sql" 
+"_Create_section_lang.sql" 
+"_Create_service_category.sql" 
+"_Create_service_payment.sql" 
+"_Create_service_plan.sql" 
+"_Create_system_config.sql" 
+"_Create_system_object.sql" 
+"_Create_table_structure.sql" 
+"_Create_transaction.sql" 
+"_Create_transaction_earn.sql" 
+"_Create_transaction_import.sql" 
+"_Create_transaction_use.sql" 
+"_Create_user_profile.sql" 
+"_Create_user_role.sql" 
+"_Create_wifi_access_history.sql" 
+"_Create_wifi_location.sql" 
+"_Create_wifi_location_privilege.sql" 
+Execute "02Table Data Restore" 
+"dbo.access_token.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.basic_rule.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.combine_redemption.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.custom_field.Table.sql" 
+
+(0 行受影响)
+"dbo.gift.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_category.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_category_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_category_link.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_inventory.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.gift_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_location.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_member_privilege.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_photo.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.gift_redemption.Table.sql" 
+
+(0 行受影响)
+"dbo.language.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.listing.Table.sql" 
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.listing'.
+消息 1088，级别 16，状态 11，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Cannot find the object "dbo.listing" because it does not exist or you do not have permissions.
+"dbo.listing_item.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.location.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.location_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.log.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.log_detail.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.log_role.Table.sql" 
+
+(0 行受影响)
+"dbo.member_advance_search.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_advance_search_rule.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_card.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_category.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_category_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_column.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_import.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_level.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_level_change.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_level_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_profile.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_service.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.member_udd.Table.sql" 
+
+(0 行受影响)
+"dbo.passcode.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.passcode_failImport.Table.sql" 
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.passcode_failImport'.
+"dbo.passcode_format.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.passcode_generate.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.passcode_prefix.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.passcode_registry.Table.sql" 
+
+(0 行受影响)
+"dbo.privilege.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.product.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.product_category.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.product_category_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.product_category_link.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.product_custom_info.Table.sql" 
+
+(0 行受影响)
+"dbo.product_lang.Table.sql" 
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.product_lang'.
+消息 1088，级别 16，状态 11，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Cannot find the object "dbo.product_lang" because it does not exist or you do not have permissions.
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.product_lang'.
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.product_lang'.
+"dbo.product_photo.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.product_purchase.Table.sql" 
+
+(0 行受影响)
+"dbo.promotion_rule.Table.sql" 
+
+(0 行受影响)
+"dbo.promotion_rule_member_category.Table.sql" 
+
+(0 行受影响)
+"dbo.promotion_rule_member_level.Table.sql" 
+
+(0 行受影响)
+"dbo.promotion_rule_purchase_criteria.Table.sql" 
+
+(0 行受影响)
+"dbo.promotion_rule_service_criteria.Table.sql" 
+
+(0 行受影响)
+"dbo.reminder_engine.Table.sql" 
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.reminder_engine'.
+消息 1088，级别 16，状态 11，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Cannot find the object "dbo.reminder_engine" because it does not exist or you do not have permissions.
+"dbo.reminder_schedule.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.reminder_template.Table.sql" 
+消息 208，级别 16，状态 1，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Invalid object name 'dbo.reminder_template'.
+消息 1088，级别 16，状态 11，服务器 WIN-4J88204G69I\SQLEXPRESS，第 1 行
+Cannot find the object "dbo.reminder_template" because it does not exist or you do not have permissions.
+"dbo.role.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.section.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.section_lang.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.service_category.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.service_payment.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.service_plan.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.system_config.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.system_object.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.table_structure.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.transaction.Table.sql" 
+
+(0 行受影响)
+"dbo.transaction_earn.Table.sql" 
+
+(0 行受影响)
+"dbo.transaction_import.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+
+(1 行受影响)
+"dbo.transaction_use.Table.sql" 
+
+(0 行受影响)
+"dbo.user_profile.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.user_role.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.wifi_access_history.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.wifi_location.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+"dbo.wifi_location_privilege.Table.sql" 
+
+(0 行受影响)
+
+(1 行受影响)
+Execute "04Stored Procedures" 
+"fsp_RandomInteger.sql" 
+"sp_CheckDuplicate_giftNo.sql" 
+"sp_CheckDuplicate_productNo.sql" 
+"sp_CloseEncryptionKey.sql" 
+"sp_CreateAccessToken.sql" 
+"sp_CreateBasicRule.sql" 
+"sp_CreateCombineRedemption.sql" 
+"sp_CreateGift.sql" 
+"sp_CreateGiftCategory.sql" 
+"sp_CreateGiftCategoryLang.sql" 
+"sp_CreateGiftCategoryLink.sql" 
+"sp_CreateGiftInventory.sql" 
+"sp_CreateGiftLang.sql" 
+"sp_CreateGiftLocation.sql" 
+"sp_CreateGiftMemberPrivilege.sql" 
+"sp_CreateGiftPhoto.sql" 
+"sp_CreateGiftRedemption.sql" 
+"sp_CreateLocation.sql" 
+"sp_CreateLocationLang.sql" 
+"sp_CreateLog.sql" 
+"sp_CreateLogDetail.sql" 
+"sp_CreateMember.sql" 
+"sp_CreateMemberAdvanceSearch.sql" 
+"sp_CreateMemberAdvanceSearchRule.sql" 
+"sp_CreateMemberCard.sql" 
+"sp_CreateMemberCategory.sql" 
+"sp_CreateMemberCategoryLang.sql" 
+"sp_CreateMemberImport.sql" 
+"sp_CreateMemberService.sql" 
+"sp_CreatePasscode.sql" 
+"sp_CreatePasscodeFormat.sql" 
+"sp_CreatePasscodeGenerate.sql" 
+"sp_CreatePasscodePrefix.sql" 
+"sp_CreatePasscode_failImport.sql" 
+"sp_CreateProduct.sql" 
+"sp_CreateProductCategory.sql" 
+"sp_CreateProductCategoryLang.sql" 
+"sp_CreateProductCategoryLink.sql" 
+"sp_CreateProductLang.sql" 
+"sp_CreateProductPhoto.sql" 
+"sp_CreateProductPurchase.sql" 
+"sp_CreatePromotionRule.sql" 
+"sp_CreateReminderEngine.sql" 
+"sp_CreateReminderSchedule.sql" 
+"sp_CreateReminderTemplate.sql" 
+"sp_CreateRole.sql" 
+"sp_CreateRolePrivilege.sql" 
+"sp_CreateSection.sql" 
+"sp_CreateServiceCategory.sql" 
+"sp_CreateServicePayment.sql" 
+"sp_CreateServicePlan.sql" 
+"sp_CreateSystemConfig.sql" 
+"sp_CreateSystemObject.sql" 
+"sp_CreateTransaction.sql" 
+"sp_CreateTransactionEarn.sql" 
+"sp_CreateTransactionImport.sql" 
+"sp_CreateTransactionUse.sql" 
+"sp_CreateUser.sql" 
+"sp_CreateUserOwnedRole.sql" 
+"sp_CreateWifiAccessHistory.sql" 
+"sp_CreateWifiLocation.sql" 
+"sp_CreateWifiLocationPrivilege.sql" 
+"sp_CrtPromotionRuleMemberCat.sql" 
+"sp_CrtPromotionRuleMemberLevel.sql" 
+"sp_CrtPromotionRulePurchaseCrite.sql" 
+"sp_CrtPromotionRuleServiceCrite.sql" 
+"sp_DeleteGiftCategoryLink.sql" 
+"sp_DeleteGiftLocation.sql" 
+"sp_DeletePasscodeByFail.sql" 
+"sp_DeleteProductCategoryLink.sql" 
+"sp_DeleteRolePrivilege.sql" 
+"sp_DeleteSystemObject.sql" 
+"sp_DeleteUserOwnedRole.sql" 
+"sp_DelGiftMemPrivilege_ownedList.sql" 
+"sp_DelWifiLocationPrivilege.sql" 
+"sp_fix_UpdateDisplayOrderByTable.sql" 
+"sp_fix_UserLogout.sql" 
+The module 'sp_UserLogout' depends on the missing object 'dbo.sp_TakeLog'. The module will still be created; however, it cannot run successfully until the object exists.
+"sp_GeneratePasscode.sql" 
+The module 'sp_GeneratePasscode' depends on the missing object 'sp_UpdatePasscodePrefix_usage'. The module will still be created; however, it cannot run successfully until the object exists.
+The module 'sp_GeneratePasscode' depends on the missing object 'sp_UpdatePasscodePrefix_usage'. The module will still be created; however, it cannot run successfully until the object exists.
+"sp_GetExtJSGridHeaders.sql" 
+"sp_GetExtJSSearchColumns.sql" 
+"sp_GetGiftCategoryDetail.sql" 
+"sp_GetGiftCategoryLangDetail.sql" 
+"sp_GetGiftCategoryLists.sql" 
+"sp_GetGiftCategory_childList.sql" 
+"sp_GetGiftDetailBy.sql" 
+"sp_GetGiftLangDetailBy.sql" 
+"sp_GetGiftLists.sql" 
+"sp_GetGiftLocationLists.sql" 
+"sp_GetGiftMemberPrivilege_ownedList.sql" 
+"sp_GetGiftPhotoListBy.sql" 
+"sp_GetLanguageList.sql" 
+"sp_GetListingItemName.sql" 
+"sp_GetListingItemsByCode.sql" 
+"sp_GetListingItemValByCodeName.sql" 
+"sp_GetLocationDetail.sql" 
+"sp_GetLocationLangDetail.sql" 
+"sp_GetLocationLists.sql" 
+"sp_GetLog_lists.sql" 
+"sp_GetMemberAdvanceSearchListMember.sql" 
+"sp_GetMemberDetailBy.sql" 
+"sp_GetMemberID.sql" 
+"sp_GetMemberLevelLists.sql" 
+"sp_GetMemberLists.sql" 
+"sp_GetNextID.sql" 
+"sp_GetPasscodeDetail.sql" 
+"sp_GetPasscodeFormatDetailBy.sql" 
+"sp_GetPasscodeGenerateLists.sql" 
+"sp_GetPasscodeLists.sql" 
+"sp_GetPasscodePrefixDetailBy.sql" 
+"sp_GetPasscodeRegistryLists.sql" 
+"sp_GetPasscodeUsageSummary.sql" 
+"sp_GetPrivilege_detail.sql" 
+"sp_GetProductCategoryDetailBy.sql" 
+"sp_GetProductCategoryLang_ownedList.sql" 
+"sp_GetProductCategoryLists.sql" 
+"sp_GetProductCustomInfoLists.sql" 
+"sp_GetProductDetailBy.sql" 
+"sp_GetProductID.sql" 
+"sp_GetProductLang_ownedList.sql" 
+"sp_GetProductLists.sql" 
+"sp_GetRoleAccessDetail.sql" 
+"sp_GetRoleDetail.sql" 
+"sp_GetRoleLists.sql" 
+"sp_GetSystemConfigList.sql" 
+"sp_GetSystemConfigValue.sql" 
+"sp_GetSystemObject_detail.sql" 
+"sp_GetTableCurrentIdentity.sql" 
+"sp_GetUserBy.sql" 
+"sp_GetUserLists.sql" 
+"sp_GetUserOwnedRole_lists.sql" 
+"sp_GetUserProfileDetail.sql" 
+"sp_GetUserSectionAccess_list.sql" 
+"sp_GetUserSections.sql" 
+"sp_JSON.sql" 
+"sp_MemberLogin.sql" 
+"sp_MemberLoginWithFB.sql" 
+"sp_OpenEncryptionKey.sql" 
+"sp_SoftDeleteByModule.sql" 
+"sp_SoftDeleteSystemObject.sql" 
+"sp_TableRESEED.sql" 
+"sp_UpdateBasicRule.sql" 
+"sp_UpdateCombineRedemption.sql" 
+"sp_UpdateGift.sql" 
+"sp_UpdateGiftCategory.sql" 
+"sp_UpdateGiftCategoryLang.sql" 
+"sp_UpdateGiftCategoryLink.sql" 
+"sp_UpdateGiftHotItemDisplayOrder.sql" 
+"sp_UpdateGiftLang.sql" 
+"sp_UpdateGiftPhoto.sql" 
+"sp_UpdateGiftRedemption.sql" 
+"sp_UpdateLocation.sql" 
+"sp_UpdateLocationLang.sql" 
+"sp_UpdateMember.sql" 
+"sp_UpdateMemberCard.sql" 
+"sp_UpdateMemberCategory.sql" 
+"sp_UpdateMemberCategoryLang.sql" 
+"sp_UpdateMemberService.sql" 
+"sp_UpdatePasscode.sql" 
+"sp_UpdatePasscodeGenerate.sql" 
+"sp_UpdatePasscodePrefix_usage.sql" 
+"sp_UpdatePrivilege.sql" 
+"sp_UpdateProduct.sql" 
+"sp_UpdateProductCategory.sql" 
+"sp_UpdateProductCategoryLang.sql" 
+"sp_UpdateProductCategoryLink.sql" 
+"sp_UpdateProductLang.sql" 
+"sp_UpdateProductPhoto.sql" 
+"sp_UpdateProductPurchase.sql" 
+"sp_UpdateReminderTemplate.sql" 
+"sp_UpdateRole.sql" 
+"sp_UpdateServiceCategory.sql" 
+"sp_UpdateServicePayment.sql" 
+"sp_UpdateServicePlan.sql" 
+"sp_UpdateSystemConfig.sql" 
+"sp_UpdateTransaction.sql" 
+"sp_UpdateTransactionEarn.sql" 
+"sp_UpdateUser.sql" 
+"sp_UpdateUserPassword.sql" 
+"sp_UpdateWifiLocation.sql" 
+"sp_UserLogin.sql" 
+"sp_XML2JSON.sql" 
+Execute "05Functions Scalar-valued Functions" 
+"fn_buildUpdateSql.sql" 
+"fn_GetListingIDByCode.sql" 
+"fn_GetListingItemValByCodeName.sql" 
+"fn_GetModuleListingColumnsByName.sql" 
+"fn_GetSettingValueByName.sql" 
+"fn_TRIM.sql" 
+Execute "06Functions Table-valued Functions" 
+"fnSplitJson2.sql" 
+消息 208，级别 16，状态 6，服务器 WIN-4J88204G69I\SQLEXPRESS，过程 fnSplitJson2，第 1 行
+Invalid object name 'dbo.fnSplitJson2'.
+"parseJSON.sql" 
+Execute "07View" 
+"_Create_v_accessObject.sql" 
+Execute "log" 
+-------------------------------------------------- SQL Batch ver1.0 Installation Finish ------------------------------------------------- 

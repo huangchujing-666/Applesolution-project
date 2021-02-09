@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Palmary.Loyalty.API.MobileWebService" CodeBehind="MobileWebService.svc.cs" %>

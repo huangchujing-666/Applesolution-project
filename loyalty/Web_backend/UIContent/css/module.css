@@ -1,0 +1,267 @@
+.iconRole16{
+	background-image:url(../images/edit.gif) !important;
+}
+.iconUser16{
+	background-image:url(../icons/obj/objUser/16.gif) !important;
+}
+.iconExplorer16{
+	background-image:url(../icons/explorer.gif) !important;
+}
+.iconClient16{
+	background-image:url(../icons/building.png) !important
+}
+.iconContact16{
+	background-image:url(../icons/group.png) !important
+}
+.iconDistributor{
+	background-image:url(../icons/user_gray.png) !important
+}
+.iconDashboard{
+	background-image:url(../icons/dashboard.png) !important
+}
+.iconView{
+	background-image:url(../images/preview.png) !important
+}
+.iconSave{
+   background-image:url(../icons/table_save.png) !important
+}
+.iconAdd{
+   background-image:url(../icons/add.png) !important
+}
+.iconAssign{
+   background-image:url(../icons/cog.png) !important
+}
+.iconPayment{
+   background-image:url(../icons/money.png) !important
+}
+.iconCurrency{
+   background-image:url(../icons/coins.png) !important
+}
+.iconDirect{
+   background-image:url(../icons/arrow_inout.png) !important
+}
+.iconUser_edit{
+   background-image:url(../icons/user_edit.png) !important
+}
+.iconUser_go{
+   background-image:url(../icons/user_go.png) !important
+}
+.iconStock{
+   background-image:url(../icons/book_open.png) !important
+}
+.iconStockCount{
+   background-image:url(../icons/chart_bar.png) !important
+}
+.iconInspection{
+   background-image:url(../icons/page_find.png) !important
+}
+.iconScript{
+	background-image: url(../icons/script.png)!important
+}
+.iconInvoice{
+	background-image: url(../icons/attach_write_16.gif)!important
+}
+.iconAdoption{
+	background-image: url(../icons/bdApproval.gif)!important
+}
+.iconSalesOrder{
+	background-image: url(../icons/folder_table.png)!important
+}
+.iconDistributorProduct{
+	background-image:url(../icons/user_orange.png)!important
+}
+.iconReload{
+	background-image:url(../icons/reload.gif) !important
+}
+.iconListConfig{
+	background-image:url(../icons/cog.png) !important;
+}
+.iconCourseBook{
+	background-image:url(../icons/book.png) !important;
+}
+.iconOwner{
+   background-image:url(../icons/table.png) !important;
+}
+.iconAgreement{
+   background-image:url(../icons/script.png) !important;
+}
+.iconReset{
+  background-image:url(../icons/arrow_rotate_anticlockwise.png) !important;
+}
+.iconGuarantor{
+  background-image:url(../icons/user.png) !important;
+}
+.iconTerminatedw{
+  background-image:url(../icons/cancel.png) !important;
+}
+.iconCentre{
+  background-image:url(../icons/transmit.png) !important;
+}
+.iconClassroom{
+  background-image:url(../icons/table_multiple.png) !important;
+}
+.iconEnquiry{
+  background-image:url(../icons/color_wheel.png) !important;
+}
+.iconContact{
+  background-image:url(../icons/transmit_blue.png) !important;
+}
+.iconStudent{
+  background-image:url(../icons/world.png) !important;
+}
+.iconCentreMasterCourse{
+  background-image:url(../icons/brick.png) !important;
+}
+.iconCentreMasterCourseCentre{
+  background-image:url(../icons/bricks.png) !important;
+}
+.iconTimetable{
+  background-image:url(../icons/calendar.png) !important;
+}
+.iconMasterCourseFee{
+  background-image:url(../icons/feed_go.png) !important;
+}
+.iconMasterCourse{
+  background-image:url(../icons/page_white_compressed.png) !important;
+}
+.iconMasterCourseRoyalty{
+  background-image:url(../icons/rainbow.png) !important;
+}
+.iconMasterCourseAttachment{
+  background-image:url(../icons/page_add.png) !important;
+}
+.iconPendingList{
+  background-image:url(../icons/table.png) !important;
+}
+.iconCourseApplication{
+  background-image:url(../icons/wand.png) !important;
+}
+.iconViewMasterCourse{
+  background-image:url(../icons/book.png) !important;
+}
+.iconApprove{
+   background-image:url(../icons/accept.png) !important
+}
+.iconApprovalList{
+   background-image:url(../icons/building_link.png) !important
+}
+.iconRouteList{
+   background-image:url(../icons/building.png) !important
+}
+.iconReject{
+   background-image:url(../icons/cart_remove.gif) !important
+}
+.iconSignIn{
+   background-image:url(../icons/user_red.png) !important
+}
+.iconHeadOffice{
+   background-image:url(../icons/building.png) !important
+}
+.iconStaff16{
+   background-image:url(../icons/user_suit.png) !important
+}
+.iconEmailTemplate{
+  background-image:url(../icons/email_edit.png) !important
+}
+.iconAttendanceRecord{
+  background-image:url(../icons/text_list_bullets.png) !important
+}
+.iconApplyMasterCourse{
+  background-image:url(../icons/page_white_paint.png) !important
+}
+.iconContinue{
+  background-image:url(../icons/text_signature.png) !important
+}
+.iconUnSelectAll{
+  background-image:url(../images/uncheck.gif) !important
+}
+.iconSelectAll{
+  background-image:url(../images/check.gif) !important
+}
+.iconPre{
+  background-image:url(../icons/resultset_previous.png) !important
+}
+.iconNext{
+  background-image:url(../icons/resultset_next.png) !important
+}
+.iconWrench{
+  background-image:url(../icons/wrench.gif) !important
+}
+.iconBullet_orange{
+  background-image:url(../icons/bullet_orange.png) !important
+}
+.iconTag_orange{
+  background-image:url(../icons/tag_orange.png) !important
+}
+.iconTag_red{
+  background-image:url(../icons/tag_red.png) !important
+}
+.iconTag_purple{
+  background-image:url(../icons/tag_purple.png) !important
+}
+.iconTag_yellow{
+  background-image:url(../icons/tag_yellow.png) !important
+}
+.iconGift{
+  background-image:url(../icons/gift.png) !important
+}
+.iconBag{
+  background-image:url(../icons/bag.png) !important
+}
+.iconNewspaper{
+  background-image:url(../icons/newspaper.png) !important
+}
+.iconTable_edit{
+  background-image:url(../icons/table_edit.png) !important
+}
+.iconLayout{
+  background-image:url(../icons/layout.png) !important
+}
+.iconServer{
+  background-image:url(../icons/server.png) !important
+}
+.iconReport_user{
+  background-image:url(../icons/report_user.png) !important
+}
+.iconGroup_link{
+  background-image:url(../icons/group_link.png) !important
+}
+.iconPackage{
+  background-image:url(../icons/package.png) !important
+}
+.iconPackage_link{
+  background-image:url(../icons/package_link.png) !important
+}
+.iconKey_add {
+    background-image: url(../icons/key_add.png) !important;
+}
+.iconHouse {
+    background-image: url(../icons/house.png) !important;
+}
+.iconBox {
+    background-image: url(../icons/box.png) !important;
+}
+.iconBasket {
+    background-image: url(../icons/basket.png) !important;
+}
+.iconBasket_go {
+    background-image: url(../icons/basket_go.png) !important;
+}
+.iconAward_star_gold_1 {
+    background-image: url(../icons/award_star_gold_1.png) !important;
+}
+.iconAward_star_gold_3 {
+    background-image: url(../icons/award_star_gold_3.png) !important;
+}
+.iconDatabase_go {
+    background-image: url(../icons/database_go.png) !important;
+}
+.iconExport {
+background-image: url(../icons/excel.gif) !important;
+}
+.iconScheduleSearch{
+	background-image:url(../icons/report_edit.png) !important
+}
+.iconCalendar{
+	background-image:url(../icons/date.png) !important
+}

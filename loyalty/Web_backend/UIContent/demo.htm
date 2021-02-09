@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="js_lib/resources/css/ext-all.css" />
+     <link rel="stylesheet" type="text/css" href="js_lib/resources/css/extensible-all.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/module.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gird.css"/>
+    <link rel="stylesheet" type="text/css" href="css/embraiz.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gridpanel.css"/>
+    <link rel="stylesheet" type="text/css" href="css/BoxSelect.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ClearButton.css"/>
+    <link rel="stylesheet" type="text/css" href="css/htmlEditorImage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ComboFieldBox.css"/>
+
+
+
+    <script type="text/javascript" src="js_lib/ext-all-debug.js"></script>
+    <script type="text/javascript" src="js_lib/extensible-all-debug.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+
+   <!--<script type="text/javascript" src="ux/multiupload/swfobject.js"></script>-->
+
+
+    <script type="text/javascript" src="embraiz/component/custom_fields.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_layout.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_tool.js"></script>
+    <script type="text/javascript" src="embraiz/component/button.js"></script>
+    <script type="text/javascript" src="embraiz/component/combobox.js"></script>
+    <script type="text/javascript" src="embraiz/component/store.js"></script>
+    <script type="text/javascript" src="embraiz/component/gird.js"></script>
+    <script type="text/javascript" src="embraiz/component/form.js"></script>
+    <script type="text/javascript" src="embraiz/component/GridTable.js"></script>
+    <script type="text/javascript" src="embraiz/component/grid_search.js"></script>
+    <script type="text/javascript" src="embraiz/component/BoxSelect.js"></script>
+    <script type="text/javascript" src="embraiz/component/GridTableSearch.js"></script>
+    <script type="text/javascript" src="embraiz/component/gridkeyboard.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_keyboard.js"></script>
+    <script type="text/javascript" src="embraiz/component/ClearButton.js"></script>
+    <script type="text/javascript" src="embraiz/component/cellEdit_grid_search.js"></script>
+    <script type="text/javascript" src="embraiz/component/Editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/CellEditing.js"></script>
+    <script type="text/javascript" src="embraiz/component/extPaging.js"></script>
+    <script type="text/javascript" src="embraiz/component/cell-editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/row_editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/HtmlEditorImage.js"></script>
+
+  <!--  <script type="text/javascript" src="modules/customerProfile/js/index.js"></script>-->
+<script type="text/javascript" src="edit.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Embraiz</title>
+    <script type="text/javascript">
+     
+        Ext.onReady(function () {
+
+            // basic tabs 1, built from existing content
+//            var tabs = Ext.widget('tabpanel', {
+//                renderTo: 'tabs1',
+//                width: 450,
+//                activeTab: 0,
+//                defaults: {
+//                    bodyPadding: 10
+//                },
+//                items: [{
+//                    contentEl: 'script',
+//                    title: 'Short Text',
+//                    closable: true
+//                }, {
+//                    contentEl: 'markup',
+//                    title: 'Long Text'
+//                }]
+//            });
+
+//            // second tabs built from JS
+//            var tabs2 = Ext.widget('tabpanel', {
+//                renderTo: document.body,
+//                activeTab: 0,
+//                width: 600,
+//                height: 250,
+//                plain: true,
+//                defaults: {
+//                    autoScroll: true,
+//                    bodyPadding: 10
+//                },
+//                items: [{
+//                    title: 'Normal Tab',
+//                    html: "My content was added during construction."
+//                }, {
+//                    title: 'Ajax Tab 1',
+//                    loader: {
+//                        url: 'ajax1.htm',
+//                        contentType: 'html',
+//                        loadMask: true
+//                    },
+//                    listeners: {
+//                        activate: function (tab) {
+//                            tab.loader.load();
+//                        }
+//                    }
+//                }, {
+//                    title: 'Ajax Tab 2',
+//                    loader: {
+//                        url: 'ajax2.htm',
+//                        contentType: 'html',
+//                        autoLoad: true,
+//                        params: 'foo=123&bar=abc'
+//                    }
+//                }, {
+//                    title: 'Event Tab',
+//                    listeners: {
+//                        activate: function (tab) {
+//                            setTimeout(function () {
+//                                alert(tab.title + ' was activated.');
+//                            }, 1);
+//                        }
+//                    },
+//                    html: "I am tab 4's content. I also have an event listener attached."
+//                }, {
+//                    title: 'Disabled Tab',
+//                    disabled: true,
+//                    html: "Can't see me cause I'm disabled"
+//                }
+//        ]
+//            });
+
+            //-----------------------------------
+            var activeTabIndex = 0;
+            var contentPanel = Ext.create('Ext.tab.Panel', {
+                id: 'content-panel',
+                region: 'center',
+                layout: 'card',
+                //deferredRender : true,
+                margins: '0 5 5 0',
+                activeItem: activeTabIndex,
+                border: false,
+                items: [],
+                listeners: {
+                    'tabchange': function (tabPanel, tab) {
+                        //tab1切换时修改浏览器hash   
+                        Ext.History.add(tabPanel.id + tokenDelimiter + tab.id);
+                    }
+                }
+            });
+
+        // ------------------------------
+            var testDiv = Ext.get("tabs1");
+
+          
+            target_div = document.createElement("div");
+            
+            testDiv.appendChild(target_div);
+            grider_div = document.createElement("div");
+            testDiv.appendChild(grider_div);
+
+            //var target_div = Ext.get("holder");
+           // var grider_div = Ext.get("holder2");
+            Ext.Ajax.request({
+                url: 'form_data2.json',
+                success: function (o) {
+                    var data_json = Ext.decode(o.responseText);
+                   //new com.embraiz.component.form().editForm(target_div.dom, data_json, null);
+                    new com.embraiz.component.gridSearch().render(target_div, grider_div, data_json, true);	 
+                },
+                scope: this
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="holder" style="margin:5px"> Demo Page:</div>
+<div id="holder2"style="margin:5px"> Customer Profile</div>
+<div id="tabs1">
+        <div id="script" class="x-hide-display">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales a, porta at, vulputate
+            eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales non, iaculis ac, lacus.
+            <br/><br/>
+            Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet tincidunt quam turpis
+            vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla vel, urna.</p>
+        </div>
+        <div id="markup" class="x-hide-display">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales a, porta at, vulputate
+            eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales non, iaculis ac, lacus.
+            Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, sit amet tincidunt quam turpis
+            vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, pretium eget, cursus a, fringilla vel, urna.
+            <br/><br/>
+            Aliquam commodo ullamcorper erat. Nullam vel justo in neque porttitor laoreet. Aenean lacus dui, consequat eu,
+            adipiscing eget, nonummy non, nisi. Morbi nunc est, dignissim non, ornare sed, luctus eu, massa. Vivamus eget
+            quam. Vivamus tincidunt diam nec urna. Curabitur velit.</p>
+        </div>
+    </div>
+</body>
+</html>

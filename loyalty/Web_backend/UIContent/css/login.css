@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, img {
+         margin:0pt;
+         padding:0pt;
+}
+fieldset, img, abbr {
+	border: 0;
+}
+ul, ol{
+	list-style: none;
+}
+a, ins {
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	background-image: url(../images/login_back.jpg);
+	FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper {
+	height:650px;
+	left:50%;
+	margin-left:-400px;
+	margin-top:-350px;
+	position:absolute;
+	top:50%;
+	width:800px;
+	background-image: url(../images/main-pic.jpg);
+	background-repeat: no-repeat;
+}
+.wrapper .main_table{
+	width: 400px;
+	height: 160px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 320px;
+	color: #252525;
+}
+.wrapper .login_text{
+	width:240px;
+	margin-left:10px;
+	font-size: 17px;
+	position: relative;
+	top: 5px;
+	border: 1px solid #ffff00;
+	height: 23px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 4px;
+	vertical-align: middle;
+	padding-bottom: 2px;
+}
+.wrapper .password{
+	top:4px;
+}
+.lgicon_del {
+	height: 16px;
+	position: relative;
+	width: 16px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../images/login_del.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	top: 7px;
+	left:-20px;
+}
+.login_detail li{
+	float: left;
+	margin-right:5px;
+	font-size: 12px;
+	color: #555555;
+	margin-top: 10px;
+}
+.forget_password{
+	margin-left: 110px;
+	color: #555555;
+}
+.forget_password a{
+	color: #555555;
+}
+.forget_password a:visit{
+	color: #555555;
+}
+.forget_password a:hover{
+	text-decoration: underline;
+	color: #666;
+}
+a.login_btn{
+	height: 61px;
+	width: 162px;
+	display:block;
+	position: relative;
+	left: 310px;
+	top: 369px;
+}
+a.login_btn:hover{
+	background-image: url(../images/login_btn.jpg);
+}

@@ -1,0 +1,20 @@
+﻿Change_id,member_id,source_type,change_type,reason_type,old_member_level_id,new_member_level_id,remark,member_no,source_type_name,change_type_name,reason_type_name,old_member_level_name,new_member_level_name
+1,122,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,PL011,System,Upgrade,Normal Point Change,Normal,No.1
+2,158,1,1,1,2,3,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0001,System,Upgrade,Normal Point Change,No.1,Platinum
+3,159,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0002,System,Upgrade,Normal Point Change,Normal,No.1
+4,160,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0003,System,Upgrade,Normal Point Change,Normal,No.1
+5,161,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0004,System,Upgrade,Normal Point Change,Normal,No.1
+6,162,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0005,System,Upgrade,Normal Point Change,Normal,No.1
+7,163,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0006,System,Upgrade,Normal Point Change,Normal,No.1
+8,164,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0007,System,Upgrade,Normal Point Change,Normal,No.1
+9,165,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0001,System,Upgrade,Normal Point Change,Normal,No.1
+10,166,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0002,System,Upgrade,Normal Point Change,Normal,No.1
+11,167,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0003,System,Upgrade,Normal Point Change,Normal,No.1
+12,168,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0004,System,Upgrade,Normal Point Change,Normal,No.1
+13,169,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0005,System,Upgrade,Normal Point Change,Normal,No.1
+15,170,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0006,System,Upgrade,Normal Point Change,Normal,No.1
+16,171,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0007,System,Upgrade,Normal Point Change,Normal,No.1
+17,172,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0001,System,Upgrade,Normal Point Change,Normal,No.1
+18,173,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0002,System,Upgrade,Normal Point Change,Normal,No.1
+19,174,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0003,System,Upgrade,Normal Point Change,Normal,No.1
+20,175,1,1,1,1,2,,2015/1/1 上午 12:00:00,1,1,0001/1/1 上午 12:00:00,1,1,0,MC0004,System,Upgrade,Normal Point Change,Normal,No.1

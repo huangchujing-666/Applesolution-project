@@ -1,0 +1,1 @@
+{"totalCount":9, "items":[ {"name":"0","sp500":"1100","djia":"10000"}, {name:1,sp500:2100,djia:20000}, {name:1,sp500:2100,djia:20000}, {name:2,sp500:3100,djia:30000}, {name:3,sp500:4100,djia:40000}, {name:4,sp500:5100,djia:50000}, {name:5,sp500:6100,djia:60000}, {name:6,sp500:7100,djia:70000}, {name:7,sp500:8100,djia:80000} ]} 

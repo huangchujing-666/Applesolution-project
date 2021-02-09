@@ -1,0 +1,14 @@
+@media (min-width: 768px){
+.footer ul li:last-child{
+    margin-left: 0px;
+}
+.product_title{
+    min-height: 50px;
+    margin-top: 0px;
+}
+#example .modal-dialog{
+    margin-top: 20%;
+}
+}
+
+

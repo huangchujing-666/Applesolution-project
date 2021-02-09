@@ -1,0 +1,1 @@
+{success: true, fields: ['name', 'sp500', 'djia'], url:'../UIContent/modules/portal/portlet/list_linePortlet_data.js', xField:['name'], yField:['djia'], yField2:['sp500'], title1:'Dow Jones Average', title2:'S&P 500', isLineChart:true }

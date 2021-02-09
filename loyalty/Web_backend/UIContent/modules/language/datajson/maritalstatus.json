@@ -1,0 +1,7 @@
+{
+   success:true,
+   data:[
+       {'id':1,"value":"Single"},
+       {'id':2,"value":"Married"}
+   ]
+}

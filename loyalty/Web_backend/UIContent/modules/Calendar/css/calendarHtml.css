@@ -1,0 +1,139 @@
+﻿/*四个table的样式*/
+/*fixTable:头部固定表 ,HeaderTable:标题表 ,TimeTable:时刻表 ,calendarTable:日历表*/
+.fixTable,.HeaderTable,.TimeTable{
+   /* margin-left: auto;
+    margin-right: auto;*/
+    table-layout: fixed;
+    border-collapse:separate;
+    text-align:center;
+    
+}
+.calendarTable{
+	table-layout: fixed;
+    border-collapse:separate;
+}
+
+.fixTable th , .HeaderTable th {	
+	  color: #04408C;
+      font-family: tahoma,arial,verdana,sans-serif;
+      font-size: 11px;    
+      font-weight: bold;	
+	  PADDING-RIGHT: 3px;
+	  PADDING-LEFT: 5px;
+	  PADDING-BOTTOM: 5px;
+	  PADDING-TOP: 7px;
+	  height:40px;
+	  /*BACKGROUND: #dfe8f6 url(../images/tab-strip-bg.gif) repeat-x scroll center bottom;*/
+	  background-color: #CAE1FF;
+}
+.HeaderTable th{
+	 border-left: 1px solid #FFFFFF;
+	  border-right: 1px solid #FFFFFF;
+}
+.fixTable td,.TimeTable td{
+	font-size: 12px;
+	/*PADDING-RIGHT: 3px; 
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 5px;
+    PADDING-TOP: 3px; */
+    width:100px;
+    border: 1px solid #E1E1E1;
+}
+.fixTable td{
+	height: 30px;
+}
+.TimeTable td{
+	height: 25px;
+}
+.HeaderTable td{
+	height:30px;
+	width:110px;
+	font-size: 12px;
+	background-color:white;
+    border: 1px solid #E1E1E1;
+    /*超出内容设为隐藏，并且用省略号代替*/
+    word-wrap:break-word;
+}
+.calendarTable td{
+	font-size: 12px;
+    border: 1px solid #E1E1E1;
+	vertical-align:top;
+	height: 1400px;
+	padding: 4px;
+	padding-top:0px;
+	padding-left:9px;
+}
+
+.calendarTable th a{
+	font-weight: bold;
+}
+.calendarTable a{
+	color:#15428b;
+	/*text-decoration: none;*/
+}
+.calendarTable a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*训练师(instructor)一行的div样式*/
+.calendar_instrutor_td_div{
+	height: 20px;
+}
+/*时间表td的div样式*/
+.calendar_time_div{
+	height: 15px; 
+}
+
+/*日历表td的div样式*/
+.calendar_td_div{
+	position: relative;
+    cursor: default;
+}
+/*日历表之间的间隔th/td的样式*/
+.calendar_interval{
+	width:15px;
+	background: white;
+}
+
+/*日历表内容的div样式*/
+.calendar_class_div{
+	position:absolute;  
+	text-align:center;  
+    width:86px;  
+    background: #A4D3EE;
+    padding:4px;
+    padding-top:0px;
+    color: blue;
+    left:0px;
+}
+
+
+
+
+.fix{
+	width: 100px;
+	height: 70px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.header{
+	height:70px;
+	margin-left:101px;
+	margin-top:0px;
+}
+
+.col{
+	width: 100px;
+	float: left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.data{
+	margin-left:101px;
+	margin-top:0px;
+}

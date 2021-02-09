@@ -1,0 +1,8 @@
+﻿redemption_id,transaction_id,redemption_code,redemption_channel,member_id,gift_id,quantity,point_used,redemption_status,collect_date,collect_location_id,void_date,void_user_id,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,gift_no,gift_name,location_name,redemption_status_name,member_no,member_name,crt_by_name
+18,34,14040000185,3,181,198,1,2,1,,1,,,,1,2014/4/15 下午 07:32:51,2,1,2014/4/15 下午 07:32:51,2,1,0,Test2,1,IKEA Causeway Bay store,Waiting Collect,MC0003,"Lai Ming Test, Lai",,
+17,32,14040000177,3,122,197,1,1,1,,1,,,,1,2014/4/15 下午 07:18:29,2,1,2014/4/15 下午 07:18:29,2,1,0,TEST,Test Eng,IKEA Causeway Bay store,Waiting Collect,PL011,"Wong Ka Yan, Crystal",,
+16,31,14040000169,3,122,197,1,1,2,2014/4/15 下午 07:33:30,1,,,,1,2014/4/15 下午 07:13:29,2,1,2014/4/15 下午 07:33:30,2,1,0,TEST,Test Eng,IKEA Causeway Bay store,Collected,PL011,"Wong Ka Yan, Crystal",,
+15,29,14040000151,3,179,197,2,2,-1,,1,2014/4/15 下午 05:13:17,,test wavie,1,2014/4/15 下午 05:12:02,2,1,2014/4/15 下午 05:13:17,2,1,0,TEST,Test Eng,IKEA Causeway Bay store,Voided,MC0001,"Tai Man Test123 Chan, Nick",,
+14,28,14040000144,3,179,197,1,1,1,,1,,,,1,2014/4/15 下午 05:11:05,2,1,2014/4/15 下午 05:11:05,2,1,0,TEST,Test Eng,IKEA Causeway Bay store,Waiting Collect,MC0001,"Tai Man Test123 Chan, Nick",,
+13,27,14040000136,3,179,197,1,1,1,,1,,,,1,2014/4/15 下午 05:07:25,2,1,2014/4/15 下午 05:07:25,2,1,0,TEST,Test Eng,IKEA Causeway Bay store,Waiting Collect,MC0001,"Tai Man Test123 Chan, Nick",,
+12,26,14040000128,3,179,197,1,1,1,,2,,,,1,2014/4/15 下午 05:05:29,2,1,2014/4/15 下午 05:05:29,2,1,0,TEST,Test Eng,IKEA Kowloon Bay store,Waiting Collect,MC0001,"Tai Man Test123 Chan, Nick",,

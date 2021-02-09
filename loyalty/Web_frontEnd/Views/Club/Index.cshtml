@@ -1,0 +1,213 @@
+﻿@{
+    ViewBag.Title = "TrueLoyalty® Club";
+}
+
+
+ @if (!@Model.HasLogin)
+{
+<script type="text/javascript" src="@Url.Content("~/Content/js/common.js")"></script>
+     
+ <script>
+     //Facebook login Version 2.0
+     // This is called with the results from from FB.getLoginStatus().
+     function statusChangeCallback(response) {
+         console.log('statusChangeCallback');
+         console.log(response);
+         // The response object is returned with a status field that lets the
+         // app know the current login status of the person.
+         // Full docs on the response object can be found in the documentation
+         // for FB.getLoginStatus().
+         if (response.status === 'connected') {
+             // Logged into your app and Facebook.
+             performFBLoginAPI();
+         } else if (response.status === 'not_authorized') {
+             // The person is logged into Facebook, but not your app.
+             // update status of <div>
+             //document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
+         } else {
+             // The person is not logged into Facebook, so we're not sure if
+             // they are logged into this app or not.
+             // update status of <div>
+             //document.getElementById('status').innerHTML = 'Please log ' + 'into Facebook.';
+         }
+     }
+
+     // This function is called when someone finishes with the Login
+     // Button.  See the onlogin handler attached to it in the sample
+     // code below.
+     function checkLoginState() {
+         
+         $.post("@Url.Content("~/Club/SessionExist")", 
+             function (data) {
+
+                 var obj = jQuery.parseJSON(data);
+                 if (obj.result == true)
+                     window.location.assign("@Url.Content("~/Club/Member")");
+                 else
+                 {
+                     FB.getLoginStatus(function (response) {
+                         statusChangeCallback(response);
+                     });
+                 }
+             }
+         );
+     }
+
+     window.fbAsyncInit = function () {
+         FB.init({
+             appId: '612989558734123',
+             cookie: true,  // enable cookies to allow the server to access 
+             // the session
+             xfbml: true,  // parse social plugins on this page
+             version: 'v2.0' // use version 2.0
+         });
+
+         // Now that we've initialized the JavaScript SDK, we call 
+         // FB.getLoginStatus().  This function gets the state of the
+         // person visiting this page and can return one of three states to
+         // the callback you provide.  They can be:
+         //
+         // 1. Logged into your app ('connected')
+         // 2. Logged into Facebook, but not your app ('not_authorized')
+         // 3. Not logged into Facebook and can't tell if they are logged into
+         //    your app or not.
+         //
+         // These three cases are handled in the callback function.
+
+         //FB.getLoginStatus(function (response) {
+         //    statusChangeCallback(response);
+         //});
+
+     };
+
+     // Load the SDK asynchronously
+     (function (d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+     // Here we run the Graph API after login is
+     // successful.  See statusChangeCallback() for when this call is made.
+     function performFBLoginAPI() {
+         console.log('Welcome!  Fetching your information.... ');
+         FB.api('/me', function (response) {
+             console.log(response);
+             console.log('Successful login for: ' + response.name);
+
+             console.log('first_name, ' + response.first_name);
+             console.log('middle_name, ' + response.middle_name);
+             console.log('last_name, ' + response.last_name);
+             console.log('gender, ' + response.gender);
+             console.log('locale, ' + response.locale);
+             console.log('languages, ' + response.languages);
+             console.log('link, ' + response.link);
+             console.log('username, ' + response.username);
+             console.log('age_range, ' + response.age_range);
+             console.log('link, ' + response.link);
+
+             console.log('email, ' + response.email);
+             console.log('mobile, ' + response.mobile);
+             console.log('birthday, ' + response.birthday);
+             console.log('relationship_status, ' + response.relationship_status);
+
+             $.post("@Url.Content("~/Club/FBLogin")", {
+                    login_type: "fb",
+                    fbid: response.id,
+                    email: response.email,
+                    first_name: response.first_name,
+                    middle_name: response.middle_name,
+                    last_name: response.last_name,
+                    birthday: response.birthday,
+                    gender: response.gender
+                },
+                function (data) {
+                
+                    var obj = jQuery.parseJSON(data);
+                    if (obj.result == true)
+                        window.location.assign("@Url.Content("~/Club/Member")");
+                }
+            );
+
+             // update status of <div>
+             // document.getElementById('status').innerHTML ='Thanks for logging in, ' + response.name + '!';
+         });
+     }
+
+    
+
+     //lougout
+     function logout() {
+         FB.logout(function (response) {
+             // user is now logged out
+             window.location.replace("<%=fronEndStartURL%>");
+         });
+     };
+    </script>
+     
+     
+     <section id="support" class="doublediagonal">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>會員登入</h1>
+                    <div class="divider"></div>
+                    <p>TrueLoyalty Club</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                <form role="form" action="@Url.Content("~/Club/Login")" method="post" onsubmit="return ValidateLogin('@Url.Content("~/Club/")', 'loginformname', 'loginformpassword', 'loginformsubmit');">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="登記電郵 / 會員編號" id="loginformname" name="loginformname">
+                                    </div>
+                                    <div class="form-group">
+                                        @*<input type="email" class="form-control" placeholder="Your email">*@
+                                        <input type="password" class="form-control" placeholder="" id="loginformpassword" name="loginformpassword">
+                                    </div>
+                                    @*<div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                                    </div>*@
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    <div style="min-height:5px"> </div>
+                                    <h4>或其他登入方法:</h4>
+                                    <div id="fb-root"></div>
+                                    <fb:login-button show-faces="false" size="large" max-rows="1" autologoutlink="false" scope="email, user_birthday" onlogin="checkLoginState();">使用Facebook</fb:login-button>
+                                </form>
+                            </div>
+                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">22 Hung To Road, Hong Kong</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            <a href="mailto:support@oleose.com">enquiry@palmary.com.hk</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-phone fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">+852 2342 7972</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ }

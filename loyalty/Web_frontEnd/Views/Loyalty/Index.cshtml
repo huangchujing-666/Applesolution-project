@@ -1,0 +1,111 @@
+﻿@*<script src="~/UIContent/js/library/jquery-1.11.0.js"></script>*@
+<script src="~/UIContent/js/library/jquery-1.8.2.min.js"></script>
+<script src="~/UIContent/js/library/jquery-1.12.0.js"></script>
+<script src="~/UIContent/js/library/bootstrap-pl3.3.6.js"></script>
+<div class="banner">
+    <div id="myCarousel1" class="carousel slide" data-interval="5000" data-ride="carousel">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+            <li data-target="#myCarousel1" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="@Url.Content("~/UIContent/images/title_1.png")" width="100%" height="auto" alt="First slide" />
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/UIContent/images/banner570b417ff2200.jpg")" width="100%" height="auto" alt="Socend slide">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/UIContent/images/banner57037db2567f0.jpg")" width="100%" height="auto" alt="Three slide">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/UIContent/images/banner5783678354dbf.jpg")" width="100%" height="auto" alt="four slide">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control left prev_icon" href="#myCarousel1"
+           data-slide="prev"></a> <a class="carousel-control right  next_icon" href="#myCarousel1"
+                                     data-slide="next"></a>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="logo_title">
+        <h1>會員登入</h1>
+        <div class="divider"></div>
+        <p>TrueLoyalty Club</p>
+    </div>
+    <div class="row form">
+        <div class="col-md-8  col-xs-12  col-md-offset-2 ">
+            <form id="form1">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="loginformname" name="loginformname" placeholder="登錄電郵">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="loginformpassword" name="loginformpassword" placeholder="會員密碼">
+                </div>
+                <button id="btnLogin" class="btn btn-lg submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //回车点击
+        $("#form1").keydown(function () {
+            if (event.keyCode == 13) {
+                $("#btnLogin").click();
+            }
+        });
+        $("#btnLogin").click(function () {
+            var i = 0;
+            $("#form1").find("input").each(function () {
+                if ($(this).val().length <= 0) {
+                    $(this).css("box-shadow", "inset 0 0 8px #ff0000");
+                } else {
+                    i++;
+                    $(this).css("box-shadow", "none");
+                }
+            });
+            // var str = $("#form1").serialize();
+            if (i >= 2) {
+                $.ajax({
+                    url: "Loyalty/Login",
+                    data: { "loginformname": $("#loginformname").val(), "loginformpassword": $("#loginformpassword").val() },
+                    type: "post",
+                    success: function (data) {
+                        if (data == "1") {
+                            location.href = "@Url.Content("~/Loyalty/Member")";
+                        } else {
+                            // $("#promptMsg").text(data);
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+

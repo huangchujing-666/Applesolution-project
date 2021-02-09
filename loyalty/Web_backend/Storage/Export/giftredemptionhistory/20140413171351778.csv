@@ -1,0 +1,6 @@
+﻿redemption_id,transaction_id,redemption_code,redemption_channel,member_id,gift_id,quantity,point_used,redemption_status,collect_date,collect_location_id,void_date,void_user_id,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,gift_no,gift_name,location_name,redemption_status_name,member_no,member_name,crt_by_name
+5,29,14040000052,3,122,75,1,0.8,1,,2,,,,1,2014/4/12 下午 11:05:23,2,1,2014/4/12 下午 11:05:23,2,1,0,FL01,FLÄCKIG,IKEA Kowloon Bay store,Waiting Collect,PL011,"Wong Ka Yan, Crystal",
+4,27,14040000045,3,122,75,1,0.8,-1,,2,2014/4/12 下午 11:00:20,,test,1,2014/4/11 下午 06:01:34,2,1,2014/4/12 下午 11:00:20,2,1,0,FL01,FLÄCKIG,IKEA Kowloon Bay store,Voided,PL011,"Wong Ka Yan, Crystal",
+3,26,14040000037,3,122,76,1,1.1,-1,,2,2014/4/12 下午 11:01:35,,test,1,2014/4/11 下午 05:46:02,2,1,2014/4/12 下午 11:01:35,2,1,0,TT01,"Tea towel, rose",IKEA Kowloon Bay store,Voided,PL011,"Wong Ka Yan, Crystal",
+2,26,14040000029,3,122,75,1,0.8,-1,,2,2014/4/12 下午 11:04:08,,test,1,2014/4/11 下午 05:46:02,2,1,2014/4/12 下午 11:04:08,2,1,0,FL01,FLÄCKIG,IKEA Kowloon Bay store,Voided,PL011,"Wong Ka Yan, Crystal",
+1,25,14040000011,3,122,75,1,0.8,2,2014/4/12 下午 11:05:06,1,,,,1,2014/4/11 下午 05:41:45,2,1,2014/4/12 下午 11:05:06,2,1,0,FL01,FLÄCKIG,IKEA Causeway Bay store,Collected,PL011,"Wong Ka Yan, Crystal",

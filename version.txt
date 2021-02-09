@@ -1,0 +1,12 @@
+===============================================
+Code: loyalty
+===============================================
+
+This version main critical change:
+
+Web_frontEnd
+change to use new responsive site
+
+===============================================
+
+clone from Garbo

@@ -1,0 +1,11 @@
+﻿transaction_id,type,source_id,location_id,member_id,point_change,point_status,point_expiry_date,display,void_date,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,type_name,member_name,member_no,point_status_name,status_name,crt_by_name
+39,3,1,0,213,5,1,,True,,,1,2015/5/29 上午 10:31:36,1,1,2015/5/29 上午 10:31:36,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+38,3,1,0,213,-11,1,,True,,,1,2015/5/29 上午 10:31:25,1,1,2015/5/29 上午 10:31:25,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+37,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:30:42,1,1,2015/5/29 上午 10:30:42,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+36,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:29:54,1,1,2015/5/29 上午 10:29:54,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+35,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:29:24,1,1,2015/5/29 上午 10:29:24,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+34,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:29:08,1,1,2015/5/29 上午 10:29:08,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+33,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:27:40,1,1,2015/5/29 上午 10:27:40,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+32,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:25:48,1,1,2015/5/29 上午 10:25:48,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+31,3,1,0,213,-10,1,,True,,,1,2015/5/29 上午 10:25:11,1,1,2015/5/29 上午 10:25:11,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,
+30,3,1,0,213,1,1,,True,,,1,2015/5/29 上午 10:19:16,1,1,2015/5/29 上午 10:19:16,1,1,0,Point Adjustment,Nick Tai Man Chan,MC0001,,,,

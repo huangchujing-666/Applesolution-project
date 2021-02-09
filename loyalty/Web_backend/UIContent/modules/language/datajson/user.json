@@ -1,0 +1,18 @@
+{row: [
+{fieldLabel: 'Login Name',type: 'input',name: 'loginName',allowBlank:false,tabIndex:1},
+{fieldLabel: 'Nick Name',type: 'input',name: 'nickName',tabIndex:2},
+{fieldLabel: 'Email',type: 'input',name:'email',allowBlank:false,tabIndex:3},
+{fieldLabel: 'Status',type: 'select',name:'status',datasource:'modules/user/datajson/status.json',tabIndex:4},
+{fieldLabel: 'Role',type: 'select',name:'role',datasource:'modules/user/list_role.jsp',tabIndex:4}
+],
+"rowhidden":[{type:'hidden',name:'uid'}],
+column:2,
+post_url:'modules/user/list_data.jsp',
+post_header:'modules/user/grid_header.jsp',
+title:'User Detail',
+icon:'iconUser16',
+post_params:'modules/user/insert_data.jsp',
+button_text:'Save',
+button_icon:'iconSave',
+value_changes:true
+}

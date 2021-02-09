@@ -1,0 +1,39 @@
+#tableElement{
+	padding:20px;	
+}
+#tableElement th, #tableElement td{
+	padding: 5px;
+	border:1px solid #C7E8FA;
+}
+#tableElement th{
+	background-color: #f1faff;
+	border:1px solid #C7E8FA;
+	height: 35px;
+}
+.gridCell{
+	background-color: #f1faff;
+}
+.iconAdd{
+	background-image:url(../icons/add.png) !important;
+}
+.iconDelete{
+	background-image:url(../icons/delete.png) !important;
+}
+.iconSearch{
+	background-image:url(../icons/magnifier.png) !important;
+}
+.iconGrid{
+	background-image:url(../icons/application_view_columns.png) !important;
+}
+.iconForm{
+	background-image:url(../icons/application_form.png) !important;
+}
+.iconGridEdit{
+	background-image:url(../icons/application_form_edit.png) !important;
+}
+.changeText
+{
+	background-color:#FFFF00;
+
+}
+.test {background-color:#FFFF00;}

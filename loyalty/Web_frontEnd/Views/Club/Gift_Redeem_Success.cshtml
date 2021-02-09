@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "TrueLoyalty® Club :: 禮品專區";
+}
+<section id="message">
+<div class="container">
+    <div>
+     <h3>成功換領禮品</h3>
+
+     <p>恭喜您！您已成功換領LOYALTY®禮品 @TempData["GiftName"]，共使用了 @TempData["PointUse"] 分。</p>
+     <p>您同時會收到確認電郵。</p>
+
+     <p><a href="@Url.Content("~/Club/Transaction")" title="返回禮品專區" class="btn btn-primary btn-lg">返回禮品專區</a></p>
+    </div>
+    <div>
+      <h3>會員有何優惠</h3>
+      所有LOYALTY產品內都隱藏着一組「產品密碼」，會員可於此網站登記密碼以賺取積分，累積滿一定分數，即可換取禮品，包括全線LOYALTY產品或其他禮品。LOYALTY，您的「產品密碼」，為您打開「獎賞之門」。 
+    </div>
+</div>
+</section>

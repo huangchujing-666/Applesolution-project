@@ -1,0 +1,2 @@
+﻿transaction_id,type,source_id,location_id,member_id,point_change,point_status,point_expiry_date,display,void_date,remark,status,crt_date,crt_by_type,crt_by,upd_date,upd_by_type,upd_by,record_status,type_name,member_name,member_no,point_status_name,status_name,crt_by_name
+2,5,0,0,180,16,2,,True,,,1,2014/4/16 下午 12:07:50,2,1,2014/4/16 下午 12:07:50,2,1,0,Post Paid Service,"Fung Chi Chung Test, Paul",MC0002,,,

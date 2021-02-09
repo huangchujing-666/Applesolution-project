@@ -1,0 +1,9 @@
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\HashLib\bin\Debug\HashLib.dll
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\HashLib\bin\Debug\HashLib.pdb
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\HashLib\obj\Debug\HashLib.dll
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\HashLib\obj\Debug\HashLib.pdb
+E:\Jing\GIT\applesolution_trueloyalty_6085\code\loyalty\loyalty\HashLib\obj\Debug\HashLib.csprojResolveAssemblyReference.cache
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\HashLib\bin\Debug\HashLib.dll
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\HashLib\bin\Debug\HashLib.pdb
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\HashLib\obj\Debug\HashLib.dll
+E:\Git\applesolution_trueloyalty_60851\code\loyalty\loyalty\HashLib\obj\Debug\HashLib.pdb

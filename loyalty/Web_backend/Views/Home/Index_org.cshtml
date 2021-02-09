@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="js_lib/resources/css/ext-all.css" />
+     <link rel="stylesheet" type="text/css" href="js_lib/resources/css/extensible-all.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/module.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gird.css"/>
+    <link rel="stylesheet" type="text/css" href="css/embraiz.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gridpanel.css"/>
+    <link rel="stylesheet" type="text/css" href="css/BoxSelect.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ClearButton.css"/>
+    <link rel="stylesheet" type="text/css" href="css/htmlEditorImage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ComboFieldBox.css"/>
+
+
+
+    <script type="text/javascript" src="js_lib/ext-all-debug.js"></script>
+    <script type="text/javascript" src="js_lib/extensible-all-debug.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+
+   <script type="text/javascript" src="ux/multiupload/swfobject.js"></script>
+
+
+    <script type="text/javascript" src="embraiz/component/custom_fields.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_layout.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_tool.js"></script>
+    <script type="text/javascript" src="embraiz/component/button.js"></script>
+    <script type="text/javascript" src="embraiz/component/combobox.js"></script>
+    <script type="text/javascript" src="embraiz/component/store.js"></script>
+    <script type="text/javascript" src="embraiz/component/gird.js"></script>
+    <script type="text/javascript" src="embraiz/component/form.js"></script>
+    <script type="text/javascript" src="embraiz/component/GridTable.js"></script>
+    <script type="text/javascript" src="embraiz/component/grid_search.js"></script>
+    <script type="text/javascript" src="embraiz/component/BoxSelect.js"></script>
+    <script type="text/javascript" src="embraiz/component/GridTableSearch.js"></script>
+    <script type="text/javascript" src="embraiz/component/gridkeyboard.js"></script>
+    <script type="text/javascript" src="embraiz/component/form_keyboard.js"></script>
+    <script type="text/javascript" src="embraiz/component/ClearButton.js"></script>
+    <script type="text/javascript" src="embraiz/component/cellEdit_grid_search.js"></script>
+    <script type="text/javascript" src="embraiz/component/Editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/CellEditing.js"></script>
+    <script type="text/javascript" src="embraiz/component/extPaging.js"></script>
+    <script type="text/javascript" src="embraiz/component/cell-editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/row_editing.js"></script>
+    <script type="text/javascript" src="embraiz/component/HtmlEditorImage.js"></script>
+
+    <script type="text/javascript" src="edit.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Embraiz</title>
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            var target_div = Ext.get("holder");
+            Ext.Ajax.request({
+                url: 'form_data.json',
+                success: function (o) {
+                    var data_json = Ext.decode(o.responseText);
+                    new com.embraiz.component.form().editForm(target_div.dom, data_json, null);
+                },
+                scope: this
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="holder"></div>
+</body>
+</html>

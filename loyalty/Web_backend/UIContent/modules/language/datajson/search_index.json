@@ -1,0 +1,14 @@
+{row: [{
+fieldLabel: 'Login Name',type: 'input',name: 'loginName',tabIndex:1},
+{fieldLabel: 'Nick Name',type: 'input',name: 'nickName',tabIndex:2},
+{fieldLabel: 'Status',type: 'select',name:'status',datasource:'modules/user/datajson/status.json',tabIndex:3},
+{fieldLabel: 'Role',type: 'select',name:'role',datasource:'modules/user/list_role.json',tabIndex:4}
+],
+column:2,
+post_url:'modules/user/list_data.json',
+post_params:'modules/user/search_params.json',
+post_header:'modules/user/gird_header.json',
+title:'Search',
+ sub_title:'Advance search',
+icon:'iconSearch',
+button_text:'Search'}

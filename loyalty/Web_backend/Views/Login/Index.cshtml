@@ -1,0 +1,206 @@
+﻿@{
+    Layout = null;
+}
+@model Palmary.Loyalty.Web_backend.ObjectModels.Infrastructure.HomeObject 
+<!DOCTYPE html>
+<html>
+<!--Login Page Layout-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" /> <!-- type="image/x-icon"/>-->
+  
+    <style>
+        html, body { margin:0; padding:0; height:100%;}
+        #wrap { min-height:100%; background:#36b349 url(../UIContent/images/Template/TrueLoyalty/login/login_page_bg.jpg) repeat-x 0 0;}
+        #login_page { margin:0 auto; width:1000px;}
+        .logo { padding-top:270px; padding-left:30px; height:86px; }
+        .logo img { float:left; border:0;}
+        .logo p { float:left; margin:0 0 0 15px; padding-top:45px; font-size:18px; font-family:"Myriad Pro"; color:#36b349;}
+        .login_form { height:450px; margin-top:-7px; background:url(../UIContent/images/Template/TrueLoyalty/login/login_form_bg.png) no-repeat 0 0;}
+        .login_row { padding:12px 30px; height:46px; clear:both; font-size:18px;}
+        .login_row:after { content:''; display:table; clear:both; visibility:hidden;}
+        .login_row label { float:left; line-height:46px; color:#FFF; font-family:Arial, Helvetica, sans-serif; width:135px;}
+        .login_msg_row { padding:12px 30px; clear:both; font-size:16px; color:red}
+        .logintext { font-size:17px; float:left; margin:0; padding:5px; border:0; width:301px; height:36px; background:url(../UIContent/images/Template/TrueLoyalty/login/textinput.png) no-repeat;}
+        .btnlogin { float:left; margin:0 0 0 30px; padding:0; border:0; width:142px; height:46px; font-size:22px; font-family:"Myriad Pro"; color:#FFF; background:url(../UIContent/images/Template/TrueLoyalty/login/btnlogin.png) no-repeat; cursor:pointer;}
+        .powered { text-align:right; padding-top:270px; padding-right:30px; font-size:12px; color:#FFF; font-family:Arial, Helvetica, sans-serif;}
+        .powered a { margin-left:10px; text-decoration:none; display:inline-block; width:56px; height:14px; background:url(../UIContent/images/Template/TrueLoyalty/login/palmary.png) no-repeat center center; cursor:pointer}
+    </style>
+
+    <script src="../UIContent/js_lib/jquery-1.11.0.js"></script>
+    
+
+@*    <link href = "@Url.Content("~/UIContent/js_lib/resources/css/ext-all-gray.css")" rel="stylesheet" type="text/css" />
+    
+    <script src = "@Url.Content("~/UIContent/js_lib/ext-all-debug.js")" type="text/javascript"></script>
+    <script src = "@Url.Content("~/UIContent/js_lib/extensible-all-debug.js")" type="text/javascript"></script>
+
+    <script type = "text/javascript">
+        Ext.require(['*']);
+        var login = function () {
+           
+            Ext.QuickTips.init();
+
+            function submitOnEnter(field, event) {
+	            if (event.getKey() == event.ENTER) {
+                var submitBtn = Ext.getCmp('LoginSubmitButton');
+                    submitBtn.btnEl.dom.click();
+	            }
+            };
+
+            var form = Ext.widget({
+                renderTo: 'loginpanel',
+                xtype: 'form',
+                layout: 'form',
+                id: 'simpleForm',
+                collapsible: false,
+                frame: true,
+                title: 'Login - Palmary Loyalty 2.0.1',
+                bodyPadding: '5 5 0',
+                width: 350,
+                fieldDefaults: {
+                    msgTarget: 'side',
+                    labelWidth: 75,
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                },
+                defaultType: 'textfield',
+                items: [{
+                    fieldLabel: 'Name2',
+                    name: 'name2',
+                    allowBlank: false,
+                    blankText: 'Name should not be empty!',
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                }, {
+                    fieldLabel: 'Password',
+                    name: 'psd',
+                    allowBlank: false,
+                    inputType: 'password',
+                    blankText: 'Password should not be empty!',
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                }],
+                buttons: [{
+                    id: 'LoginSubmitButton',
+                    text: 'Submit',
+                    handler: function () {
+                        var form = this.up('form').getForm();
+                        var win = this.up('window');
+                        if (form.isValid()) {
+                            form.submit({
+                                clientValidation: true,
+                                waitMsg: 'Wait',
+                                waitTitle: 'verifying login……',
+                                url: '@Url.Action("Perform")',
+                                success: function (form1, action) {
+                                    if (action.success) {
+                                        window.location.href = "@Url.Action("Index","Home")";
+                                    }
+                                    else {
+                                        Ext.MessageBox.show({
+                                            width: 150,
+                                            title: "login failed",
+                                            buttons: Ext.MessageBox.OK,
+                                            msg: action.result.msg
+                                        }); 
+                                    }
+                                },
+                                failure: function (form1, action) {
+                                    Ext.MessageBox.show({
+                                        width: 150,
+                                        title: "login failed",
+                                        buttons: Ext.MessageBox.OK,
+                                        msg: 'login failed'//action.result.msg
+                                    });
+                                }
+                            });
+                        }
+                    }
+                }]
+             
+            });
+
+
+          
+
+
+            Ext.get('loginpanel').setStyle('position', 'absolute').center(Ext.getBody());
+           
+            //Ext.MessageBox.confirm('Confirm', 'Are you sure you want to do that?');
+        };
+
+        Ext.onReady(login);
+        
+    </script>*@
+</head>
+<body>
+    <div id="wrap">
+        <div id="login_page">
+            <div class="logo"><img src="../UIContent/images/Template/TrueLoyalty/login/logo.png" border="0"/> <p>an innovative loyalty program for your brand</p></div>
+            <div class="login_form">
+                <form action="#" method="post" id="login_form">
+                    <div class="login_msg_row" id="error_message"></div>
+		            <div class="login_row">
+                        <label for="login_id">LOGIN</label>
+                        <input type="text" class="logintext" id="login_id" name="login_id"/>
+		            </div>
+                    <div class="login_row">
+                        <label for="login_pass">PASSWORD</label>
+                        <input type="password" class="logintext" id="login_password" name="login_password"/>
+                        <input id="submit_button" type="submit" value="SUBMIT" class="btnlogin" />
+                        <img id="loading-icon" src="../UIContent/images/loading-icon100.gif" style="display:none; padding:0px 0px 0px 15px" height="50" width="50"/>
+                    </div>
+                    <div class="powered">Power By:<a href="http://www.palmary.com.hk" target="_blank">&nbsp;</a><br />Version @Model.siteVersion</div>
+                </form>
+
+                <script>
+                    // Attach a submit handler to the form
+                    $("#login_form").submit(function (event) {
+
+                        // hide button
+                        $("#submit_button").css("display", "none");
+                        $("#loading-icon").css("display", "block");
+
+                        // Stop form from submitting normally
+                        event.preventDefault();
+
+                        // Get some values from elements on the page:
+                        var $form = $(this),
+                            login_id = $form.find("input[name='login_id']").val(),
+                            login_password = $form.find("input[name='login_password']").val();
+
+                        url = "../Login/Perform";
+
+                        // Send the data using post
+                        var posting = $.post(url, { login_id: login_id, login_password: login_password });
+
+                        posting.done(function (data) {
+                            var result = jQuery.parseJSON(data);
+                            
+                            if (!result.success) {
+                                // Put the results in a div
+                                $("#error_message").empty().append(result.msg);
+
+                                // show button
+                                $("#submit_button").css("display", "block");
+                                $("#loading-icon").css("display", "none");
+
+
+                            }
+                            else
+                                window.location.href = "../Home/Index";
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

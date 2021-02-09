@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 44.125, 40.625" name="LoyaltyDB">
+  <DataContextMoniker Name="/LoyaltyDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="440c8cce-3a57-4df4-9a5a-df9b87fdd503" absoluteBounds="0.75, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/access_token" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3019a91b-9f05-4733-aaf5-8baf4190d420" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a562bd4-779d-4d78-b45f-fdaf202b7d91" absoluteBounds="3.75, 0.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/wifi_location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fb0ea51-f5b5-4f6e-a698-d96b6d8e904f" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c7b25dd-6dac-4d86-9183-59217ca38790" absoluteBounds="0.75, 4.75, 2, 4.2458215332031255">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/basic_rule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="183d1b40-cd99-42eb-8e53-6149e21e9218" absoluteBounds="0.765, 5.21, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ba64849-75b2-4f52-96c2-7e6ae453a105" absoluteBounds="3.75, 4.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/combine_redemption" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6b08359-2353-4d63-8341-297fca07a64a" absoluteBounds="3.765, 5.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93bba74b-55f2-42c6-8329-a632d2c94d6e" absoluteBounds="6.25, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/custom_field" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2f91669-c7d9-4952-8500-6f6838fa4bb4" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="637952bb-1c3b-476c-9d98-a320d1f81354" absoluteBounds="6.75, 4.75, 2, 5.9649987792968755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46f01e72-3a6c-4071-9620-79611893c7be" absoluteBounds="6.765, 5.21, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0318aa3c-c41d-4aae-aaad-a6a3e0b1a143" absoluteBounds="9, 0.875, 2, 3.4817427571614576">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d5e6f40-cab1-4fcc-b0aa-fd91840df38f" absoluteBounds="9.015, 1.335, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e476a35-2cd6-4982-92f4-e84d27aa2e9a" absoluteBounds="0.75, 9.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_category_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ade4505c-7c94-4161-ac85-1128aecd1613" absoluteBounds="0.765, 10.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdb5b556-e988-41ff-b22c-64b695f1e15b" absoluteBounds="9.75, 5.75, 2, 2.9086836751302076">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_category_link" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd6ea854-ee9f-4212-b125-f41e745d72b6" absoluteBounds="9.765, 6.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13a7529d-c2bf-4dcd-ba32-1b4971ed8cec" absoluteBounds="9.75, 9.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_inventory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f5c1e1c-3b5b-4160-a7d6-ce05dad57d4f" absoluteBounds="9.765, 10.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7744939-ba8b-4c9f-b41d-80908fea9886" absoluteBounds="3.75, 11.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b35593e-da17-416a-b715-ad64de0d3b5a" absoluteBounds="3.765, 12.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23c90918-0ad9-4948-bc08-4046d06b3afe" absoluteBounds="12.75, 0.75, 2, 2.9086836751302081">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de2246f7-e5f0-47b5-a35b-2f80a18982e1" absoluteBounds="12.765, 1.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc854b01-2923-4141-8592-bc44d84a2edc" absoluteBounds="12.75, 4.75, 2, 3.0997033691406246">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_member_privilege" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20c96c64-c76a-4a30-9ee4-3d7c9b69bfad" absoluteBounds="12.765, 5.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b481f11-28b7-4450-b31b-a78347075030" absoluteBounds="12.75, 8.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_photo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3f42f12-8240-4513-a94f-c2f0211b73b2" absoluteBounds="12.765, 9.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df6c34c5-9388-4155-91a4-48eb05fbe450" absoluteBounds="12.75, 13.75, 2, 5.0099003092447916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/gift_redemption" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2815de1-ceca-4c76-b5a5-476025208131" absoluteBounds="12.765, 14.21, 1.9700000000000002, 4.4499003092447911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea466aba-10f2-4190-ab0c-a6d3cd3891b6" absoluteBounds="6.75, 14.75, 2, 3.0997033691406273">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5aa4528e-0dbd-4d2c-a7af-ad0c1a4eccc8" absoluteBounds="6.765, 15.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cce9a08-a8cc-4826-9162-0691a0f75cce" absoluteBounds="15.75, 0.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/listing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de030981-136e-4c69-8703-8f49d7a29498" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1dad7068-dc91-4c9f-b465-c12f508adad9" absoluteBounds="0.75, 15.75, 2, 2.7176639811197951">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/listing_item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66d0e06e-61a3-4457-9c87-314df98f3f10" absoluteBounds="0.765, 16.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f03f5b5-7fce-4cf3-a118-d7875e32746f" absoluteBounds="15.75, 4.75, 2, 4.6278609212239576">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b148b08-dd57-46d1-add3-d2067c63c733" absoluteBounds="15.765, 5.21, 1.9700000000000002, 4.067860921223958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70f62f1c-cef9-47d1-9fad-075e18e2c71e" absoluteBounds="15.75, 10.75, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/location_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dc1e1c5-5d8f-4a5e-bbc7-a6b4715c661b" absoluteBounds="15.765, 11.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b914a73e-8d98-4b42-9493-144d5646166c" absoluteBounds="15.75, 15.75, 2, 3.6727624511718773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f762745c-1a0c-4adc-b569-26ca2bddbc4a" absoluteBounds="15.765, 16.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26922c9b-57ac-4e06-9239-b2067f6110cb" absoluteBounds="18.75, 0.75, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/log_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b599ddce-7fba-4db9-9062-c966d0bbee74" absoluteBounds="18.765, 1.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d7930c4-c5a0-4127-a6f8-5fe9f3a0231d" absoluteBounds="3.75, 18.75, 2, 1.5715458170572951">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/log_role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17f0aab3-8ab5-40c0-8747-7e902e1a1e4c" absoluteBounds="3.765, 19.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8cf79a3-2e2a-4f50-9a48-d037f1050df4" absoluteBounds="18.75, 4.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_advance_search" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7acf6e50-1964-4ad4-b7ef-7df48b949321" absoluteBounds="18.765, 5.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="260eea2a-b6a3-4c4b-b58c-f1399f56dc1e" absoluteBounds="6.75, 18.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_advance_search_rule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3657bdb-4ed1-4fc0-9499-071d1449abcf" absoluteBounds="6.765, 19.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7e453ee-075d-4030-9fac-cc4549eabdf7" absoluteBounds="18.75, 8.75, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_card" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58b48b05-d8d7-4471-b999-d7787a211165" absoluteBounds="18.765, 9.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f53ce34-1080-4fb6-a27c-9a2c4f7e39b8" absoluteBounds="18.75, 13.75, 2, 3.0997033691406273">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ed7b044-eec6-4ea4-bba7-1ce179c5f947" absoluteBounds="18.765, 14.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e67629c-282d-43f7-94f2-77eb07b17413" absoluteBounds="18.75, 17.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_category_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd5056fd-20ff-4d52-abe6-8612939fbf0d" absoluteBounds="18.765, 18.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="841266f7-9e66-4843-afdc-02b9954a52e0" absoluteBounds="9.75, 19.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_column" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25ed2255-a8dd-435b-95da-ffcc681ec819" absoluteBounds="9.765, 20.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="121e8977-c4ce-4dc2-9c64-8a2e75c796ee" absoluteBounds="12.75, 20.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_import" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e41259d-794b-4cb8-8e5e-d4862ec33c27" absoluteBounds="12.765, 21.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e88cf1e-89b9-4b1c-859c-6bfee3ebdbe1" absoluteBounds="21.75, 0.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_level" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1c97d4f-dbea-4459-97ad-d8cc5be64be5" absoluteBounds="21.765, 1.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1167c0d9-c2a9-4e63-b3af-19ad09c5bdca" absoluteBounds="0.75, 21.75, 2, 3.6727624511718773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_level_change" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1474965f-4029-489a-a2b2-7d07671bb1b6" absoluteBounds="0.765, 22.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41857fb2-3793-40e5-a35c-a925173b82fa" absoluteBounds="21.75, 4.75, 2, 2.5266442871093746">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_level_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06c3554b-2677-408d-abcd-ddd20bfc57be" absoluteBounds="21.765, 5.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a29362f3-d571-4b66-a2f6-df49d25ddf3e" absoluteBounds="21.75, 8.75, 2, 8.63927449544271">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c908e478-61a5-4c64-9443-2703eb21c6f5" absoluteBounds="21.765, 9.21, 1.9700000000000002, 8.0792744954427071" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1233983b-7b4c-4b9d-b6bf-3f7acdc38dc3" absoluteBounds="15.75, 21.75, 2, 3.6727624511718773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48a48b5a-4564-4bdb-a3a9-341fd9029455" absoluteBounds="15.765, 22.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d972272d-8b65-4a88-9db7-1d30a3182685" absoluteBounds="21.75, 18.75, 2, 21.628613688151042">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/member_udd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57d680f4-1d57-4162-a447-d7571640728d" absoluteBounds="21.765, 19.21, 1.9700000000000002, 21.068613688151039" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="983ddf85-d7e8-4a5f-b369-7a1e90fe95b6" absoluteBounds="3.75, 23.75, 2, 4.4368412272135451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode" />
+      <nestedChildShapes>
+        <elementListCompartment Id="604e60af-52e1-4db2-b83f-a356422d6abb" absoluteBounds="3.765, 24.21, 1.9700000000000002, 3.8768412272135415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f5882d9-6295-4969-a45c-b29096df7e2a" absoluteBounds="24.75, 0.75, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode_failImport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4abea95-b169-4621-bfc9-3ce6fe591505" absoluteBounds="24.765, 1.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcf35ebf-a9c2-4eab-922f-2e80353c06b8" absoluteBounds="24.75, 4.75, 2, 3.0997033691406246">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode_format" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8614a609-cd01-42bc-b6a5-808a1bb33a09" absoluteBounds="24.765, 5.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6fc1df05-2636-47c4-b8b5-9ff7329bc92c" absoluteBounds="6.75, 24.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode_generate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f087dee6-4c8a-4ccd-bddf-bcf15f109035" absoluteBounds="6.765, 25.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b5f3394-7173-44dc-8512-2c99be5d6074" absoluteBounds="24.75, 8.75, 2, 3.0997033691406255">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode_prefix" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b65d3cf0-d6ba-4c55-ac51-ce08b093e5b9" absoluteBounds="24.765, 9.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="037c806a-2444-4cd9-95e7-16b30958403e" absoluteBounds="24.75, 12.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/passcode_registry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07b9536b-dc1c-41d7-ae92-2edb997bd035" absoluteBounds="24.765, 13.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="991d5116-e3cc-4e4c-a9ae-17df174c358c" absoluteBounds="24.75, 16.75, 2, 3.8637821451822951">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/privilege" />
+      <nestedChildShapes>
+        <elementListCompartment Id="238acf57-8bd4-4e26-bd32-c84541a3e323" absoluteBounds="24.765, 17.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26bc9a32-ad4c-43dd-9459-468aa08c8df2" absoluteBounds="24.75, 21.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d24e928-08b7-4a9b-bbc7-2ddf99214627" absoluteBounds="24.765, 22.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3ae1067-17ec-4057-a31b-d19b3b2b5cc3" absoluteBounds="9.75, 25.75, 2, 3.4817427571614594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e771770-117d-46d2-a0f3-ba28c984df0e" absoluteBounds="9.765, 26.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fd9484d-2159-4920-8862-d400a35541d6" absoluteBounds="12.75, 26.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_category_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e986e08-88f1-4ba8-9397-976a7da79245" absoluteBounds="12.765, 27.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83841aed-e5d5-427b-a362-1d0e9d1540b7" absoluteBounds="15.75, 26.75, 2, 2.9086836751302094">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_category_link" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8da64a7-202a-4080-94a4-326b5bb5d6a2" absoluteBounds="15.765, 27.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68c7611e-c54f-4e24-bfaf-f636fe646380" absoluteBounds="24.75, 26.75, 2, 2.5266442871093773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_custom_info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ada14e8e-ca24-487f-ba57-107a4e531df0" absoluteBounds="24.765, 27.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79c4be38-f178-4f2d-8bb7-5d673aecdbfd" absoluteBounds="27.75, 0.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a3af4f5-f2be-4fce-a6b2-00f2e984e6f6" absoluteBounds="27.765, 1.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9d606a3-a7f9-4fe7-8086-a10205402123" absoluteBounds="27.75, 4.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_photo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87e7df64-bf4c-4619-b057-1cec257dc9a2" absoluteBounds="27.765, 5.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97ff4c41-8d5c-4289-b34a-f90362e29424" absoluteBounds="27.75, 9.75, 2, 4.2458215332031255">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/product_purchase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be29f943-d653-422d-801a-7664bfb760a8" absoluteBounds="27.765, 10.21, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8e046bc-5eb1-4756-bca9-ed2fb518a628" absoluteBounds="27.75, 14.75, 2, 5.0099003092447916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/promotion_rule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f4dd226-fe1e-45f1-a8d2-8ecec159793e" absoluteBounds="27.765, 15.21, 1.9700000000000002, 4.4499003092447911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9179223d-9d2a-4a4c-8c8b-044f48f9ca1a" absoluteBounds="27.75, 20.75, 2, 2.9086836751302094">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/promotion_rule_member_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="256f303d-3bc0-4a63-974f-8a1d2635ceb7" absoluteBounds="27.765, 21.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d67490b5-2fbb-4116-9b30-c137bf53d9ba" absoluteBounds="27.75, 24.75, 2, 2.9086836751302094">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/promotion_rule_member_level" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c567c9b8-cab2-487d-8a4d-67bc61639ad7" absoluteBounds="27.765, 25.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e566648f-d326-4f55-9c44-0ec14f99896b" absoluteBounds="27.75, 28.75, 2, 3.6727624511718773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/promotion_rule_purchase_criteria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb6205d4-d6db-4ab6-add5-55279ef0b7ad" absoluteBounds="27.765, 29.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87043e2b-acb0-41db-a350-a30b7116b595" absoluteBounds="0.75, 29.75, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/promotion_rule_service_criteria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f59d4ff8-f64c-43d9-a748-0777daf43a3d" absoluteBounds="0.765, 30.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fbb7e3c-1c30-4c66-9056-a58f1b85b001" absoluteBounds="3.75, 29.75, 2, 3.0997033691406273">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/reminder_engine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e363212-749a-4f17-a9f6-4a0e45c90dab" absoluteBounds="3.765, 30.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b774b03-2a1b-4b0e-886a-64175f482220" absoluteBounds="30.75, 0.75, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/reminder_schedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="768bef9d-14cf-467b-8647-34536b6fbe71" absoluteBounds="30.765, 1.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36b937e7-537d-4cf9-b6a2-979d94c18231" absoluteBounds="30.75, 4.75, 2, 3.0997033691406246">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/reminder_template" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48c99ab1-3c87-48cf-a30a-48fb4998b3fa" absoluteBounds="30.765, 5.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9b09fe5-0e8d-4a4c-b92a-8ee3518e87b2" absoluteBounds="6.75, 30.75, 2, 2.7176639811197916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78b2e6ae-cab2-4aa3-95fc-c49df177dd7c" absoluteBounds="6.765, 31.21, 1.9700000000000002, 2.1576639811197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a3ea6a2-01b6-43a5-8682-a03c2558c7ee" absoluteBounds="30.75, 8.75, 2, 5.3919396972656255">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/section" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a050801c-fa54-4376-874f-adae12231e29" absoluteBounds="30.765, 9.21, 1.9700000000000002, 4.831939697265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e4eecd3-38ce-4b0f-830d-0d803bdac365" absoluteBounds="9.75, 30.75, 2, 2.5266442871093773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/section_lang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8043b164-dd84-4970-be1b-06edb4879a33" absoluteBounds="9.765, 31.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58770741-ddb9-4847-b41d-2d979819f04d" absoluteBounds="12.75, 30.75, 2, 3.481742757161463">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/service_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21d2c86b-cde4-472e-89b4-aaa4166d0c7a" absoluteBounds="12.765, 31.21, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd4b0e3e-5e57-4079-af85-6154f54da66f" absoluteBounds="30.75, 14.75, 2, 4.6278609212239594">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/service_payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd7de6e3-81ba-467a-ad2e-122b5e7326e4" absoluteBounds="30.765, 15.21, 1.9700000000000002, 4.067860921223958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a3d9ada-09de-4355-8e7f-4e3df8045b71" absoluteBounds="15.75, 30.75, 2, 4.054801839192713">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/service_plan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a9afb8b-7d08-4818-8736-be0dbc54a75b" absoluteBounds="15.765, 31.21, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6cbc84b9-1d76-42c1-bfed-524032410b6d" absoluteBounds="30.75, 20.75, 2, 3.8637821451822951">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/system_config" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6954e673-88fc-45d3-bbe4-0131393c9d11" absoluteBounds="30.765, 21.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c55bd21-fc72-468a-8a5a-b91fdaac9e49" absoluteBounds="30.75, 25.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/system_object" />
+      <nestedChildShapes>
+        <elementListCompartment Id="177de0bd-110b-461d-b99d-b8d1df0fbace" absoluteBounds="30.765, 26.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8fcaa6d-9ecc-4127-8686-2bc0affcd98b" absoluteBounds="30.75, 29.75, 2, 5.773979085286463">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/table_structure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ba39600-00f2-451e-8ab0-470b42b66971" absoluteBounds="30.765, 30.21, 1.9700000000000002, 5.213979085286458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3510dc67-8784-4cc5-a495-65f0d7031881" absoluteBounds="33.75, 0.75, 2, 4.4368412272135416">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1800f34-a30d-4fb0-b3c7-1bfb64f67f2f" absoluteBounds="33.765, 1.21, 1.9700000000000002, 3.8768412272135415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b835eb69-cdee-4c82-a5df-c75dfb80578f" absoluteBounds="0.75, 33.75, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/transaction_earn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4f9505b-2c9f-4678-ac9b-588c52bc8cab" absoluteBounds="0.765, 34.21, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="036d63c6-c102-4af8-941a-145029590445" absoluteBounds="33.75, 6.75, 2, 3.6727624511718755">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/transaction_import" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bcb9c96-34e7-4799-9834-58bbc7da09f9" absoluteBounds="33.765, 7.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67ed8690-7f4c-47f5-9d25-34961973513f" absoluteBounds="33.75, 11.75, 2, 3.0997033691406255">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/transaction_use" />
+      <nestedChildShapes>
+        <elementListCompartment Id="866a58af-e8c8-493e-9269-837099905a5a" absoluteBounds="33.765, 12.21, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01a77489-6254-4e80-b775-4760cd1a112f" absoluteBounds="33.75, 15.75, 2, 3.6727624511718773">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/user_profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17070e8b-71a5-46f4-9fb1-2f91a0457205" absoluteBounds="33.765, 16.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d20bc26-4580-4300-be9e-b61662698b1c" absoluteBounds="33.75, 20.75, 2, 2.9086836751302094">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/user_role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e439761-ebca-46c4-9b79-e72d2f898998" absoluteBounds="33.765, 21.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f6847cc-79ee-4c15-a4d9-01931610a62b" absoluteBounds="33.75, 24.75, 2, 3.2907230631510451">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/wifi_access_history" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20bd157c-8c15-4cfc-b0b7-0c0009ed24dd" absoluteBounds="33.765, 25.21, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a12a25d-0b4c-4b5d-952b-7f44613e65b6" absoluteBounds="24.75, 33.75, 2, 2.908683675130213">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/wifi_location_privilege" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb7258ab-9ac8-4fd6-b485-20c265545ac3" absoluteBounds="24.765, 34.21, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b564f483-9166-4989-8bf7-bec8de1d8deb" absoluteBounds="41.875, 31, 2, 1.762565511067713">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/v_accessObject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c84493db-f1bf-4d29-a487-038f95b8a2b7" absoluteBounds="41.89, 31.46, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85b3aae3-f145-4ac3-b6a1-f8ac91dc2e16" absoluteBounds="2.625, 2.5, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/LoyaltyDBDataContext/cronjob" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3a74d06-74d8-4860-9b06-831d31e28e03" absoluteBounds="2.64, 2.96, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

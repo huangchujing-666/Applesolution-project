@@ -1,0 +1,279 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "TrueLoyalty® Club :: 積分記錄";
+}
+@*<div class="address"><a href="@Url.Content("~/Club/Member")" title="首頁">首頁</a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")" width="10" height="8" alt=">" /> <a href="@Url.Content("~/Club/Member")" title="LOYALTY® Club"><span>LOYALTY<sup>®</sup> Club</span></a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")"  width="10" height="8" alt=">" /> 積分記錄 </div>
+  </div>*@
+@*<div class="club_banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>*@
+@*<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>*@
+
+<section id="transaction">
+    <div class="container">
+        <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px">
+
+            <div class="col-md-4 col-xs-12">
+                <h3>用户: @Model.MemberName</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <h3>會員等級: @Model.MemberInfo.memberlevel</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <h3>總積分: @Model.MemberAvailablePoint</h3>
+                <span>*12月31日或之前</span>
+            </div>
+
+        </div>
+
+        <div class="row col-md-12" style="min-height: 60px;">
+            <h3><b>產品保用及產品資料紀錄</b></h3>
+        </div>
+        <div class="row col-md-12" style="min-height: 20px;" align="right">
+            @if (Model.Pager.totalpage > 1)
+            {
+                <div class="pages_ul2">
+                    @if (Model.Pager.page > 1)
+                    {
+                        <a href="@Url.Action("Transaction", "Club", new { page = Model.Pager.page - 1, category = Model.CategoryNum })"></a>
+                    }
+                    @for (int i = 1; i <= Model.Pager.totalpage; i++)
+                    {
+                        <a href="@Url.Action("Transaction", "Club", new { page = i, category = Model.CategoryNum })">
+                            @if (Model.Pager.page == i)
+                            { 
+                                <span style="font-size: 17px"><b>@i</b></span>
+                            }
+                            else
+                            {
+                                @i
+                            }
+                        </a>
+                    }
+                    @if (Model.Pager.page < Model.Pager.totalpage)
+                    {
+                        <a href="@Url.Action("Transaction", "Club", new { page = Model.Pager.page + 1, category = Model.CategoryNum })">
+                            <img src="@Url.Content("~/Content/images/shuzi_up.png")" width="21" height="21" border="0" alt=">" /></a>
+                    }
+                </div>
+             
+            }
+
+        </div>
+        <div class="row col-md-12">  
+
+                    
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                    <b>產品類別</b>
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                   <b> 產品型號</b>
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                   <b> 保用期至</b>
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                 
+                </div>
+
+            </div>
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;">
+
+                <div class="row col-md-2 col-xs-6">
+                    電視
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    LTG25-85HG
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2016-02-22
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                        <a href="#">續保</a>
+                </div>
+
+            </div>
+            
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                    電話
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                   Apple 6s
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2016-02-22
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                       <a href="#">續保</a>
+                </div>
+                
+            </div>
+            
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;">
+
+                <div class="row col-md-2 col-xs-6">
+                    電視
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    LTG82-23E
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-10-02
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                         <a href="#">續保</a>
+                </div>
+                
+
+            </div>
+                 <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                    風筒
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    NP95-E
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-09-30
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                         <a href="#">續保</a>
+                </div>
+
+            </div>
+            
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;">
+
+                <div class="row col-md-2 col-xs-6">
+                    抽濕機
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    EP-85G
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-09-01
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                      <a href="#">續保</a>
+                </div>
+
+            </div>
+                 <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                     電話
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    SAMSUNG GalaxyII
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-05-13
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                         <a href="#">續保</a>
+                </div>
+
+            </div>
+            
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;">
+
+                <div class="row col-md-2 col-xs-6">
+                   電話
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    Apple 5c
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-04-28
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                        <a href="#">續保</a>
+                </div>
+
+            </div>
+                 <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                   風筒
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    DE24-E
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-04-01
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                       <a href="#">續保</a>
+                </div>
+
+            </div>
+            
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;">
+
+                <div class="row col-md-2 col-xs-6">
+                    電視
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                    FR74Y-E
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-03-29
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                      <a href="#">續保</a>
+                </div>
+
+            </div>
+                 <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px; padding: 2px;background-color:#f1f1f1; ">
+
+                <div class="row col-md-2 col-xs-6">
+                  電話
+                </div>
+                <div class="row col-md-6 col-xs-9">
+                   Apple 5
+                </div>
+                <div class="row col-md-2 col-xs-3">
+                    2015-02-22
+                </div>
+
+                <div class="row col-md-2 col-xs-3">
+                 <a href="#">續保</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

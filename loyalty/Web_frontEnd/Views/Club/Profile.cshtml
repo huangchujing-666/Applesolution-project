@@ -1,0 +1,190 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "TrueLoyalty® Club :: 更改個人資料";
+}
+@*  <div class="address"><a href="@Url.Content("~/Club/Member")" title="首頁">首頁</a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")" width="10" height="8" alt=">" /> <a href="@Url.Content("~/Club/Member")" title="LOYALTY® Club"><span>LOYALTY<sup>®</sup> Club</span></a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")" width="10" height="8" alt=">" /> 更改個人資料 </div>
+  </div>*@
+@*  <div class="club_banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="" border="0" alt="@item.title" /></div>
+        }
+    }
+  </div>*@
+@*<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>*@
+
+<script type="text/javascript" src="@Url.Content("~/Content/js/profile.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Content/js/qrcode.js")"></script>
+<link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" />
+
+<section id="profile">
+    <div class="container">
+        <form name="registerform" id="registerform" onsubmit="return profileCheck();">
+            <div class="row col-md-12" style="outline: 1px solid #dddddd; min-height: 60px">
+
+                <div class="col-md-4 col-xs-12">
+                    <h3>用户: @Model.MemberName</h3>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <h3>會員等級: @Model.MemberInfo.memberlevel</h3>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <h3>總積分: @Model.MemberAvailablePoint</h3>
+                    <span>*12月31日或之前</span>
+                </div>
+
+            </div>
+
+            <div class="row col-md-12" style="min-height: 60px;">
+                <h3><b>更改會員資料</b></h3>
+            </div>
+            <div class="row col-md-12 col-xs-12">
+                請填妥以下表格，“<span class="xinghao">＊</span>”為必須填寫欄目
+            </div>
+
+            <div class="row col-md-12" style="min-height: 30px"></div>
+
+
+            <div class="row col-md-2 col-xs-1">
+                姓
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <span class="input2 noborder">@Model.MemberInfo.lastname</span><input type="hidden" name="lastname" id="lastname" value="@Model.MemberInfo.lastname" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                名
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <span class="input2 noborder">@Model.MemberInfo.firstname</span><input type="hidden" name="firstname" id="firstname" value="@Model.MemberInfo.firstname" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                性别	
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                @if (Model.MemberInfo.gender == "M")
+                {
+                    <span class="input2 noborder">男</span><input type="hidden" name="gender" id="gender" value="M" />
+                }
+                else
+                {
+                    <span class="input2 noborder">女</span><input type="hidden" name="gender" id="gender" value="F" />
+                }
+            </div>
+
+
+            <div class="row col-md-2 col-xs-5">
+                出生日期	
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                @if (Model.MemberInfo.age.HasValue)
+                {
+                    <span class="input2 noborder">@Model.MemberInfo.age.Value.Date.ToString("yyyy-MM-dd")</span>
+                    <input type="hidden" name="age" id="age" value="@Model.MemberInfo.age.Value.Date.ToString("yyyy-MM-dd")" />
+                }
+                else
+                {
+                    <span class="input2 noborder"></span>
+                    <input type="hidden" name="age" id="age" value="" />
+                }
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                手提電話號碼<span class="xinghao">*</span>
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <input type="text" name="mobile" id="mobile" class="input1" maxlength="8" value="@Model.MemberInfo.mobile" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                會員編號
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <span class="input2 noborder">@Model.MemberInfo.member_no</span><input type="hidden" name="email" id="email" value="@Model.MemberInfo.member_no" />
+            </div>
+            
+            <div class="row col-md-2 col-xs-5"></div>
+            <div id="qrcode" class="row col-md-10 col-xs-7"></div>
+            <div class="row col-md-2 col-xs-5">
+                電郵
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <span class="input2 noborder">@Model.MemberInfo.email</span><input type="hidden" name="email" id="email" value="@Model.MemberInfo.email" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                地址<span class="xinghao">*</span>
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <input type="text" name="address2" id="address2" class="input2" maxlength="200" value="@Html.Raw(Model.MemberInfo.address2)" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <input type="text" name="address1" id="address1" class="input2" maxlength="200" value="@Html.Raw(Model.MemberInfo.address1)" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5" style="min-height: 40px">
+                身份證頭4位數字
+            </div>
+            <div class="row col-md-10 col-xs-7" style="min-height: 40px">
+                <span class="input2 noborder">@Model.MemberInfo.hkid</span><input type="hidden" name="hkid" value="@Model.MemberInfo.hkid" />
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                更改登入密碼
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <input type="password" name="password" id="password" class="input1 w120" maxlength="12" autocomplete="off" />（必須為８個位或以上，包括最少一個符號)
+            </div>
+
+            <div class="row col-md-2 col-xs-5">
+                重新輸入新密碼
+            </div>
+            <div class="row col-md-10 col-xs-7">
+                <input type="password" name="cpassword" id="cpassword" class="input1 w120" maxlength="12" autocomplete="off" />
+            </div>
+
+            <div class="row col-md-12 col-xs-12" style="min-height: 20px"></div>
+            <div class="row col-md-12 col-xs-12">
+                <input type="image" id="btn_submit" name="btn_submit" src="@Url.Content("~/Content/images/submit_btn.jpg")" alt="送出" title="送出" /><span class="loading"><img src="@Url.Content("~/Content/images/loading.gif")" alt="" /></span>
+            </div>
+
+
+
+        </form>
+
+    </div>
+</section>
+
+<script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width: 100,
+        height: 100
+    });
+
+    function makeCode() {
+        var elText = '@Model.MemberInfo.member_no';
+
+
+    qrcode.makeCode(elText);
+}
+
+makeCode();
+
+
+</script>

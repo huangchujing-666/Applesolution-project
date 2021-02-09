@@ -1,0 +1,20 @@
+@media (min-width: 992px){
+.footer ul li{
+    float:left;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.footer ul li:last-child{
+    margin-left: 0px;
+}
+#example .modal-dialog{
+    margin-top: 20%;
+}
+}
+@media (min-width: 1200px){
+
+.footer ul li:last-child{
+    margin-left: 20px;
+}
+
+}

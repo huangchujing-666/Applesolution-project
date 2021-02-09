@@ -1,0 +1,246 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "TrueLoyalty® Club :: 登記成為會員";
+}
+
+
+@*  <div class="club_banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>*@
+<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>
+
+<section id="register">
+    <div class="container">
+        <form name="registerform" id="registerform" onsubmit="return registerCheck();">
+
+            <div class="row col-md-12" style="min-height: 60px; float: left">
+                <h3><b>登記成為會員</b></h3>
+            </div>
+
+            <div style="float: left">
+                請填妥以下表格，“<span class="xinghao">＊</span>”為必須填寫欄目<br />
+                注意：禮品換領信將根據以下資料發出，請確保所提供的資料正確無誤，如因資料有誤而導致不能換領禮品<br />
+                或招致任何損失，本公司恕不負責。
+            </div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td width="140">&nbsp;</td>
+                    <td></td>
+                </tr>
+                <tr height="35">
+                    <td>姓<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="lastname" id="lastname" class="input1" maxlength="40" autocomplete="off" />
+                        登記姓名必須與香港身份證相同</td>
+                </tr>
+                <tr height="35">
+                    <td>名<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname" class="input1" maxlength="80" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>性别<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender_male" value="M" class="cbox1" />
+                        <label style="margin-top:5px">男</label>
+                        &nbsp;
+                  <input type="radio" name="gender" id="gender_female" value="F" class="cbox1" />
+                        <label style="margin-top:5px"> 女</label></td>
+                </tr>
+                <tr height="35">
+                    <td>出生日期</td>
+                    <td>
+                        <input type="text" name="age" id="age" class="input1" maxlength="10" autocomplete="off" />
+                        <label>YYYY-MM-DD</label></td>
+                </tr>
+                <tr height="35">
+                    <td>手提電話號碼<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="mobile" id="mobile" class="input1" maxlength="8" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>電郵<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="email" id="email" class="input1" maxlength="200" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>地址<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="address1" id="address1" class="input2" maxlength="200" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="text" name="address2" id="address2" class="input2" maxlength="200" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>身份證頭4位數字<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="text" name="hkid" id="hkid" class="input1" maxlength="4" autocomplete="off" /></td>
+                </tr>
+                <tr height="35">
+                    <td>登入密碼<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="password" name="password" id="password" class="input1 w120" maxlength="12" autocomplete="off" />（必須為８個位或以上，包括最少一個符號，如@@#$%^)
+                    </td>
+                </tr>
+                <tr height="35">
+                    <td>請重新輸入登入密碼<span class="xinghao">*</span></td>
+                    <td>
+                        <input type="password" name="cpassword" id="cpassword" class="input1 w120" maxlength="12" autocomplete="off" /></td>
+                </tr>
+                @* <tr>
+          <td>所屬產品</td>
+          <td><select name="product" size="1" id="product" class="dropdown1" style="width:300px;">
+              <option value="">請選擇所屬產品</option>
+              @foreach (var item in Model.Products)
+              {
+              <option value="@Html.DisplayFor(modelItem => item.id)">@Html.DisplayFor(modelItem => item.name)</option>                  
+              }
+            </select></td>
+        </tr>
+        <tr>
+          <td>請輸入所購產品內的<br />
+            「產品密碼」</td>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="70px"><input type="text" name="code1" id="code1" class="input3 uppercase" autocomplete="off" maxlength="2" /></td>
+                <td width="25px" align="center"><img src="@Url.Content("~/Content/images/heng_line.jpg")" alt="-" /></td>
+                <td width="150px"><input type="text" name="code2" id="code2" class="input4 uppercase" autocomplete="off" maxlength="4" /></td>
+                <td width="25px" align="center"><img src="@Url.Content("~/Content/images/heng_line.jpg")" width="16" alt="-" /></td>
+                <td><input type="text" name="code3" id="code3" class="input4 uppercase" autocomplete="off" maxlength="4" /></td>
+              </tr>
+            </table></td>
+        </tr>*@
+                <tr>
+                    <td colspan="2">
+                        <table width="80%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td width="200px">請問您是否由會員介紹入會?</td>
+                                <td width="300px">
+                                    <input type="radio" name="referral" id="referral_yes" value="Y" @if (Model.Referrer != "")
+                                                                                                    { <text>checked="checked"</text> } />
+                                    <label style="margin-top:-2px">是，請輸入介紹人的登記電郵</label>
+
+                                </td>
+                                <td>
+                                    <input type="radio" name="referral" id="referral_no" value="N" />
+                                    <label style="margin-top:-5px">否</label>
+
+                                </td>
+                            </tr>
+                            <tbody id="div_referrel">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>介紹人的登記電郵</td>
+                                    <td>
+                                        <input type="text" id="referreremail" name="referreremail" class="input1" maxlength="200" value="@Model.Referrer" autocomplete="off" /></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                        <td colspan="2">本會嚴格遵守「個人資料私隱條例」。閣下提供的資料只會用作會員通訊及<br />
+                            優惠推廣之用，絕不公開。如欲查詢、更改或刪除閣下在本會的個人資料，<br />
+                            請<a href="@Url.Content("~/Contact_Us")" target="_blank" title="聯絡我們">聯絡我們</a>。</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="textarea" id="terms" cols="45" rows="5" class="terms">＜註冊會員的條款及細則＞
+登記成為LOYALTY®會員，代表你同意以下事項：
+
+1. 法律聲明
+本頁說明的法律指引適用於本網站所有的到訪者。　你必須承諾毫無保留地遵守這些指引方可瀏覽本網站及登記成為本網站會員。由於這些指引會隨時被修改，並不另行通知，所以我們建議你不時查閱這些指引。
+
+2. 註冊義務
+(a)依LOYALTY®會員註冊表格之提示提供你本人正確、精確、最新及完整的資料（以下簡稱「登記資料」）
+(b)維持並立即更新「登記資料」，確保其為正確、精確、最新及完整。若你提供任何錯誤、不實、過時、不完整或有誤導成分的資料，或者LOYALTY®網站有合理的理由懷疑前開資料為錯誤、不實、過時、不完整或有誤導成分的資料，LOYALTY®網站有權暫停或終止你的帳號，並取消你所擁有的積分，同時亦有權拒絕你於現在和未來使用本網站的服務之全部或一部份。
+
+3. 私隱政策
+LOYALTY®網站十分關切所有使用者的安全及私隱。除非你自願提供，LOYALTY®網站並不會收集你的任何個人身份證明資料。LOYALTY®網站不會向任何第三者或供應商洩露任何你的個人資料。這些自願提供的資料只會為以最有效率的方法回覆你之目的而使用。
+如果你自願提供個人身份證明資料，例如姓名、性別、年齡、地址、電話、電郵地址或其他個人資料，我們可能會以電郵或一般郵件提供我們認為你可能有興趣的資料，或就你提交資料時向你披露的原因聯絡你。這時你會有機會去選擇退出這項服務（請參考私隱政策）。你的資料除了可能會被轉交專責處理和派遞的一間執行公司外，LOYALTY® 不會向第三者出售或轉讓你傳遞給我們的個人資料。LOYALTY®內部可能會將資料轉交授權的LOYALTY®服務供應商、外國員工或容許其存取該等資料。由於本網站伺服器的主機在新加坡，資料可能會被轉交LOYALTY®在新加坡的相關公司。在任何時候，個人資料均會被視為機密資料處理。
+本網站可能會使用資料去追蹤本網站到訪者的總數、本網站每頁的到訪者人數、到訪者在本網站的流動模式以及到訪者網絡服務供應商的域名。賽諾菲安萬特可能會集體使用這些資料去了解到訪者怎樣使用本網站，以便作出改善。過程中不會利用到個人身份證明資料。
+另外，我們可能會在你的電腦儲存一些資料以便我們改善你到訪本網站的質素。在某些情況下，這些資料會幫助我們去度身訂做你有興趣的內容，或幫助我們避免在你重訪時向你徵詢同樣的資料。大部份的瀏覽器都會容許你從你電腦的硬式磁碟機中刪除這些稱之為「Cookies」的資料，阻擋所有Cookies，或甚至在Cookies被置於你系統前接收警告。請參考你的瀏覽器說明或說明按鈕以便更加認識Cookies。
+你只須向以下單位提出要求便可以使用、修改、矯正及/或封鎖任何有關你的個人資料：
+郵寄：香港告士打道311號皇室大廈25樓賽諾菲安萬特香港有限公司
+
+4. 會員帳號、密碼及安全
+完成本服務的登記程序之後，你將擁有一個密碼及帳號。維持密碼及帳號的機密安全，是你的責任。利用該密碼及帳號所進行的一切行動，你將負完全的責任。你同意以下事項：
+(a)你的密碼或帳號遭到未獲授權的使用，或者其他任何安全問題發生時，你將立即通知LOYALTY®網站。
+(b)每次連線完畢，均結束你的帳號使用。你未能遵守本項規定所衍生之任何損失或損害，LOYALTY®網站無法也不予負責。
+
+5. 會員行為
+你同意不將本服務作以下用途：
+(a). 將設計目的在於干擾、破壞或限制任何電腦軟件、硬體或通訊設備的電腦病毒，包括但不限於「木馬屠城」病毒（Trojan Horses）、蠕蟲（worms）、「計時炸彈」(time bombs) 或刪除蠅（cancelbots）以下簡稱「病毒」)，或其他電腦代碼、檔案和程式之任何資料，以任何方式傳送。
+(b). 干擾或破壞本服務或與本服務相連線之伺服器和網路，或不遵守於本服務連線網路之規定、程序、政策或規範。
+(c). 故意或非故意違反任何適用的本地、國家或國際法規，以及任何具有法律效力之規定。
+(d). 蒐集和儲存其他使用者之個人資料；如果有關個人資料得到正確儲存，並根據有關的個人資料保障條例而使用，則不在此列。
+
+6. 積分計劃
+(a). 「產品密碼」積分計劃只適用於LOYALTY®香港區網站。
+(b). 所有積分均不可兌換現金或「禮品專區」以外的其他貨品，亦不可轉讓。
+(c). 所有積分交易均以LOYALTY®香港區網站系統記錄為準。
+(d). 領取禮品時，職員有權要求客人出示有效之身份証明文件，以核對領取人的身份。
+(e). 若所兌換禮品缺貨時，LOYALTY®有機會以其他相同價值之貨品代替。
+(f). LOYALTY®保留一切暫停或終止積分計劃、更改條款及以上細則的權利。
+(g). 如有任何爭議，LOYALTY®保留最終決定權。</textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="accept_terms" id="accept_terms" value="Y" />
+                            本人已閱讀並同意登記會員之條款</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br />
+                            <input type="image" id="btn_submit" name="btn_submit" src="@Url.Content("~/Content/images/register_btn.jpg")" alt="登記" title="登記" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+  
+        <script type="text/javascript" src="@Url.Content("~/Content/js/register.js")"></script>
+
+        <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" type="text/css" />
+    </div>
+</section>

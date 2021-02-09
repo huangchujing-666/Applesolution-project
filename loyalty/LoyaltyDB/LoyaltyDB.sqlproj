@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>LoyaltyDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.0</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <GenerateDac>False</GenerateDac>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DacApplicationName>$(MSBuildProjectName)</DacApplicationName>
+    <DacVersion>1.0.0.0</DacVersion>
+    <DacDescription>
+    </DacDescription>
+    <RootNamespace>LoyaltyDB</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>4.0</PreviousProjectVersion>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94722dee-9226-4a5f-8d04-25a80f5d473b}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CS_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+    <DacDatabaseCollation>SQL_Latin1_General_CP1_CI_AS</DacDatabaseCollation>
+    <ValidatePolicy>True</ValidatePolicy>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+    <DacDatabaseCollation>SQL_Latin1_General_CP1_CI_AS</DacDatabaseCollation>
+    <ValidatePolicy>True</ValidatePolicy>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Server Level Objects\" />
+    <Folder Include="Schema Objects\Server Level Objects\Linked Servers\" />
+    <Folder Include="Schema Objects\Server Level Objects\Linked Server Logins\" />
+    <Folder Include="Schema Objects\Server Level Objects\Error Messages\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Credentials\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Cryptographic Providers\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Event Sessions\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Server Audit\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Server Audit Specification\" />
+    <Folder Include="Schema Objects\Server Level Objects\Security\Logins\" />
+    <Folder Include="Schema Objects\Server Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Server Level Objects\Service Broker\Endpoints\" />
+    <Folder Include="Schema Objects\Server Level Objects\Programmability\" />
+    <Folder Include="Schema Objects\Server Level Objects\Programmability\Server Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="SQLScripts" />
+    <Folder Include="SQLScripts\01Table" />
+    <Folder Include="SQLScripts\02Table Data Restore" />
+    <Folder Include="SQLScripts\03Table Data Core_need_install" />
+    <Folder Include="SQLScripts\04Stored Procedures" />
+    <Folder Include="SQLScripts\05Functions Scalar-valued Functions" />
+    <Folder Include="SQLScripts\06Functions Table-valued Functions" />
+    <Folder Include="SQLScripts\07View" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SQLScripts\01Table\_Create_access_token.sql" />
+    <None Include="SQLScripts\01Table\_Create_basic_rule.sql" />
+    <None Include="SQLScripts\01Table\_Create_combine_redemption.sql" />
+    <None Include="SQLScripts\01Table\_Create_custom_field.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_category.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_category_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_category_link.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_inventory.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_location.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_member_privilege.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_photo.sql" />
+    <None Include="SQLScripts\01Table\_Create_gift_redemption.sql" />
+    <None Include="SQLScripts\01Table\_Create_language.sql" />
+    <None Include="SQLScripts\01Table\_Create_listing.sql" />
+    <None Include="SQLScripts\01Table\_Create_listing_item.sql" />
+    <None Include="SQLScripts\01Table\_Create_location.sql" />
+    <None Include="SQLScripts\01Table\_Create_location_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_log.sql" />
+    <None Include="SQLScripts\01Table\_Create_log_detail.sql" />
+    <None Include="SQLScripts\01Table\_Create_log_role.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_advance_search.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_advance_search_rule.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_card.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_category.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_category_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_column.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_import.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_level.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_level_change.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_level_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_profile.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_service.sql" />
+    <None Include="SQLScripts\01Table\_Create_member_udd.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode_failImport.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode_format.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode_generate.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode_prefix.sql" />
+    <None Include="SQLScripts\01Table\_Create_passcode_registry.sql" />
+    <None Include="SQLScripts\01Table\_Create_privilege.sql" />
+    <None Include="SQLScripts\01Table\_Create_product.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_category.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_category_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_category_link.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_custom_info.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_photo.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_purchase.sql" />
+    <None Include="SQLScripts\01Table\_Create_product_purchase_order.sql" />
+    <None Include="SQLScripts\01Table\_Create_promotion_rule.sql" />
+    <None Include="SQLScripts\01Table\_Create_promotion_rule_member_category.sql" />
+    <None Include="SQLScripts\01Table\_Create_promotion_rule_member_level.sql" />
+    <None Include="SQLScripts\01Table\_Create_promotion_rule_purchase_criteria.sql" />
+    <None Include="SQLScripts\01Table\_Create_promotion_rule_service_criteria.sql" />
+    <None Include="SQLScripts\01Table\_Create_reminder_engine.sql" />
+    <None Include="SQLScripts\01Table\_Create_reminder_schedule.sql" />
+    <None Include="SQLScripts\01Table\_Create_reminder_template.sql" />
+    <None Include="SQLScripts\01Table\_Create_role.sql" />
+    <None Include="SQLScripts\01Table\_Create_section.sql" />
+    <None Include="SQLScripts\01Table\_Create_section_lang.sql" />
+    <None Include="SQLScripts\01Table\_Create_service_category.sql" />
+    <None Include="SQLScripts\01Table\_Create_service_payment.sql" />
+    <None Include="SQLScripts\01Table\_Create_service_plan.sql" />
+    <None Include="SQLScripts\01Table\_Create_system_config.sql" />
+    <None Include="SQLScripts\01Table\_Create_system_object.sql" />
+    <None Include="SQLScripts\01Table\_Create_table_structure.sql" />
+    <None Include="SQLScripts\01Table\_Create_transaction.sql" />
+    <None Include="SQLScripts\01Table\_Create_transaction_earn.sql" />
+    <None Include="SQLScripts\01Table\_Create_transaction_import.sql" />
+    <None Include="SQLScripts\01Table\_Create_transaction_use.sql" />
+    <None Include="SQLScripts\01Table\_Create_user_profile.sql" />
+    <None Include="SQLScripts\01Table\_Create_user_role.sql" />
+    <None Include="SQLScripts\01Table\_Create_wifi_access_history.sql" />
+    <None Include="SQLScripts\01Table\_Create_wifi_location.sql" />
+    <None Include="SQLScripts\01Table\_Create_wifi_location_privilege.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.access_token.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.basic_rule.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.combine_redemption.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.custom_field.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_category.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_category_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_category_link.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_inventory.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_location.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_member_privilege.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_photo.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.gift_redemption.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.language.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.listing.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.listing_item.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.location.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.location_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.log.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.log_detail.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.log_role.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_advance_search.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_advance_search_rule.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_card.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_category.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_category_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_column.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_import.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_level.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_level_change.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_level_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_profile.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_service.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.member_udd.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode_failImport.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode_format.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode_generate.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode_prefix.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.passcode_registry.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.privilege.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_category.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_category_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_category_link.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_custom_info.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_photo.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.product_purchase.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.promotion_rule.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.promotion_rule_member_category.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.promotion_rule_member_level.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.promotion_rule_purchase_criteria.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.promotion_rule_service_criteria.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.reminder_engine.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.reminder_schedule.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.reminder_template.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.role.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.section.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.section_lang.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.service_category.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.service_payment.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.service_plan.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.system_config.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.system_object.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.table_structure.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.transaction.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.transaction_earn.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.transaction_import.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.transaction_use.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.user_profile.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.user_role.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.wifi_access_history.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.wifi_location.Table.sql" />
+    <None Include="SQLScripts\02Table Data Restore\dbo.wifi_location_privilege.Table.sql" />
+    <None Include="SQLScripts\04Stored Procedures\fsp_RandomInteger.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CheckDuplicate_giftNo.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CheckDuplicate_productNo.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CloseEncryptionKey.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateAccessToken.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateBasicRule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateCombineRedemption.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGift.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftInventory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftMemberPrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftPhoto.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateGiftRedemption.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateLocationLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateLog.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateLogDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMember.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberAdvanceSearch.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberAdvanceSearchRule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberCard.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberImport.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateMemberService.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePasscode.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePasscode_failImport.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePasscodeFormat.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePasscodeGenerate.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePasscodePrefix.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProduct.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductPhoto.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateProductPurchase.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreatePromotionRule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateReminderEngine.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateReminderSchedule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateReminderTemplate.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateRole.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateRolePrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateSection.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateServiceCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateServicePayment.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateServicePlan.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateSystemConfig.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateSystemObject.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateTransaction.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateTransactionEarn.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateTransactionImport.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateTransactionUse.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateUser.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateUserOwnedRole.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateWifiAccessHistory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateWifiLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CreateWifiLocationPrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CrtPromotionRuleMemberCat.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CrtPromotionRuleMemberLevel.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CrtPromotionRulePurchaseCrite.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_CrtPromotionRuleServiceCrite.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteGiftCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteGiftLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeletePasscodeByFail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteProductCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteRolePrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteSystemObject.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DeleteUserOwnedRole.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DelGiftMemPrivilege_ownedList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_DelWifiLocationPrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_fix_UpdateDisplayOrderByTable.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_fix_UserLogout.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GeneratePasscode.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetExtJSGridHeaders.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetExtJSSearchColumns.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftCategory_childList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftCategoryDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftCategoryLangDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftCategoryLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftLangDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftLocationLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftMemberPrivilege_ownedList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetGiftPhotoListBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetLanguageList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetListingItemName.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetListingItemsByCode.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetListingItemValByCodeName.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetLocationDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetLocationLangDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetLocationLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetLog_lists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetMemberAdvanceSearchListMember.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetMemberDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetMemberID.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetMemberLevelLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetMemberLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetNextID.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeFormatDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeGenerateLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodePrefixDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeRegistryLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPasscodeUsageSummary.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetPrivilege_detail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductCategoryDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductCategoryLang_ownedList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductCategoryLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductCustomInfoLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductDetailBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductID.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductLang_ownedList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetProductLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetRoleAccessDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetRoleDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetRoleLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetSystemConfigList.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetSystemConfigValue.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetSystemObject_detail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetTableCurrentIdentity.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserBy.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserLists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserOwnedRole_lists.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserProfileDetail.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserSectionAccess_list.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_GetUserSections.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_JSON.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_MemberLogin.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_MemberLoginWithFB.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_OpenEncryptionKey.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_SoftDeleteByModule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_SoftDeleteSystemObject.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_TableRESEED.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateBasicRule.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateCombineRedemption.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGift.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftHotItemDisplayOrder.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftPhoto.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateGiftRedemption.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateLocationLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateMember.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateMemberCard.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateMemberCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateMemberCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateMemberService.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdatePasscode.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdatePasscodeGenerate.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdatePasscodePrefix_usage.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdatePrivilege.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProduct.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductCategoryLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductCategoryLink.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductLang.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductPhoto.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateProductPurchase.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateReminderTemplate.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateRole.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateServiceCategory.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateServicePayment.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateServicePlan.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateSystemConfig.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateTransaction.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateTransactionEarn.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateUser.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateUserPassword.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UpdateWifiLocation.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_UserLogin.sql" />
+    <None Include="SQLScripts\04Stored Procedures\sp_XML2JSON.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_buildUpdateSql.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_GetListingIDByCode.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_GetListingItemValByCodeName.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_GetModuleListingColumnsByName.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_GetSettingValueByName.sql" />
+    <None Include="SQLScripts\05Functions Scalar-valued Functions\fn_TRIM.sql" />
+    <None Include="SQLScripts\06Functions Table-valued Functions\fnSplitJson2.sql" />
+    <None Include="SQLScripts\06Functions Table-valued Functions\parseJSON.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="SQLScripts\07View\_Create_v_accessObject.sql" />
+    <Build Include="SQLScripts\01Table\_Create_cronjob.sql" />
+  </ItemGroup>
+</Project>

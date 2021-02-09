@@ -1,0 +1,132 @@
+﻿@model Palmary.Loyalty.Web_frontend.Models.LoyaltyModels
+@{
+    ViewBag.Title = "TrueLoyalty® Club :: 積分記錄";
+}
+    @*<div class="address"><a href="@Url.Content("~/Club/Member")" title="首頁">首頁</a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")" width="10" height="8" alt=">" /> <a href="@Url.Content("~/Club/Member")" title="LOYALTY® Club"><span>LOYALTY<sup>®</sup> Club</span></a> <img src="@Url.Content("~/Content/images/adderss_icon2.png")"  width="10" height="8" alt=">" /> 積分記錄 </div>
+  </div>*@
+  @*<div class="club_banner" id="topbanner">
+    @foreach (var item in Model.TopBanners)
+    {
+        if (item.link != "")
+        {
+    <div><a href="@item.link" title="@item.title"><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></a></div>
+        }
+        else
+        {
+    <div><img src="@Url.Content("~/materials/banner")/@item.file_path" width="983" height="263" alt="@item.title" border="0" /></div>
+        }
+    }
+  </div>*@
+@*<script type="text/javascript">
+    $(function () {
+        $('#topbanner').cycle({
+            fx: 'fade'
+        });
+    });
+</script>*@
+
+<section id="transaction">
+<div class="container">
+    <div class="row col-md-12" style="outline:1px solid #dddddd; min-height:60px">
+        
+            <div class="col-md-4 col-xs-12">
+               <h3>用户: @Model.MemberName</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+               <h3>會員等級: @Model.MemberInfo.memberlevel</h3>
+            </div>
+            <div class="col-md-4 col-xs-6">
+               <h3>總積分: @Model.MemberAvailablePoint</h3><span>*12月31日或之前</span>
+            </div>
+            
+    </div>
+
+    <div class="row col-md-12" style="min-height:60px;"><h3><b>積分記錄</b></h3></div>
+    <div class="row col-md-12" style="min-height:20px;" align="right">
+             @if (Model.Pager.totalpage > 1)
+              {
+              <div class="pages_ul2"> 
+                  @if (Model.Pager.page > 1)
+                  {
+                 <a href="@Url.Action("Transaction", "Club", new { page = Model.Pager.page-1, category = Model.CategoryNum})"><img src="@Url.Content("~/Content/images/shuzi_down.png")" width="21" height="21" border="0" alt="<" /></a>
+                  }
+                  @for (int i = 1; i <= Model.Pager.totalpage; i++)
+                  {
+                      <a href="@Url.Action("Transaction", "Club", new { page = i, category = Model.CategoryNum})">
+                      @if (Model.Pager.page == i)
+                      { 
+                        <span style="font-size:17px"><b>@i</b></span>
+                      }
+                      else
+                      {
+                          @i
+                      }
+                    </a>
+                  }
+                  @if (Model.Pager.page < Model.Pager.totalpage)
+                  {
+                 <a href="@Url.Action("Transaction", "Club", new { page = Model.Pager.page+1, category = Model.CategoryNum})"><img src="@Url.Content("~/Content/images/shuzi_up.png")" width="21" height="21" border="0" alt=">" /></a>
+                  }
+              </div>
+             
+              }
+
+    </div>
+    <div class="row col-md-12">
+
+
+        @{ var odd = true; }
+        @foreach (var item in Model.Transactions)
+        {
+          <div  class="row col-md-12" style="outline:1px solid #dddddd; min-height:60px; padding:2px; @(odd ? "" : "background-color:#f1f1f1")" >
+             <div class="row col-md-2 col-xs-6">
+                @if (item.Type == "Product")
+                {
+                <img src="@Url.Content("~/materials/product")/@item.Image.Replace(".", "_thumb.")" width="37" alt="Thumbnail" />
+                }
+                @if (item.Type == "Referral")
+                {
+                <img src="@Url.Content("~/Content/images/get_scores.jpg")" width="37" height="36" alt="Thumbnail" />
+                }
+                @if (item.Type == "Redeem")
+                {
+                <img src="@Url.Content("~/materials/gift")/@item.Image.Replace(".", "_thumb.")" width="37" alt="Thumbnail" />
+                }
+                @if (item.Type == "Bonus")
+                {
+                <img src="@Url.Content("~/Content/images/dummy.png")" width="33" alt="Thumbnail" />
+                }
+               </div>
+              <div class="row col-md-2 col-xs-6">
+                @item.TransactionDate.ToString("yyyy-MM-dd HH:mm")
+              </div>
+              <div class="row col-md-6 col-xs-9">
+                @Html.DisplayFor(modelItem => item.ItemName)
+              </div>
+              <div class="row col-md-2 col-xs-3">
+                @if (item.Point < 0)
+                {
+                <span style="color:#F00">@if (item.Point > 0) { <text>+</text> }@Html.DisplayFor(modelItem => item.Point)分</span>
+                }
+                else
+                {
+                <span style="color:#10ac00">@if (item.Point > 0) { <text>+</text> }@Html.DisplayFor(modelItem => item.Point)分</span>
+                }
+
+                @*@if (item.Type == "Redeem")
+                {
+                <td class="jifen_font1">@if (item.Point > 0) { <text>+</text> }@Html.DisplayFor(modelItem => item.Point)分</td>
+                }
+                else
+                {
+                <td class="jifen_font2">@if (item.Point > 0) { <text>+</text> }@Html.DisplayFor(modelItem => item.Point)分</td>
+                }*@
+              </div>
+            
+          </div>
+            odd = !odd;
+        }
+    </div>
+
+</div>
+</section>

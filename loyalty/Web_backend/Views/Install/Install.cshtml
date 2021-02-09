@@ -1,0 +1,177 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Install Loyalty System 2.0</title>
+    <link href="@Url.Content("~/UIContent/js_lib/resources/css/ext-all-gray.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/UIContent/js_lib/ext-all-debug.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/UIContent/js_lib/extensible-all-debug.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        Ext.require(['*']);
+        var install = function () {
+            Ext.QuickTips.init();
+
+            function submitOnEnter(field, event) {
+	            if (event.getKey() == event.ENTER) {
+                var submitBtn = Ext.getCmp('InstallSubmitButton');
+                    submitBtn.btnEl.dom.click();
+	            }
+            };
+
+            var form = Ext.widget({
+                renderTo: 'installPanel',
+                xtype: 'form',
+                layout: 'form',
+                id: 'simpleForm',
+                collapsible: false,
+                frame: true,
+                title: 'Install - Palmary Loyalty 2.0',
+                bodyPadding: '5 5 0',
+                width: 550,
+                fieldDefaults: {
+                    msgTarget: 'side',
+                    labelWidth: 200,
+                    listeners: {
+			            specialkey: submitOnEnter
+		            }
+                },
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'radiogroup',
+                        fieldLabel: 'Passcode Insert Method',
+                        columns: 2,  //arrange Radio Buttons into 2 columns
+                        id: 'passcode_insert_method_radiogroup',
+                        name: 'passcode_insert_method_radiogroup',
+                        items: [
+                            {
+                                xtype: 'radiofield',
+                                boxLabel: 'Import by Excel',
+                                name: 'passcode_insert_method',
+                              
+                                inputValue: 'Excel',
+                                listeners: {
+                                    change: function (cb, nv, ov) {
+                                        
+                                        if (nv) {
+                                            Ext.getCmp('passcode_format').hide();
+                                            Ext.getCmp('safetyLimit_precent').hide();
+                                            Ext.getCmp('noOfyear_expiry').hide();
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                xtype: 'radiofield',
+                                boxLabel: 'AutoGenerate',
+                                name: 'passcode_insert_method',
+                                checked: true,
+                                inputValue: 'AutoGenerate',
+                                listeners: {
+                                    change: function (cb, nv, ov) {
+
+                                        if (nv) {
+                                            Ext.getCmp('passcode_format').show();
+                                            Ext.getCmp('safetyLimit_precent').show();
+                                            Ext.getCmp('noOfyear_expiry').show();
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        fieldLabel: 'Passcode Format',
+                  
+                        name: 'passcode_format',
+                        id: 'passcode_format',
+                        value: '%%%-####-$$$$',
+                        allowBlank: false,
+                        blankText: 'should not be empty!',
+                        listeners: {
+			                specialkey: submitOnEnter
+		                }
+                    }, {
+                        fieldLabel: 'Passcode Safety Limit(%)',
+                        name: 'safetyLimit_precent',
+                        id: 'safetyLimit_precent',
+                        allowBlank: false,
+                        value: '0.5',
+                        blankText: 'should not be empty!',
+                        listeners: {
+			                specialkey: submitOnEnter
+		                }
+                    }, {
+                        fieldLabel: 'Passcode Expiry Time (yr)',
+                        name: 'noOfyear_expiry',
+                        id: 'noOfyear_expiry',
+                        allowBlank: false,
+                        value: '5',
+                        blankText: 'should not be empty!',
+                        listeners: {
+                            specialkey: submitOnEnter
+                        }
+                    }],
+                    buttons: [{
+                        id: 'InstallSubmitButton',
+                        text: 'Submit',
+                        handler: function () {
+                            var form = this.up('form').getForm();
+                            var win = this.up('window');
+                            if (form.isValid()) {
+                                form.submit({
+                                    clientValidation: true,
+                                    waitMsg: 'Wait',
+                                    waitTitle: 'verifying install……',
+                                    url: '../Install/CreatePasscodeFormat', @*'@Url.Action("CreatePasscodeFormat")',*@
+                                    success: function (form1, action) {
+                                        if (action.success) {
+                                            Ext.MessageBox.show({
+                                                width: 150,
+                                                title: "Install Progress",
+                                                buttons: Ext.MessageBox.OK,
+                                                msg: "Install Complete"
+                                            });
+                                        }
+                                        else {
+                                            Ext.MessageBox.show({
+                                                width: 150,
+                                                title: "Install Failed",
+                                                buttons: Ext.MessageBox.OK,
+                                                msg: action.result.msg
+                                            }); 
+                                        }
+                                    },
+                                    failure: function (form1, action) {
+                                        Ext.MessageBox.show({
+                                            width: 150,
+                                            title: "Install Failed",
+                                            buttons: Ext.MessageBox.OK,
+                                            msg: 'Install Failed'//action.result.msg
+                                        });
+                                    }
+                                });
+                            }
+                        }
+                }]
+             
+            });
+            Ext.get('installPanel').setStyle('position', 'absolute')
+			.center(Ext.getBody());
+            //Ext.MessageBox.confirm('Confirm', 'Are you sure you want to do that?');
+        };
+
+        Ext.onReady(install);
+    </script>
+</head>
+<body>
+    <div id="installPanel">
+    </div>
+    
+  
+</body>
+
+</html>
